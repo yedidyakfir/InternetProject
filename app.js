@@ -17,8 +17,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use('/store',express.static(path.join(__dirname,'BookStore','dist','BookStore')));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/store',express.static(path.join(__dirname,'BookStore','dist')));
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
