@@ -204,3 +204,61 @@
   cursor: pointer;
 }
 
+/*------------------------------------------------------------------
+[ Logo ]*/
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  height: 65%;
+  margin-right: 55px;
+}
+
+.logo img {
+  width: 133px;
+  height: 40px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*---------------------------------------------*/
+.limiter-menu-desktop {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+/*==================================================================
+[ Fixed menu desktop ]*/
+
+.fix-menu-desktop .wrap-menu-desktop {
+  height: 70px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
+  -o-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
+}
+
+.header-v2 .fix-menu-desktop.container-menu-desktop {
+  height: 70px;
+}
+
+.header-v3 .fix-menu-desktop .wrap-menu-desktop {
+  background-color: #222;
+  border-color: #222;
+}
+
+.header-v4 .fix-menu-desktop.container-menu-desktop {
+  height: 110px;
+}
+
