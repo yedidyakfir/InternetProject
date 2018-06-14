@@ -13,7 +13,7 @@ import { NgbModal,ModalDismissReasons } from "@ng-bootstrap/ng-bootstrap";
 import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.component";
 import { LogedNavBarComponent } from './navbar/loged-nav-bar/loged-nav-bar.component';
 import { NavBarComponent } from "./navbar/nav-bar/nav-bar.component";
-import { LoginDialogComponent } from './navbar/login-dialog/login-dialog.component';
+import { SmallBookViewComponent } from './small-book-view/small-book-view.component';
 
 
 const routes: Routes = [
@@ -27,7 +27,7 @@ const routes: Routes = [
     NavBarComponent,
     LoginNavBarComponent,
     LogedNavBarComponent,
-    LoginDialogComponent
+    SmallBookViewComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,6 @@
     <input class="password" placeholder="Enter Password" [(ngModel)]="password">
   </div>
   <div class="modal-footer">
-    <button mat-raised-button class="btn-primary">login</button>
+    <button mat-raised-button (click)="login(loginModal)" class="btn-primary">login</button>
   </div>
 </ng-template>
