@@ -8,7 +8,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AngularFontAwesomeModule } from "angular-font-awesome";
 import { MatButtonModule } from "@angular/material";
 import { MatFormFieldModule } from "@angular/material";
-import { NgbModal,ModalDismissReasons } from "@ng-bootstrap/ng-bootstrap";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 
 import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.component";
 import { LogedNavBarComponent } from './navbar/loged-nav-bar/loged-nav-bar.component';
