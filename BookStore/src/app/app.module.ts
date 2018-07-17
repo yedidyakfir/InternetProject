@@ -14,6 +14,7 @@ import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.compo
 import { LogedNavBarComponent } from './navbar/loged-nav-bar/loged-nav-bar.component';
 import { NavBarComponent } from "./navbar/nav-bar/nav-bar.component";
 import { SmallBookViewComponent } from './small-book-view/small-book-view.component';
+import { CatalogComponent } from './catalog/catalog.component';
 
 
 const routes: Routes = [
@@ -27,7 +28,8 @@ const routes: Routes = [
     NavBarComponent,
     LoginNavBarComponent,
     LogedNavBarComponent,
-    SmallBookViewComponent
+    SmallBookViewComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,
