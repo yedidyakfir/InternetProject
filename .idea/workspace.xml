@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
+    <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="added catalog&#10;still has a problem because the nav is fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/catalog/catalog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/catalog/catalog.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,14 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="125">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -47,10 +43,10 @@
       <file leaf-file-name="catalog.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/catalog/catalog.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state>
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,23 +56,24 @@
         <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="6364" column="4" selection-start-line="6364" selection-start-column="1" selection-end-line="6364" selection-end-column="4" />
+              <caret line="1575" column="8" selection-start-line="1575" selection-start-column="1" selection-end-line="1575" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav-bar.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav-bar.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>icon-header-item</find>
-      <find>limiter-menu-desktop</find>
-      <find>wrap-menu-desktop</find>
       <find>container-menu-desktop</find>
       <find>wrap-icon-header</find>
       <find>flex-w</find>
@@ -104,6 +101,9 @@
       <find>../images/icons/icon-prev.png</find>
       <find>main</find>
       <find>bg0</find>
+      <find>p-b-120</find>
+      <find>p-t-</find>
+      <find>m-t-100</find>
     </findStrings>
     <replaceStrings>
       <replace>assets/fonts/Poppins</replace>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.css" />
         <option value="$PROJECT_DIR$/BookStore/src/styles.css" />
         <option value="$PROJECT_DIR$/BookStore/src/app/small-book-view/small-book-view.component.html" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/catalog/catalog.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/catalog/catalog.component.html" />
       </list>
     </option>
   </component>
@@ -207,6 +207,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+              <item name="login-nav-bar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+              <item name="nav-bar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -301,7 +327,7 @@
       <workItem from="1527374352796" duration="20939000" />
       <workItem from="1528790963289" duration="4483000" />
       <workItem from="1528958833569" duration="9272000" />
-      <workItem from="1531685228861" duration="9967000" />
+      <workItem from="1531685228861" duration="11360000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1525887214121</created>
@@ -380,11 +406,25 @@
       <option name="project" value="LOCAL" />
       <updated>1531827451775</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added catalog&#10;still has a problem because the nav is fixed">
+      <created>1531854439123</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1531854439123</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added catalog&#10;still has a problem because the nav is fixed">
+      <created>1531854847269</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1531854847269</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64838000" />
+    <option name="totallyTimeSpent" value="66231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -428,7 +468,8 @@
     <MESSAGE value="upgrade to navbar, added login ,not logged option yet" />
     <MESSAGE value="added small book component" />
     <MESSAGE value="created small-book and started working on it" />
-    <option name="LAST_COMMIT_MESSAGE" value="created small-book and started working on it" />
+    <MESSAGE value="added catalog&#10;still has a problem because the nav is fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="added catalog&#10;still has a problem because the nav is fixed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
@@ -713,9 +754,6 @@
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/small-book-view/small-book-view.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/small-book-view/small-book-view.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -723,30 +761,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="6364" column="4" selection-start-line="6364" selection-start-column="1" selection-end-line="6364" selection-end-column="4" />
+          <caret line="1575" column="8" selection-start-line="1575" selection-start-column="1" selection-end-line="1575" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/catalog/catalog.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
