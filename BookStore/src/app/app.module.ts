@@ -13,8 +13,11 @@ import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.component";
 import { LogedNavBarComponent } from './navbar/loged-nav-bar/loged-nav-bar.component';
 import { NavBarComponent } from "./navbar/nav-bar/nav-bar.component";
-import { SmallBookViewComponent } from './small-book-view/small-book-view.component';
-import { CatalogComponent } from './catalog/catalog.component';
+import { SmallBookViewComponent } from './shopping/small-book-view/small-book-view.component';
+import { CatalogComponent } from './shopping/catalog/catalog.component';
+import { GroupDiscussionComponent } from './groups/group-discussion/group-discussion.component';
+import { EnterGroupComponent } from './groups/enter-group/enter-group.component';
+import { BlogsComponent } from './groups/blogs/blogs.component';
 
 
 const routes: Routes = [
@@ -29,7 +32,10 @@ const routes: Routes = [
     LoginNavBarComponent,
     LogedNavBarComponent,
     SmallBookViewComponent,
-    CatalogComponent
+    CatalogComponent,
+    GroupDiscussionComponent,
+    EnterGroupComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
