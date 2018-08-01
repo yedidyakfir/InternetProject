@@ -12,7 +12,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.component";
-import { LoginComponent } from "./login/login.component";
 import { LogedNavBarComponent } from './navbar/loged-nav-bar/loged-nav-bar.component';
 import { NavBarComponent } from './navbar/nav-bar/nav-bar.component';
 import { SmallBookViewComponent } from './shopping/small-book-view/small-book-view.component';
