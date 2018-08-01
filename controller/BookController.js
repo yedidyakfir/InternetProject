@@ -1,4 +1,4 @@
-import Book from '../model/BookModel';
+import Book from '../model/Book';
 
 //Simple version, without validation or sanitation
 export function test (req, res) {
