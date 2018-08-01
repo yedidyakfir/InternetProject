@@ -28,8 +28,23 @@ userSchema.pre('save', function(next) {
     this.created_at = currentDate;
 
   next();
-}
-);
+});
+
+userSchema.statics.REQUEST = async function(cb) {
+    let cursor;
+    let asynch = cb.constructor.name === 'AsyncFunction';
+    try {
+        cursor = await this.find().cursor();
+    } catch (err) { throw err; }
+    try {
+        while (todo = await cursor.next())
+            if (asynch)
+                try { await cb(todo); } catch (err) { throw err; }
+            else
+                cb(todo);
+    } catch (err) { throw err; }
+};
+
 
 // the schema is useless so far
 // we need to create a model using it
