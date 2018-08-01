@@ -3,7 +3,6 @@ var Schema = mongoose.Schema;
 
 // create a schema
 var userSchema = new Schema({
-  name: String,
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   privilege: Number,
@@ -29,7 +28,8 @@ userSchema.pre('save', function(next) {
     this.created_at = currentDate;
 
   next();
-});
+}
+);
 
 // the schema is useless so far
 // we need to create a model using it
