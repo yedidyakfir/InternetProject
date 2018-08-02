@@ -19,9 +19,9 @@ import { GroupDiscussionComponent } from './groups/group-discussion/group-discus
 import { EnterGroupComponent } from './groups/enter-group/enter-group.component';
 import { BlogsComponent } from './groups/blogs/blogs.component';
 import { MainImageComponent } from './main-image/main-image.component';
-import { AuthenticationService } from './services/authentication-service.service';
+import { AuthenticationService } from '../services/authentication-service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { AlertService } from './services/alert-service.service';
+import { AlertService } from '../services/alert-service.service';
 import {LoginComponent} from "./login/login.component";
 
 const routes: Routes = [

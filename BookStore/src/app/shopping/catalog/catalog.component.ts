@@ -11,7 +11,7 @@ import {Observable} from "rxjs";
 })
 export class CatalogComponent implements OnInit {
   public b: Book;
-  booksUrl = 'http://localhost:8080/books/list';
+  booksUrl = 'http://localhost:3000/books/list';
   constructor(private http: HttpClient) { }
 
   ngOnInit() {

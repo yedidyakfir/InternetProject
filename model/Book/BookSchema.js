@@ -48,5 +48,6 @@ module.exports = db => {
         } catch (err) { throw err; }
     };
 
+
     db.model('Books',bookSchema, 'books');
 };
