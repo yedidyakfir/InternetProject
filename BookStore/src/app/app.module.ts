@@ -10,7 +10,6 @@ import { MatButtonModule } from "@angular/material";
 import { MatFormFieldModule } from "@angular/material";
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-
 import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.component";
 import { LogedNavBarComponent } from './navbar/loged-nav-bar/loged-nav-bar.component';
 import { NavBarComponent } from './navbar/nav-bar/nav-bar.component';

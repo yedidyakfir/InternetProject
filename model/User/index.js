@@ -1,15 +1,18 @@
-// grab the things we need
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const debug = require("debug")("data-base:user");
+const mongodb = require("mongoose");
+mongodb.Promise = Promise;
 
-// create a schema
-var userSchema = new userSchema()
+let db = mongodb.createConnection();
+(async () => {
 
+    try {
+        await db.openUri('mongodb://localhost/users');
+    }
+    catch (err) {
+        debug("Error connecting to DB: " + err);
+    }
+})();
 
-// the schema is useless so far
-// we need to create a model using it
-var User = mongoose.model('User', userSchema);
-
-
-// make this available to our users in our Node applications
-module.exports = User;
+debug('Pending DB connection');
+require("./UserSchema")(db);
+module.exports = model => db.model(model);

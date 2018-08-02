@@ -4,5 +4,10 @@ let books = require('../../model/Book');
 
 /* GET ALL books*/
 router.get('/list', function (req, res ,next) {
-
+    try {
+        res.json(books.REQUEST());
+    }
+    catch (e) {res.send(e)}
 });
+
+module.exports = router;

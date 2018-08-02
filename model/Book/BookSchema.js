@@ -1,39 +1,52 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-// create a schema
-var bookSchema = new Schema({
-  name: { type: String, required: true, unique: true },
-  author: String,
-  seriesName: String,
-  publishDate: Date,
-  ISBN: { type: String, required: true, unique: true },
-  summary: String,
-  seller: String,
-  buyer: String,
-  sellDate: Date,
-  isActive: Boolean,
-  created_at: Date,
-  updated_at: Date
-});
+module.exports = db => {
 
-bookSchema.pre('save', function(next) {
-  // get the current date
-  var currentDate = new Date();
+    // create a schema
+    let bookSchema = new Schema({
+        name: { type: String, required: true, unique: true },
+        author: String,
+        seriesName: String,
+        publishDate: Date,
+        ISBN: { type: String, required: true, unique: true },
+        summary: String,
+        seller: String,
+        buyer: String,
+        sellDate: Date,
+        isActive: Boolean,
+        created_at: Date,
+        updated_at: Date
+    });
 
-  // change the updated_at field to current date
-  this.updated_at = currentDate;
+    bookSchema.pre('save', function(next) {
+        // get the current date
+        var currentDate = new Date();
 
-  // if created_at doesn't exist, add to that field
-  if (!this.created_at)
-    this.created_at = currentDate;
+        // change the updated_at field to current date
+        this.updated_at = currentDate;
 
-  next();
-});
+        // if created_at doesn't exist, add to that field
+        if (!this.created_at)
+            this.created_at = currentDate;
 
-// the schema is useless so far
-// we need to create a model using it
-var Book = mongoose.model('Book', bookSchema);
+        next();
+    });
 
-// make this available to our users in our Node applications
-module.exports = Book;
+    bookSchema.statics.REQUEST = async function(cb) {
+        let cursor;
+        let asynch = cb.constructor.name === 'AsyncFunction';
+        try {
+            cursor = await this.find().cursor();
+        } catch (err) { throw err; }
+        try {
+            while (todo = await cursor.next())
+                if (asynch)
+                    try { await cb(todo); } catch (err) { throw err; }
+                else
+                    cb(todo);
+        } catch (err) { throw err; }
+    };
+
+    db.model('Books',bookSchema, 'books');
+};
