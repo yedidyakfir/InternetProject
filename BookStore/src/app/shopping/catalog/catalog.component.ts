@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Book} from "../../../model/book";
 import {HttpClient} from "@angular/common/http";
-import { Observable } from "rxjs/index";
+import {map} from "rxjs/operators";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-catalog',
@@ -10,12 +11,13 @@ import { Observable } from "rxjs/index";
 })
 export class CatalogComponent implements OnInit {
   public b: Book;
-  booksUrl = 'http://localhost:8080/books';
+  booksUrl = 'http://localhost:8080/books/list';
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    console.log("I ahte this is idiotic");
     this.http.get(this.booksUrl)
-      .map()
+      .subscribe(res => console.log(res));
 
     this.b = new Book();
     this.b.price = 15;
