@@ -11,4 +11,44 @@ router.get('/list', function (req, res ,next) {
     catch (e) {res.send(e)}
 });
 
+router.post('/creat', function (req, res ,next) {
+    let bookToaAdd = new book
+        {
+            this.name = req.body.name,
+            this.author = req.body.author,
+            this.seriesName = req.body.seriesName,
+            this.publishDate = req.body.publishDate,
+            this.ISBN = req.body.ISBN,
+            this.summary = req.body.summary,
+            this.seller = req.body.seller,
+            this.sellDate = new Date(),//just fo now we should put it null? or min value on date
+            this.created_at = new Date(),
+            this.updated_at = new Date
+        };
+    try {
+        res.json(books.CREAT(bookToaAdd));
+    }
+    catch (e) {res.send(e)}
+});
+
+//just for check if work
+router.get('/creat', function (req, res ,next) {
+    let bookToaAdd = new book
+        {
+            this.name = "a",
+            this.author = "req.body.author",
+            this.seriesName = "4",
+            this.publishDate = new Date(),
+            this.ISBN = "req.body.ISBN",
+            this.summary = "req.body.summary",
+            this.seller = "req.body.seller",
+            this.sellDate = new Date(),//just fo now we should put it null? or min value on date
+            this.created_at = new Date(),
+            this.updated_at = new Date
+        };
+    try {
+        res.json(books.CREAT(bookToaAdd));
+    }
+    catch (e) {res.send(e)}
+});
 module.exports = router;
