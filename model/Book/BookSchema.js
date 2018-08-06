@@ -48,18 +48,18 @@ module.exports = db => {
         } catch (err) { throw err; }
     };
 
-    bookSchema.statics.CREAT = async function( bookToAdd)
+    bookSchema.statics.CREATE = async function(bookToAdd)
     {
         let realBookToaAdd = bookToAdd;
         db.model.save(function (err) {
             if (err) {
                 throw err;
             }
-            console.log("book sucessfuly creat")
+            console.log("book sucessfuly created")
         })
     };
 
-    bookSchema.statics.CREAT = async function(name,author, seriesName,publishDate,ISBN,summary,seller)
+    bookSchema.statics.CREATE = async function(name,author, seriesName,publishDate,ISBN,summary,seller)
     {
         let bookToaAdd = new book
         {

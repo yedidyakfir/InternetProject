@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/services/alert-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/services/alert-service.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/services/authentication-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/BookController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/UserController.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Book/BookSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Book/BookSchema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/Data/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Data/books.js" afterDir="false" />
     </list>
@@ -25,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="books.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="books.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/Data/books.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -37,8 +31,8 @@
       <file leaf-file-name="catalog.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="175">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -46,20 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Book/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="47" selection-start-column="47" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookSchema.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookSchema.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Book/BookSchema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="49" selection-start-line="49" selection-end-line="50" />
+            <state relative-caret-position="1250">
+              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -160,9 +145,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/model/Book/BookSchema.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" />
         <option value="$PROJECT_DIR$/routes/Data/books.js" />
-        <option value="$PROJECT_DIR$/model/Book/BookSchema.js" />
       </list>
     </option>
   </component>
@@ -185,10 +170,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="2425" />
+    <option name="height" value="1375" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -283,6 +268,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/model/Book/BookSchema.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/routes/Data/books.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -290,10 +277,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BookStore/src/app/main-image/main-image.component.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BookStore/src/app/main-image/main-image.component.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BookStore/src/app/main-image/main-image.component.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BookStore/src/app/main-image/main-image.component.ts</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -434,7 +417,7 @@
       <workItem from="1527374352796" duration="20939000" />
       <workItem from="1528790963289" duration="4483000" />
       <workItem from="1528958833569" duration="9272000" />
-      <workItem from="1531685228861" duration="42315000" />
+      <workItem from="1531685228861" duration="47997000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1525887214121</created>
@@ -583,28 +566,36 @@
       <option name="project" value="LOCAL" />
       <updated>1533244492950</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fixed angular catalog component (the port problem ,from 8080 to 3000)">
+      <created>1533245652355</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1533245652355</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97186000" />
+    <option name="totallyTimeSpent" value="102868000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50625" side_tool="true" weight="0.23379384" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4984375" weight="0.32943678" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49791667" weight="0.32731137" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4984375" weight="0.32827586" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49791667" weight="0.32689655" />
       <window_info id="npm" order="2" sideWeight="0.501355" side_tool="true" weight="0.16302083" />
-      <window_info active="true" anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.23333333" />
+      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.29166666" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.16302083" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.20377605" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49895832" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49895832" visible="true" weight="0.3995749" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49895832" visible="true" weight="0.51862067" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -635,18 +626,26 @@
     <MESSAGE value="created blogs" />
     <MESSAGE value="created books router" />
     <MESSAGE value="started connection angular and mongodb" />
-    <option name="LAST_COMMIT_MESSAGE" value="started connection angular and mongodb" />
+    <MESSAGE value="fixed angular catalog component (the port problem ,from 8080 to 3000)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed angular catalog component (the port problem ,from 8080 to 3000)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/Data/books.js</url>
-          <line>8</line>
+          <line>36</line>
           <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/Data/books.js</url>
+          <line>51</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -956,20 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Data/books.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Book/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -987,20 +972,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/Book/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Book/BookSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="175">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Book/BookSchema.js">
+    <entry file="file://$PROJECT_DIR$/routes/Data/books.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="49" selection-start-line="49" selection-end-line="50" />
+        <state relative-caret-position="175">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
         </state>
       </provider>
     </entry>
