@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+const debug = require("debug")("data-base:books");
 var Schema = mongoose.Schema;
 
 module.exports = db => {
@@ -7,6 +8,7 @@ module.exports = db => {
     let bookSchema = new Schema({
         name: { type: String, required: true, unique: true },
         author: String,
+        photo: String,
         seriesName: String,
         publishDate: Date,
         ISBN: { type: String, required: true, unique: true },
@@ -34,56 +36,42 @@ module.exports = db => {
     });
 
     bookSchema.statics.REQUEST = async function(cb) {
-        let cursor;
-        let asynch = cb.constructor.name === 'AsyncFunction';
-        try {
-            cursor = await this.find().cursor();
-        } catch (err) { throw err; }
-        try {
-            while (todo = await cursor.next())
-                if (asynch)
-                    try { await cb(todo); } catch (err) { throw err; }
-                else
-                    cb(todo);
-        } catch (err) { throw err; }
+        debug("get all books");
+        let u = await this.find({});
+        return u;
     };
 
     bookSchema.statics.CREATE = async function(bookToAdd)
     {
         let realBookToaAdd = bookToAdd;
-        db.model.save(function (err) {
-            if (err) {
-                throw err;
-            }
-            console.log("book sucessfuly created")
-        })
+        this.create(bookToAdd);
+        this.save();
     };
 
-    bookSchema.statics.CREATE = async function(name,author, seriesName,publishDate,ISBN,summary,seller)
-    {
-        let bookToaAdd = new book
-        {
-            this.name = name,
-            this.author = author,
-            this.seriesName = seriesName,
-            this.publishDate = publishDate,
-            this.ISBN = ISBN,
-            this.summary = summary,
-            this.seller = seller,
-            this.sellDate = new Date(),//just fo now we should put it null? or min value on date
-            this.created_at = new Date(),
-            this.updated_at = new Date
-        };
-        db.model.save(function (err) {
-            if (err) {
-                throw err;
-            }
-            console.log("book sucessfuly created")
-        })
-    };
+    // bookSchema.statics.CREATE = async function(name,author, seriesName,publishDate,ISBN,summary,seller)
+    // {
+    //     let bookToaAdd = new book
+    //     {
+    //         this.name = name,
+    //         this.author = author,
+    //         this.seriesName = seriesName,
+    //         this.publishDate = publishDate,
+    //         this.ISBN = ISBN,
+    //         this.summary = summary,
+    //         this.seller = seller,
+    //         this.sellDate = new Date(),//just fo now we should put it null? or min value on date
+    //         this.created_at = new Date(),
+    //         this.updated_at = new Date
+    //     };
+    //     db.model.save(function (err) {
+    //         if (err) {
+    //             throw err;
+    //         }
+    //         console.log("book sucessfuly created")
+    //     })
+    // };
 
 
-    db.model('Books',bookSchema, 'books');
-
+    db.model('Books',bookSchema);
     
 };
