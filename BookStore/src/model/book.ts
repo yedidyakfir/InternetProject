@@ -2,13 +2,20 @@ export class Book
 {
   name: String;
   auther: String;
+  photo: String;
   series: String;
 
-  price: Number;
   publishDate: Date;
   ISBN: Number;
-  promise: String;
+  summary: String;
+  seller: String;
+  buyer: String;
 
+  sellDate: Date;
 
+  createdAt: Date;
+
+  updatedAt: Date;
+  price: Number;
   active: boolean;
 }

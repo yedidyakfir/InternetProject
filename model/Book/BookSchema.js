@@ -16,9 +16,10 @@ module.exports = db => {
         seller: String,
         buyer: String,
         sellDate: Date,
-        isActive: Boolean,
+        active: Boolean,
         created_at: Date,
-        updated_at: Date
+        updated_at: Date,
+        price: Number
     });
 
     bookSchema.pre('save', function(next) {

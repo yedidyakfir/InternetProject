@@ -35,17 +35,19 @@ router.get('/list', async function (req, res ,next) {
 //just for check if work
 router.get('/create', async function (req, res ,next) {
     let bookToaAdd = {
-            name : "a",
+            name : "StormLight2",
             author : "req.body.author",
             seriesName : "4",
             publishDate : new Date(),
-            ISBN : "req.body.ISBN",
+            ISBN : 3456,
             summary : "req.body.summary",
             seller : "req.body.seller",
             sellDate : new Date(),//just fo now we should put it null? or min value on date
             created_at : new Date(),
             updated_at : new Date(),
-            photo : ""
+            photo : "",
+            active : true,
+            price : 15
         };
     console.log('book created');
     try {
