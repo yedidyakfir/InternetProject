@@ -1,7 +1,7 @@
 //this file is responsible for all the request for books
 var express = require('express');
 var router = express.Router();
-let books = require('../../model/Book')('Books');
+let books = require('../../model')('Books');
 
 /* GET ALL books*/
 router.get('/list', async function (req, res ,next) {
@@ -12,27 +12,7 @@ router.get('/list', async function (req, res ,next) {
     catch (e) {res.send(e)}
 });
 
-// router.post('/create', function (req, res ,next) {
-//     let bookToaAdd = new book
-//         {
-//             this.name = req.body.name,
-//             this.author = req.body.author,
-//             this.seriesName = req.body.seriesName,
-//             this.publishDate = req.body.publishDate,
-//             this.ISBN = req.body.ISBN,
-//             this.summary = req.body.summary,
-//             this.seller = req.body.seller,
-//             this.sellDate = new Date(),//just fo now we should put it null? or min value on date
-//             this.created_at = new Date(),
-//             this.updated_at = new Date
-//         };
-//     try {
-//         res.json(books.CREATE(bookToaAdd));
-//     }
-//     catch (e) {res.send(e)}
-// });
-
-//just for check if work
+//create a new book
 router.get('/create', async function (req, res ,next) {
     let bookToaAdd = {
             name : "StormLight2",

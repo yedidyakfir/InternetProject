@@ -1,4 +1,6 @@
 var express = require('express');
+const passport = require('passport');
+//const User = require('../../model/User/UserSchema')('User');
 var router = express.Router();
 
 /* GET users listing. */

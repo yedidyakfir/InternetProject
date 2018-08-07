@@ -1,20 +1,21 @@
 var mongoose = require('mongoose');
+const debug = require("debug")("data-base:users");
 var Schema = mongoose.Schema;
+const passportLocalMongoose = require('passport-local-mongoose');
 
 module.exports = db => {
     // create a schema
     var userSchema = new Schema({
-        username: { type: String, required: true, unique: true },
+        email: { type: String, required: true, unique: true },
         password: { type: String, required: true },
-        privilege: Number,
         admin: Boolean,
-        location: String,
-        meta: {
-            age: Number,
-            website: String
-        },
         created_at: Date,
         updated_at: Date
+    });
+
+    userSchema.plugin(passportLocalMongoose, {
+        usernameField: 'email',
+        passwordField: 'password'
     });
 
     userSchema.pre('save', function(next) {
@@ -32,19 +33,10 @@ module.exports = db => {
     });
 
     userSchema.statics.REQUEST = async function(cb) {
-        let cursor;
-        let asynch = cb.constructor.name === 'AsyncFunction';
-        try {
-            cursor = await this.find().cursor();
-        } catch (err) { throw err; }
-        try {
-            while (todo = await cursor.next())
-                if (asynch)
-                    try { await cb(todo); } catch (err) { throw err; }
-                else
-                    cb(todo);
-        } catch (err) { throw err; }
+        debug("get all books");
+        let u = await this.find({});
+        return u;
     };
 
-    db.model('Users', userSchema, 'users');
+    db.model('Users', userSchema);
 };

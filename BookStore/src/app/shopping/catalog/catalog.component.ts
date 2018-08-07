@@ -15,8 +15,8 @@ export class CatalogComponent implements OnInit {
 
   ngOnInit() {
     // console.log("I ahte this is idiotic");
-    // this.http.get('http://localhost:3000/books/create')
-    //   .subscribe(res => console.log('created success'));
+    this.http.get('http://localhost:3000/books/create')
+      .subscribe(res => console.log('created success'));
 
     //I requesting the books data and store it in the array which is connected to the view
     this.http.get(this.booksUrl)
