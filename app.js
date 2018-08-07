@@ -30,13 +30,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+//////this is for login and identifaction
 app.use(passport.initialize());
 app.use(passport.session());
 
 passport.use(UserDB.createStrategy());
 passport.serializeUser(UserDB.serializeUser());
 passport.deserializeUser(UserDB.deserializeUser());
-
+//////
 
 app.use('/users', usersRouter);
 app.use('/books', booksRouter);

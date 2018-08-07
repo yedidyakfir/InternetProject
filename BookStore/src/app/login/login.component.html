@@ -1,8 +1,8 @@
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
-            <form class="login100-form validate-form" name="form" 
-                (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>                        
+            <form class="login100-form validate-form" name="form"
+                (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
                 <span class="login100-form-title p-b-26">
                     Welcome
                 </span>
@@ -24,7 +24,7 @@
                     <span class="btn-show-pass">
                         <i class="zmdi zmdi-eye"></i>
                     </span>
-                    
+
                     <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
                         <label for="password">Password</label>
                         <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
@@ -47,14 +47,14 @@
                         Don’t have an account?
                     </span>
 
-                    <a [routerLink]="['/register']" class="btn btn-link">Register</a>
+                    <!--<a [routerLink]="['/register']" class="btn btn-link">Register</a>!-->
 
                 </div>
             </form>
 
             <div class="account" style="padding-top: 8px">
                 <div class="g-signin2" data-longtitle="true" data-width="280" data-longtitle="true">
-            </div>	
+            </div>
         </div>
     </div>
 </div>
