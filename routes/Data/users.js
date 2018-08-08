@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+//user attempt to register
 router.post('/register', function (req, res) {
   const email = req.body.email;
   const password = req.body.password;
@@ -20,6 +21,7 @@ router.post('/register', function (req, res) {
   });
 });
 
+//user atempt to log in
 router.post('/login', function (req, res, next) {
     passport.authenticate('local', function(err, user, info) {
         if (err) { return next(err); }
@@ -30,6 +32,17 @@ router.post('/login', function (req, res, next) {
             return res.json({ success: true});
         });
     })(req, res, next);
+});
+
+//user check if he is logged in
+router.get('/isLogIn', function (req, res) {
+    if(req.isAuthenticated()) { res.json({success: true}); console.log("logged") }
+    else {res.json({success: false})}
+});
+
+//user logout
+router.get('/logout', function (req, res) {
+   req.logout();
 });
 
 module.exports = router;
