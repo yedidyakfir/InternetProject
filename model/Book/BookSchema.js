@@ -46,7 +46,6 @@ module.exports = db => {
     {
         let realBookToaAdd = bookToAdd;
         this.create(bookToAdd);
-        this.save();
     };
 
     // bookSchema.statics.CREATE = async function(name,author, seriesName,publishDate,ISBN,summary,seller)

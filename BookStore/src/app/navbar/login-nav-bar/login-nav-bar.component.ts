@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
-import { Router } from "@angular/router";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-login-nav-bar',
@@ -10,15 +10,20 @@ import { Router } from "@angular/router";
 export class LoginNavBarComponent implements OnInit {
   username: string = '';
   password: string = '';
-  constructor(private modalService: NgbModal, private router: Router) { }
+  isLogIn: Boolean = false;//
+  userUrl = 'http://localhost:3000/users';
+  constructor(private modalService: NgbModal, private http: HttpClient) { }
 
   ngOnInit() {
+    // console.log(this.userUrl + '/register');
+    // this.http.post(this.userUrl + '/register',{email:'yedidya',password:'kfiry'}).subscribe(res => console.log("s"));
   }
 
   open(modal) {
     this.modalService.open(modal,{size: "sm"});
   }
   login(modal) {
-    this.router.navigate(['logedNav', false]);
+
+    //this.router.navigate(['logedNav', false]);
   }
 }

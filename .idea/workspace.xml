@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/books/StormLight.2jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/loged-nav-bar/loged-nav-bar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/loged-nav-bar/loged-nav-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/loged-nav-bar/loged-nav-bar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/loged-nav-bar/loged-nav-bar.component.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Book/BookSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Book/BookSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/User/UserSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/User/UserSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Data/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Data/books.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Data/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Data/users.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,23 +32,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserSchema.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
+      <file leaf-file-name="login-nav-bar.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="125">
+              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding>
-                <element signature="e#526#847#0" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#ng-template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#ng-template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-nav-bar.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav-bar.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login-nav-bar.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="579">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -46,47 +66,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-nav-bar.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html">
+      <file leaf-file-name="authentication-service.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="47" column="87" selection-start-line="47" selection-start-column="87" selection-end-line="47" selection-end-column="87" />
-              <folding>
-                <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#ng-template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#ng-template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="25">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/login/login.component.ts">
+      <file leaf-file-name="UserSchema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="20" />
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#526#847#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../hw6/routes/users.js">
+        <entry file="file://$PROJECT_DIR$/routes/Data/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225" />
+            <state relative-caret-position="381">
+              <caret line="30" column="11" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="11" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/login/login.component.html">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../hw6/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="406">
+              <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../hw6/model/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/Data/books.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -103,8 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hov-img0</find>
-      <find>stext-103</find>
       <find>cl2</find>
       <find>size-102</find>
       <find>bor2</find>
@@ -133,6 +163,8 @@
       <find>experimentalDecorators</find>
       <find>pri</find>
       <find>routerLink</find>
+      <find>register</find>
+      <find>pass</find>
     </findStrings>
     <replaceStrings>
       <replace>assets/fonts/Poppins</replace>
@@ -156,8 +188,6 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/navbar/loged-nav-bar/loged-nav-bar.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/small-book-view/small-book-view.component.ts" />
         <option value="$PROJECT_DIR$/tech" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html" />
         <option value="$PROJECT_DIR$/../cozastore/cozastore/css/main.css" />
         <option value="$PROJECT_DIR$/../cozastore/cozastore/css/util.css" />
         <option value="$PROJECT_DIR$/BookStore/src/app/small-book-view/small-book-view.component.css" />
@@ -180,21 +210,25 @@
         <option value="$PROJECT_DIR$/model/Book/index.js" />
         <option value="$PROJECT_DIR$/model/User/index.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/model/book.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.html" />
-        <option value="$PROJECT_DIR$/model/Book/BookSchema.js" />
         <option value="$PROJECT_DIR$/routes/spa.js" />
-        <option value="$PROJECT_DIR$/model/User/UserSchema.js" />
-        <option value="$PROJECT_DIR$/routes/Data/users.js" />
         <option value="$PROJECT_DIR$/model/index.js" />
-        <option value="$PROJECT_DIR$/routes/Data/books.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/model/User/UserSchema.js" />
+        <option value="$PROJECT_DIR$/routes/Data/books.js" />
+        <option value="$PROJECT_DIR$/model/Book/BookSchema.js" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" />
+        <option value="$PROJECT_DIR$/routes/Data/users.js" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts" />
       </list>
     </option>
   </component>
@@ -217,10 +251,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
-    <option name="width" value="1932" />
-    <option name="height" value="1035" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -283,12 +317,53 @@
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+              <item name="nav-bar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="small-book-view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="Book" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -368,7 +443,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login.component.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -463,6 +537,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.bin\www">
+    <configuration name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/../../hw6/bin" />
     <configuration name="build" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/BookStore/package.json" />
       <command value="run" />
@@ -475,9 +550,11 @@
     <list>
       <item itemvalue="Node.js.bin\www" />
       <item itemvalue="npm.build" />
+      <item itemvalue="Node.js.www" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.www" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -502,7 +579,7 @@
       <workItem from="1527374352796" duration="20939000" />
       <workItem from="1528790963289" duration="4483000" />
       <workItem from="1528958833569" duration="9272000" />
-      <workItem from="1531685228861" duration="70069000" />
+      <workItem from="1531685228861" duration="79070000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1525887214121</created>
@@ -686,11 +763,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533676547851</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="push for or">
+      <created>1533678585308</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1533678585308</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124940000" />
+    <option name="totallyTimeSpent" value="133941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -699,11 +783,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5015625" side_tool="true" weight="0.25185972" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4984375" weight="0.32731137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4984375" visible="true" weight="0.25185972" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984375" visible="true" weight="0.25185972" />
       <window_info id="npm" order="2" sideWeight="0.501355" side_tool="true" weight="0.16302083" />
-      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.24270834" />
+      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.1890625" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.16302083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.16302083" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49895832" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -744,7 +828,8 @@
     <MESSAGE value="fixed or's stupid problem with the mongoose functions (request fixed)" />
     <MESSAGE value="the connection between angular and json is working and catalog is working" />
     <MESSAGE value="started working with passport" />
-    <option name="LAST_COMMIT_MESSAGE" value="started working with passport" />
+    <MESSAGE value="push for or" />
+    <option name="LAST_COMMIT_MESSAGE" value="push for or" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,82 +842,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/Data/books.js</url>
-          <line>33</line>
+          <line>32</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/Data/books.js</url>
-          <line>8</line>
+          <url>file://$PROJECT_DIR$/routes/Data/users.js</url>
+          <line>11</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/groups/group-discussion/group-discussion.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/groups/group-discussion/group-discussion.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="246" column="18" selection-start-line="246" selection-start-column="18" selection-end-line="246" selection-end-column="18" />
-          <folding>
-            <element signature="e#5698#5703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/groups/blogs/blogs.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/fonts/iconic/material-design-iconic-font.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cozastore/cozastore/fonts/iconic/css/material-design-iconic-font.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="7" lean-forward="true" selection-end-line="5166" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cozastore/cozastore/fonts/linearicons-v1.0.0/icon-font.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="6626" lean-forward="true" selection-start-line="6" selection-start-column="6626" selection-end-line="6" selection-end-column="6626" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/groups/blogs/blogs.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="e#7066#7071#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/groups/enter-group/enter-group.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -897,16 +921,6 @@
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -976,40 +990,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../hw6/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Data/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Data/books.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/spa.js">
@@ -1040,34 +1023,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../hw6/model/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1425">
-          <caret line="30" selection-start-line="30" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../hw6/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
           <caret line="38" column="32" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#526#847#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,24 +1047,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../hw6/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="1150">
           <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1114,27 +1058,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/login/login.component.ts">
+    <entry file="file://$PROJECT_DIR$/../../hw6/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="250">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../hw6/views/users.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/error/missingSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="701" selection-start-line="701" selection-end-line="701" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Book/BookSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Book/BookSchema.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        <state relative-caret-position="-25">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts">
+    <entry file="file://$PROJECT_DIR$/routes/Data/books.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="200">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <folding>
+            <element signature="e#526#847#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../hw6/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../hw6/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../hw6/model/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/loged-nav-bar/loged-nav-bar.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/Data/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/loged-nav-bar/loged-nav-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/loged-nav-bar/loged-nav-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
@@ -1143,11 +1190,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="47" column="87" selection-start-line="47" selection-start-column="87" selection-end-line="47" selection-end-column="87" />
+        <state relative-caret-position="125">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding>
-            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#ng-template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#ng-template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#ng-template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#ng-template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>

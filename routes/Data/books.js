@@ -7,7 +7,6 @@ let books = require('../../model')('Books');
 router.get('/list', async function (req, res ,next) {
     try {
         res.json(await books.REQUEST());
-        console.log(await books.REQUEST());
     }
     catch (e) {res.send(e)}
 });

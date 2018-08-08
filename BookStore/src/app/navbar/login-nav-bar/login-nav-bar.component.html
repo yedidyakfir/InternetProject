@@ -1,6 +1,17 @@
-<div>
+<div [hidden]="isLogIn">
   <button mat-button (click)="open(loginModal)">
     <fa name="user"></fa>
+  </button>
+</div>
+<div [hidden]="!isLogIn">
+  <button mat-button>
+    <fa name="search"></fa>
+  </button>
+  <button mat-button>
+    <fa name="shopping-cart"></fa>
+  </button>
+  <button mat-button>
+    <fa name="sign-out"></fa>
   </button>
 </div>
 

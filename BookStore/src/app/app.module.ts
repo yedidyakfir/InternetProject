@@ -11,7 +11,6 @@ import { MatFormFieldModule } from "@angular/material";
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.component";
-import { LogedNavBarComponent } from './navbar/loged-nav-bar/loged-nav-bar.component';
 import { NavBarComponent } from './navbar/nav-bar/nav-bar.component';
 import { SmallBookViewComponent } from './shopping/small-book-view/small-book-view.component';
 import { CatalogComponent } from './shopping/catalog/catalog.component';
@@ -25,8 +24,6 @@ import { AlertService } from '../services/alert-service.service';
 import {LoginComponent} from "./login/login.component";
 
 const routes: Routes = [
-  {path: 'loginNav', component: LoginNavBarComponent},
-  {path: 'logedNav/:manager', component: LogedNavBarComponent}
 ];
 
 @NgModule({
@@ -34,7 +31,6 @@ const routes: Routes = [
     AppComponent,
     NavBarComponent,
     LoginNavBarComponent,
-    LogedNavBarComponent,
     SmallBookViewComponent,
     CatalogComponent,
     GroupDiscussionComponent,
