@@ -1,26 +1,32 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import {Observable} from "rxjs/index";
 
 @Injectable()
 export class AuthenticationService {
   userUrl = 'http://localhost:3000/users';
   constructor(private http: HttpClient) { }
 
-  register(email,password){
+  register(email,password): Observable<boolean> {
+    let suc = false;
     this.http.post(this.userUrl + '/register',{email:email,password:password})
-      .subscribe(res => console.log("s"));
-    this.login(email,password);
+      .subscribe(res => {
+        if(res == 'success')
+          suc = true;
+      });
+    return this.login(email,password);
   }
 
-  login(email,password){
-    this.http.post(this.userUrl + '/login',{email:email,password:password})
-      .subscribe(res => console.log("s"));
+  login(email,password):Observable<boolean>{
+    return this.http.post<boolean>(this.userUrl + '/login',{email:email,password:password});
   }
 
-  isLogIn(){
-    this.http.get(this.userUrl + '/isLogIn')
-      .subscribe(res => console.log("s"));
+  isLogIn(): Observable<boolean>{
+    return this.http.get<boolean>(this.userUrl + '/isLogIn');
+  }
+
+  logout(){
+    this.http.get<boolean>(this.userUrl + '/logout')
+      .subscribe(res => console.log('logout attempt'));
   }
 }
