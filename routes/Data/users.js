@@ -25,21 +25,24 @@ router.post('/register', function (req, res) {
 router.post('/login', function (req, res, next) {
     passport.authenticate('local', function(err, user, info) {
         if (err) { return next(err); }
-        if (!user) { return res.json({ success: false}); }
+        if (!user) { return res.json(false); }
 
         req.logIn(user, function(err) {
             if (err) { return next(err); }
-            return res.json({ success: true});
+            return res.json(true);
         });
     })(req, res, next);
 });
 
 //user check if he is logged in
 router.get('/isLogIn', function (req, res) {
-    if(req.isAuthenticated()) { res.json({success: true}); console.log("logged") }
-    else {res.json({success: false})}
+    if(req.isAuthenticated()) { res.json(true); console.log("logged") }
+    else {res.json(false)}
 });
 
+router.get('/isAdmin', function (req, res) {
+
+});
 //user logout
 router.get('/logout', function (req, res) {
    req.logout();

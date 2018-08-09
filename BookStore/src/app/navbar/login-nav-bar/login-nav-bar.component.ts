@@ -34,8 +34,7 @@ export class LoginNavBarComponent implements OnInit {
   isLoggedIn(){
     this.auth.isLogIn()
       .subscribe(success => {
-        this.isLogIn = success
-        console.log(this.isLogIn);
+        this.isLogIn = success;
       });
   }
 }

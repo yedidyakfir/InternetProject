@@ -17,13 +17,19 @@ import { CatalogComponent } from './shopping/catalog/catalog.component';
 import { GroupDiscussionComponent } from './groups/group-discussion/group-discussion.component';
 import { EnterGroupComponent } from './groups/enter-group/enter-group.component';
 import { BlogsComponent } from './groups/blogs/blogs.component';
-import { MainImageComponent } from './main-image/main-image.component';
+import { MainImageComponent } from './main-page/main-image/main-image.component';
 import { AuthenticationService } from '../services/authentication-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AlertService } from '../services/alert-service.service';
 import {LoginComponent} from "./login/login.component";
+import { MainComponent } from './main-page/main/main.component';
+import { UserViewComponent } from './users/user-view/user-view.component';
+import { UserListComponent } from './users/user-list/user-list.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'Home', pathMatch:'full'},
+  {path:'Home', component:MainComponent},
+  {path:'Shopping', component: CatalogComponent}
 ];
 
 @NgModule({
@@ -37,7 +43,10 @@ const routes: Routes = [
     EnterGroupComponent,
     BlogsComponent,
     MainImageComponent,
-    LoginComponent
+    LoginComponent,
+    MainComponent,
+    UserViewComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
