@@ -25,6 +25,7 @@ import {LoginComponent} from "./login/login.component";
 import { MainComponent } from './main-page/main/main.component';
 import { UserViewComponent } from './users/user-view/user-view.component';
 import { UserListComponent } from './users/user-list/user-list.component';
+import { SellBookComponent } from './shopping/sell-book/sell-book.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -47,7 +48,8 @@ const routes: Routes = [
     LoginComponent,
     MainComponent,
     UserViewComponent,
-    UserListComponent
+    UserListComponent,
+    SellBookComponent
   ],
   imports: [
     BrowserModule,
