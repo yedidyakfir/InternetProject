@@ -25,8 +25,11 @@ export class AuthenticationService {
     return this.http.get<boolean>(this.userUrl + '/isLogIn');
   }
 
-  logout(){
-    this.http.get<boolean>(this.userUrl + '/logout')
-      .subscribe(res => console.log('logout attempt'));
+  isAdministrator(): Observable<boolean>{
+    return this.http.get<boolean>(this.userUrl + '/isAdmin');
+  }
+
+  logout(): Observable<boolean>{
+    return this.http.get<boolean>(this.userUrl + '/logout');
   }
 }

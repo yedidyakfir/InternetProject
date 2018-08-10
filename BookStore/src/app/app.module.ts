@@ -29,7 +29,8 @@ import { UserListComponent } from './users/user-list/user-list.component';
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
   {path:'Home', component:MainComponent},
-  {path:'Shopping', component: CatalogComponent}
+  {path:'Shopping', component: CatalogComponent},
+  {path:'Users', component: UserListComponent}
 ];
 
 @NgModule({

@@ -41,11 +41,20 @@ router.get('/isLogIn', function (req, res) {
 });
 
 router.get('/isAdmin', function (req, res) {
-
+    if(req.isAuthenticated()){res.json(req.user.admin);}
+    else {res.json(false);}
+    console.log(req.user);
 });
 //user logout
 router.get('/logout', function (req, res) {
    req.logout();
+   if(!req.isAuthenticated()) {res.json(true);}
+   else {res.json(false);}
+});
+
+router.get('/list', function (req, res) {
+   if(req.isAuthenticated() && req.user.admin){res.json(User.REQUEST());}
+   else {res.redirect('/');}
 });
 
 module.exports = router;
