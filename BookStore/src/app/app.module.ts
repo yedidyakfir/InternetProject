@@ -9,6 +9,7 @@ import { AngularFontAwesomeModule } from "angular-font-awesome";
 import { MatButtonModule } from "@angular/material";
 import { MatFormFieldModule } from "@angular/material";
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { FileSelectDirective } from "ng2-file-upload";
 
 import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.component";
 import { NavBarComponent } from './navbar/nav-bar/nav-bar.component';
@@ -26,6 +27,7 @@ import { MainComponent } from './main-page/main/main.component';
 import { UserViewComponent } from './users/user-view/user-view.component';
 import { UserListComponent } from './users/user-list/user-list.component';
 import { SellBookComponent } from './shopping/sell-book/sell-book.component';
+import { FooterComponent } from './main-page/footer/footer.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -49,7 +51,9 @@ const routes: Routes = [
     MainComponent,
     UserViewComponent,
     UserListComponent,
-    SellBookComponent
+    SellBookComponent,
+    FileSelectDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

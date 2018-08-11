@@ -42,10 +42,28 @@ module.exports = db => {
         return u;
     };
 
-    bookSchema.statics.CREATE = async function(bookToAdd)
+    // bookSchema.statics.CREATE = async function(bookToAdd)
+    // {
+    //     let realBookToaAdd = bookToAdd;
+    //     this.create(bookToAdd);
+    // };
+
+    bookSchema.statics.CREATE = async function(seller,name,author,ISBN,seriesName,publishDate,
+                                               summary,price,photoName)
     {
-        let realBookToaAdd = bookToAdd;
-        this.create(bookToAdd);
+        let bookToaAdd = {
+            name : name,
+            author : author,
+            seriesName : seriesName,
+            publishDate : publishDate,
+            ISBN : ISBN,
+            summary : summary,
+            seller : seller,
+            photo : photoName + ".jpg",
+            active : true,
+            price : price
+        };
+        this.create(bookToaAdd);
     };
 
     // bookSchema.statics.CREATE = async function(name,author, seriesName,publishDate,ISBN,summary,seller)

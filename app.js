@@ -9,6 +9,7 @@ const UserDB = require('./model')('Users');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/Data/users');
 var booksRouter = require('./routes/Data/books');
@@ -61,7 +62,9 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  console.log("message:" + err.message);
+  console.log("stack:" + err.stack);
+  //res.render('error');
 });
 
 module.exports = app;

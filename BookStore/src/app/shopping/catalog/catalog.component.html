@@ -14,7 +14,8 @@
 
       <div class="flex-w flex-c-m m-tb-10">
         <div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4">
-          <i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-plus"></i>
+          <button class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-plus"
+                  data-toggle="modal" data-target="#exampleModal"></button>
           Sell
         </div>
 
@@ -230,9 +231,33 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="row isotope-grid" style="position: relative;">
       <app-small-book-view *ngFor="let book of books" [book]="book"></app-small-book-view>
     </div>
+
+    <app-sell-book></app-sell-book>
   </div>
 </section>
