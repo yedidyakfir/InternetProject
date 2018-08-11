@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Book} from "../../../model/book";
-import {HttpClient} from "@angular/common/http";
 import {BookService} from "../../../services/BookService/book.service";
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-catalog',

@@ -1,6 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
-import { HttpClient } from "@angular/common/http";
 import { AuthenticationService } from "../../../services/authentication-service.service";
 
 @Component({
@@ -11,7 +10,8 @@ import { AuthenticationService } from "../../../services/authentication-service.
 export class LoginNavBarComponent implements OnInit {
   username: string = '';
   password: string = '';
-  isLogIn: boolean = false;//
+  isLogIn: boolean = false;//is the user is logged in
+  isAdmin: boolean = false;//is this user is an administrator
   constructor(private modalService: NgbModal, public auth: AuthenticationService) { }
 
   ngOnInit() {
@@ -21,20 +21,32 @@ export class LoginNavBarComponent implements OnInit {
   }
 
   open(modal) {
-    this.modalService.open(modal,{size: "lg"});
+    this.username = 'yedidya';
+    this.password = 'kfiry';
+    this.login();
+    //this.modalService.open(modal,{size: "lg"});
   }
-  login(modal) {
-    this.auth.login(this.username,this.password);
-    this.isLoggedIn();
+  login() {
+    this.auth.login(this.username,this.password)
+      .subscribe(res => {
+        this.isLoggedIn();
+      });
   }
   logout() {
-    this.auth.logout();
-    this.isLoggedIn();
+    this.auth.logout()
+      .subscribe(res => {
+        this.isLoggedIn();
+      });
   }
   isLoggedIn(){
     this.auth.isLogIn()
       .subscribe(success => {
+        console.log(success);
         this.isLogIn = success;
+      });
+    this.auth.isAdministrator()
+      .subscribe(success => {
+        this.isAdmin = success;
       });
   }
 }
