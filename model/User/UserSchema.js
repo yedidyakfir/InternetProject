@@ -8,6 +8,7 @@ module.exports = db => {
     var userSchema = new Schema({
         email: { type: String, required: true, unique: true },
         admin: Boolean,
+		password: String,
         created_at: Date,
         updated_at: Date,
         google: {
@@ -38,10 +39,21 @@ module.exports = db => {
     });
 
     userSchema.statics.REQUEST = async function(cb) {
-        debug("get all books");
+        debug("get all users");
         let u = await this.find({});
         return u;
     };
+	
+	userSchema.static.REGISTER = async function(email,admin,password)
+    {
+        let userToAdd = {
+            email : email,
+            admin : admin,
+            password : password,
+        };
+        this.create(userToAdd);
+    };
+
 
     db.model('Users', userSchema);
 };

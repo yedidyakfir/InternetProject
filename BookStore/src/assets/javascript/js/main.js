@@ -292,6 +292,27 @@ $(document).ready(function() {
       console.log("close modal click");
       $('.js-modal1').removeClass('show-modal1');
     });
+	
+	$('.editUserBtn').on('click', function(e)
+	{
+		console.log("edit user modal click")
+		e.preventDefault();
+		$('.edit-user-modal').addClass('show-modal1');
+	});
+	
+	$('.editUserBtn').on('click', function(e)
+	{
+		console.log("edit user modal click")
+		e.preventDefault();
+		$('.edit-user-modal').addClass('show-modal1');
+	});
+	
+	
+	$('.edit-user-close').on('click', function () 
+	{
+      console.log("close modal click");
+      $('.js-modal1').removeClass('show-modal1');
+    });
 
   })(jQuery);
 });
