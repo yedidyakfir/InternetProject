@@ -1,42 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/books/Kings Way9999999.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/books/last empire1988948.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Group/GroupSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/last empire1988948.jpg" afterDir="false" />
+    <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="added big book view,doesn't work well,&#10;there is a problem with the css in the catalog (only when refresh it works)">
+      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/main-page/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/login/login.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/animsition.js" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/animsition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/html-script/script1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/html-script/script2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/html-script/script3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/html-script/script4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/html-script/script5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/isotope.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/isotope.pkgd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/jquery.magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/jquery.magnific-popup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/parallax100.js" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/parallax100.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/model/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/model/book.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/Data/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Data/books.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/User/UserSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/User/UserSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Data/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Data/users.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,74 +31,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="small-book-view.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="small-book-view.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="big-book-view.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1839">
-              <caret line="136" column="40" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="big-book-view.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catalog.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="245" column="55" selection-start-line="245" selection-start-column="55" selection-end-line="245" selection-end-column="55" />
-              <folding>
-                <element signature="n#div#2;n#div#1;n#div#0;n#section#0;n#!!top" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#section#0;n#!!top" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -150,7 +65,6 @@
       <find>p-b</find>
       <find>mtext-106</find>
       <find>Pro</find>
-      <find>isotope</find>
       <find>images</find>
       <find>isotope-grid</find>
       <find>exampleModal</find>
@@ -159,6 +73,7 @@
       <find>loginmodal</find>
       <find>close</find>
       <find>book</find>
+      <find>isotope</find>
     </findStrings>
     <replaceStrings>
       <replace>assets/fonts/Poppins</replace>
@@ -175,8 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BookStore/src/app/login/login.component.html" />
-        <option value="$PROJECT_DIR$/model/User/UserSchema.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/login/login.component.ts" />
         <option value="$PROJECT_DIR$/../cozastore/cozastore/index.html" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/html-script/script2.js" />
@@ -191,9 +104,7 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/users/user-view/user-view.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts" />
-        <option value="$PROJECT_DIR$/routes/Data/users.js" />
         <option value="$PROJECT_DIR$/BookStore/angular.json" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/sell-book/sell-book.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/sell-book/sell-book.component.ts" />
         <option value="$PROJECT_DIR$/model/Book/BookSchema.js" />
@@ -209,23 +120,27 @@
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script3.js" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script4.js" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script5.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/index.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/isotope.pkgd.min.js" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/parallax100.js" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/jquery.magnific-popup.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/model/book.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/animsition.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/js/main.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/main-page/main/main.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/js/main.js" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/index.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" />
+        <option value="$PROJECT_DIR$/model/User/UserSchema.js" />
+        <option value="$PROJECT_DIR$/routes/Data/users.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.html" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -289,32 +204,6 @@
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="main-page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="main-page" type="462c0819:PsiDirectoryNode" />
-              <item name="footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="main-page" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="navbar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -360,6 +249,32 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="shopping" type="462c0819:PsiDirectoryNode" />
               <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="small-book-view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="Group" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -579,7 +494,7 @@
       <workItem from="1528790963289" duration="4483000" />
       <workItem from="1528958833569" duration="9272000" />
       <workItem from="1531685228861" duration="108499000" />
-      <workItem from="1533830379659" duration="63979000" />
+      <workItem from="1533830379659" duration="75215000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1525887214121</created>
@@ -812,22 +727,28 @@
       <option name="project" value="LOCAL" />
       <updated>1534029533992</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added big book view,doesn't work well,&#10;there is a problem with the css in the catalog (only when refresh it works)">
+      <created>1534089248964</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1534089248964</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227349000" />
+    <option name="totallyTimeSpent" value="238585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5015625" side_tool="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49739584" weight="0.32731137" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5833333" visible="true" weight="0.24123274" />
       <window_info id="npm" order="2" sideWeight="0.501355" side_tool="true" weight="0.16302083" />
-      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.1296875" />
+      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.2265625" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.16302083" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -851,7 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Restart the angular module" />
     <MESSAGE value="basic angular app (server not working)" />
     <MESSAGE value="added navbar" />
     <MESSAGE value="added new navbar" />
@@ -876,7 +796,8 @@
     <MESSAGE value="added user service for the administrator also added server side request for user list&#10;fix the logout and login(problem because logout didn't gave any answer back to the user so he couldn't logout)" />
     <MESSAGE value="added sell button also created component for sell modal" />
     <MESSAGE value="added footer &#10;also finished the book upload,changed navbar(still need fix ,need to add javascript)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added footer &#10;also finished the book upload,changed navbar(still need fix ,need to add javascript)" />
+    <MESSAGE value="added big book view,doesn't work well,&#10;there is a problem with the css in the catalog (only when refresh it works)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added big book view,doesn't work well,&#10;there is a problem with the css in the catalog (only when refresh it works)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -887,37 +808,17 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app.js</url>
+          <line>54</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/users/user-view/user-view.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="22" selection-end-line="40" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/images/icons/favicon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/dist/BookStore/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -936,23 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Data/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1127,13 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1165,34 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/javascript/isotope.pkgd.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8500">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/javascript/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/Data/books.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
@@ -1207,10 +1056,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="275">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1218,35 +1077,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/javascript/isotope.pkgd.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8650">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/javascript/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/aria.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="545" selection-start-line="545" selection-end-line="545" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="124" column="18" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="324">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1839">
-          <caret line="136" column="40" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="40" />
+        <state>
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1259,6 +1165,43 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#section#0;n#!!top" />
             <element signature="n#div#3;n#div#1;n#div#0;n#section#0;n#!!top" />
             <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/Data/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="36" column="84" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>

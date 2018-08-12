@@ -9,7 +9,13 @@ module.exports = db => {
         email: { type: String, required: true, unique: true },
         admin: Boolean,
         created_at: Date,
-        updated_at: Date
+        updated_at: Date,
+        google: {
+            id:String,
+            token:String,
+            email:String,
+            name:String
+        }
     });
 
     userSchema.plugin(passportLocalMongoose, {

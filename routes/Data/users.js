@@ -34,6 +34,14 @@ router.post('/login', function (req, res, next) {
     })(req, res, next);
 });
 
+router.get('/googleAuth', passport.authenticate('google' , {scope: ['profile','email']}));
+
+router.get('/googleAuth/callback',
+    passport.authenticate('google', {failureRedirect:'/'}),
+    function (req,res) {
+       res.json(true);
+    });
+
 //user check if he is logged in
 router.get('/isLogIn', function (req, res) {
     if(req.isAuthenticated()) { res.json(true); console.log("logged") }

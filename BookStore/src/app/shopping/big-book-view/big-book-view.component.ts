@@ -8,7 +8,7 @@ import {Book} from "../../../model/book";
 })
 export class BigBookViewComponent implements OnInit {
   @Input()
-  public modalBook:Book = new Book();
+  public modalBook:Book;
 
   constructor() { }
 

@@ -22,7 +22,6 @@ import { MainImageComponent } from './main-page/main-image/main-image.component'
 import { AuthenticationService } from '../services/authentication-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AlertService } from '../services/alert-service.service';
-import {LoginComponent} from "./login/login.component";
 import { MainComponent } from './main-page/main/main.component';
 import { UserViewComponent } from './users/user-view/user-view.component';
 import { UserListComponent } from './users/user-list/user-list.component';
@@ -48,7 +47,6 @@ const routes: Routes = [
     EnterGroupComponent,
     BlogsComponent,
     MainImageComponent,
-    LoginComponent,
     MainComponent,
     UserViewComponent,
     UserListComponent,

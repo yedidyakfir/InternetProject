@@ -280,6 +280,19 @@ $(document).ready(function() {
       $('.js-modal1').removeClass('show-modal1');
     });
 
+
+
+    $('.loginBtn').on('click', function (e) {
+      console.log("login btn click");
+      e.preventDefault();
+      $('.login-modal').addClass('show-modal1');
+    });
+
+    $('.login-close').on('click', function () {
+      console.log("close modal click");
+      $('.js-modal1').removeClass('show-modal1');
+    });
+
   })(jQuery);
 });
 
