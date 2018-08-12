@@ -1,5 +1,5 @@
 <div [hidden]="isLogIn">
-  <button mat-button (click)="open(loginModal)">
+  <button mat-button (click)="open()" data-toggle="modal" data-target="#loginModal">
     <fa name="user"></fa>
   </button>
 </div>
@@ -18,59 +18,59 @@
   </button>
 </div>
 
-<ng-template #loginModal let-d="dismiss" let-c="close">
-  <div class="modal-header">
-	<span class="login100-form-title p-b-26">
-                    Welcome
-    </span>
-        <span class="login100-form-title p-b-48">
-         <i class="zmdi zmdi-font"></i>
-    </span>
-    <!--<h4 class="modal-title">User Login</h4>-->
-  </div>
-  <div class="modal-body">
-	<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-		<div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" />
-            <div class="help-block">Username is required</div>
-        </div>
-    </div>
-	<div class="wrap-input100 validate-input" data-validate="Enter password">
-        <span class="btn-show-pass">
-            <i class="zmdi zmdi-eye"></i>
-        </span>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" name="password"/>
-            <div class="help-block">Password is required</div>
-        </div>
-    </div>
-  </div>
-  <div class="modal-footer">
-	<div class="container-login100-form-btn">
-        <div class="wrap-login100-form-btn">
-            <div class="login100-form-bgbtn"></div>
-            <button class="login100-form-btn">
-                Login
-            </button>
-        </div>
-    </div>
-	<div class="text-center p-t-115" style="padding-top: 8px">
-        <div class="container-login100-form-btn">
-			<div class="wrap-login100-form-btn">
-			    <div class="login100-form-bgbtn"></div>
-				<button class="login100-form-btn">
-					Don’t have an account?
-				</button>
-			</div>
-		</div>
-    </div>
-	<div class="account" style="padding-top: 8px">
-        <div class="g-signin2" data-longtitle="true" data-width="280" data-longtitle="true">
-		</div>
-    </div>
-    <!--<button mat-raised-button (click)="login(loginModal)" class="btn-primary">login</button>-->
-  </div>
+<!--<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+  <!--<div class="modal-header">-->
+	<!--<span class="login100-form-title p-b-26">-->
+                    <!--Welcome-->
+    <!--</span>-->
+        <!--<span class="login100-form-title p-b-48">-->
+         <!--<i class="zmdi zmdi-font"></i>-->
+    <!--</span>-->
+    <!--&lt;!&ndash;<h4 class="modal-title">User Login</h4>&ndash;&gt;-->
+  <!--</div>-->
+  <!--<div class="modal-body">-->
+	<!--<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">-->
+		<!--<div class="form-group">-->
+            <!--<label for="username">Username</label>-->
+            <!--<input type="text" class="form-control" />-->
+            <!--<div class="help-block">Username is required</div>-->
+        <!--</div>-->
+    <!--</div>-->
+	<!--<div class="wrap-input100 validate-input" data-validate="Enter password">-->
+        <!--<span class="btn-show-pass">-->
+            <!--<i class="zmdi zmdi-eye"></i>-->
+        <!--</span>-->
+        <!--<div class="form-group">-->
+            <!--<label for="password">Password</label>-->
+            <!--<input type="password" class="form-control" name="password"/>-->
+            <!--<div class="help-block">Password is required</div>-->
+        <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="modal-footer">-->
+	<!--<div class="container-login100-form-btn">-->
+        <!--<div class="wrap-login100-form-btn">-->
+            <!--<div class="login100-form-bgbtn"></div>-->
+            <!--<button class="login100-form-btn">-->
+                <!--Login-->
+            <!--</button>-->
+        <!--</div>-->
+    <!--</div>-->
+	<!--<div class="text-center p-t-115" style="padding-top: 8px">-->
+        <!--<div class="container-login100-form-btn">-->
+			<!--<div class="wrap-login100-form-btn">-->
+			    <!--<div class="login100-form-bgbtn"></div>-->
+				<!--<button class="login100-form-btn">-->
+					<!--Don’t have an account?-->
+				<!--</button>-->
+			<!--</div>-->
+		<!--</div>-->
+    <!--</div>-->
+	<!--<div class="account" style="padding-top: 8px">-->
+        <!--<div class="g-signin2" data-longtitle="true" data-width="280" data-longtitle="true">-->
+		<!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;<button mat-raised-button (click)="login(loginModal)" class="btn-primary">login</button>&ndash;&gt;-->
+  <!--</div>-->
 
-</ng-template>
+<!--</div>-->

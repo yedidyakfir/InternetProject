@@ -20,7 +20,7 @@ export class LoginNavBarComponent implements OnInit {
     // this.http.post(this.userUrl + '/register',{email:'yedidya',password:'kfiry'}).subscribe(res => console.log("s"));
   }
 
-  open(modal) {
+  open() {
     this.username = 'yedidya';
     this.password = 'kfiry';
     this.login();

@@ -62,4 +62,5 @@ router.post('/create',upload.single('photo'), function(req, res, next) {
    else {res.json("user must be connected");}
 });
 
+
 module.exports = router;

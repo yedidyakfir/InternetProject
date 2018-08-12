@@ -45,6 +45,8 @@ app.use('/books', booksRouter);
 
 global.appRoot = __dirname;
 app.use(express.static(path.join(__dirname,'BookStore','dist','BookStore')),spaRouter);
+app.use('/images',express.static(path.join(__dirname, 'public')));
+
 //app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);

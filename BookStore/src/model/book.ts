@@ -1,9 +1,9 @@
 export class Book
 {
   name: String;
-  auther: String;
+  author: String;
   photo: String;
-  series: String;
+  seriesName: String;
 
   publishDate: Date;
   ISBN: Number;
@@ -18,4 +18,5 @@ export class Book
   updatedAt: Date;
   price: Number;
   active: boolean;
+
 }

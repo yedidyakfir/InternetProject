@@ -28,6 +28,7 @@ import { UserViewComponent } from './users/user-view/user-view.component';
 import { UserListComponent } from './users/user-list/user-list.component';
 import { SellBookComponent } from './shopping/sell-book/sell-book.component';
 import { FooterComponent } from './main-page/footer/footer.component';
+import { BigBookViewComponent } from './shopping/big-book-view/big-book-view.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -53,7 +54,8 @@ const routes: Routes = [
     UserListComponent,
     SellBookComponent,
     FileSelectDirective,
-    FooterComponent
+    FooterComponent,
+    BigBookViewComponent
   ],
   imports: [
     BrowserModule,
