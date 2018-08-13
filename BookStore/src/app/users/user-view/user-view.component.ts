@@ -10,7 +10,7 @@ import {UserService} from "../../../services/UserService/user.service";
 export class UserViewComponent implements OnInit {
   @Input()
   public user:User;
-  public oldUserEmail :String;
+  public oldUserEmail :string;
   constructor(private userService: UserService) {
   }
 

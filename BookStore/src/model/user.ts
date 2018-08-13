@@ -1,7 +1,7 @@
 export class User
 {
-	email: String;
-	password:String;
+	email: string;
+	password: string;
 	admin: Boolean;
     created_at: Date;
     updated_at: Date;
