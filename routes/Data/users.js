@@ -60,7 +60,8 @@ router.get('/logout', function (req, res) {
    else {res.json(false);}
 });
 
-router.get('/list', function (req, res) {
+router.get('/list',async function (req, res) {
+   //return res.json(await User.REQUEST());
    if(req.isAuthenticated() && req.user.admin){res.json(User.REQUEST());}
    else {res.redirect('/');}
 });

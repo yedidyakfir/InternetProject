@@ -32,13 +32,15 @@
 	<div class = "container">
 		<tr>
             <td>
-				<span class="user-subhead" style ="vertical-align: middle;">Emai</span>
+				<span class="user-subhead" style ="vertical-align: middle;">{{user.email}}</span>
             </td>
+			<div class="divider"></div>
 			<td>
-				<span class="user-subhead">Member</span>
+				<span class="user-subhead" *ngIf="user.admin==true">Admin</span>
+				<span class="user-subhead" *ngIf="user.admin==false">Member</span>
 			</td>
             <td class="text-center">
-				2013/08/12
+				{{user.updated_at}}
             </td>
             <td style="width: 20%;">
                 <button class="table-link b editUserBtn"style ="vertical-align: middle;">

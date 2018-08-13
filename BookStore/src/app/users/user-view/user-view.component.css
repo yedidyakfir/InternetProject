@@ -167,3 +167,10 @@ input {
   display: block;
   margin: 55px auto 10px auto;
 }
+
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
