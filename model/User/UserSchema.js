@@ -9,7 +9,7 @@ module.exports = db => {
         email: { type: String, required: true, unique: true },
         admin: Boolean,
 		password: String,
-        active: boolean,
+        active: Boolean,
         created_at: Date,
         updated_at: Date,
         google: {
