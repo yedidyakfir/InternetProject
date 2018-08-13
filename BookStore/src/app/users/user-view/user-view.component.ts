@@ -22,5 +22,10 @@ export class UserViewComponent implements OnInit {
   {
     this.userService.updateUser(this.oldUserEmail,userEmail,userPassword).subscribe();
   }
+  
+  public DeleteUser(userEmail)
+  {
+	  this.userService.deleteUser(userEmail).subscribe();
+  }
 
 }
