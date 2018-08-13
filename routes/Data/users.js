@@ -64,12 +64,18 @@ router.get('/list',async function (req, res) {
 });
 
 router.post('/disable', async function(req,res) {
-   if(req.isAuthenticated() && req.user.admin) {User.DISABLE(req.body.email);}
+   if(req.isAuthenticated() && req.user.admin) {
+       User.DISABLE(req.body.email);
+       res.json(true);
+   }
    else {res.redirect('/');}
 });
 
 router.post('update',function (req,res) {
-    if(req.isAuthenticated() && req.user.admin) {User.UPDATE(req.body.email,req.body.newUser);}
+    if(req.isAuthenticated() && req.user.admin) {
+        User.UPDATE(req.body.email,req.body.newUser);
+        res.json(true);
+    }
     else {res.redirect('/');}
 });
 module.exports = router;

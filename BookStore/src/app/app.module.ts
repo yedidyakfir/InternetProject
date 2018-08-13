@@ -10,6 +10,7 @@ import { MatButtonModule } from "@angular/material";
 import { MatFormFieldModule } from "@angular/material";
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FileSelectDirective } from "ng2-file-upload";
+import { SocketIoModule, SocketIoConfig} from "ngx-socket-io";
 
 import { LoginNavBarComponent } from "./navbar/login-nav-bar/login-nav-bar.component";
 import { NavBarComponent } from './navbar/nav-bar/nav-bar.component';
@@ -28,12 +29,13 @@ import { UserListComponent } from './users/user-list/user-list.component';
 import { SellBookComponent } from './shopping/sell-book/sell-book.component';
 import { FooterComponent } from './main-page/footer/footer.component';
 import { BigBookViewComponent } from './shopping/big-book-view/big-book-view.component';
+import {AdminGuradService} from "../services/AdminGuradService/admin-gurad.service";
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
   {path:'Home', component:MainComponent},
   {path:'Shopping', component: CatalogComponent},
-  {path:'Users', component: UserListComponent},
+  {path:'Users', component: UserListComponent, canActivate: [AdminGuradService]},
   {path:'Groups', component:GroupDiscussionComponent}
 ];
 
