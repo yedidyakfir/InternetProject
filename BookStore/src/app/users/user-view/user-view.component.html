@@ -1,24 +1,24 @@
 <!--
-	<!-- Block2 
+	<!-- Block2
 	<div class="card">
 			<div class=" flex-w p-t-14">
-				<div> 
+				<div>
 					<a href="product-detail.html" class="stext-105 cl3 hov-cl1 trans-04 js-name-b2 p-b-6">
 					testEmail
 					</a>
 				</div>
 				<div>
 				<label>
-					<input type="checkbox" disabled="disabled" 
+					<input type="checkbox" disabled="disabled"
 					checked="checked" />
 					test</label>
-				</div>				
+				</div>
 				<div>
 					<button class="button-edit ">
 						Edit
 					</button>
 				</div>
-				
+
 				<div>
 					<button class="button-delet block">
 						Delet
@@ -26,7 +26,7 @@
 				</div>
 			<!--<a href="#" class="button-edit">Edit</a>
 			</div>
-		
+
 </div>-->
 <div class="card">
 	<div class = "container">
@@ -49,12 +49,12 @@
                         <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
                     </span>
                 </button>
-                <a href="#" class="table-link danger" style ="vertical-align: middle;">
+                <button class="table-link danger" style ="vertical-align: middle;" (click)="DeleteUser(user.email)">
                     <span class="fa-stack">
                         <i class="fa fa-square fa-stack-2x"></i>
                         <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
                     </span>
-                </a>
+                </button>
             </td>
         </tr>
 	</div>
@@ -72,14 +72,14 @@
   </div>
   <div class="container">
     <div class="form">
-        
+
         <!--<img src="http://www.androidpolice.com/wp-content/themes/ap2/ap_resize/ap_resize.php?src=http%3A%2F%2Fwww.androidpolice.com%2Fwp-content%2Fuploads%2F2015%2F10%2Fnexus2cee_Search-Thumb-150x150.png&w=150&h=150&zc=3">-->
-        
-        <input type="email" name="email" placeholder="Email" />
-        
-        <input type="password" name="Password" placeholder="Password" />
-		<input type="checkbox" name ="Admin"/>Is admin<br>
-        <button class="button">Save</button>
+
+        <input type="email" name="emailEdit" placeholder="Email" id="emailEdit{{user.email}}" required [(ngModel)]="user.email"/>
+
+        <input type="password" name="PasswordEdit" placeholder="Password" id="PasswordEdit{{user.email}}" required [(ngModel)]="user.password"/>
+		    <input type="checkbox" name ="Admin"/>Is admin<br>
+        <button class="button" (click)="UpdateUser(user.email,user.password)">Update</button>
 
     </div>
   </div>

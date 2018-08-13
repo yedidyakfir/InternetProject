@@ -11,14 +11,14 @@ export class UserListComponent implements OnInit {
 
   public users: User[];
 
-  constructor(private bookService: UserService) { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
     // this.http.get('http://localhost:3000/books/create')
     //   .subscribe(res => console.log('created success'));
 	//new Array<T>()
     //I requesting the books data and store it in the array which is connected to the view
-	let x =this.bookService.getUserList()
+	  let x =this.userService.getUserList();
     x.subscribe(bookRes => this.users = bookRes);
   }
 
