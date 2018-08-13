@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Group} from "../../../model/group";
 
 @Component({
   selector: 'app-group-discussion',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GroupDiscussionComponent implements OnInit {
 
+  @Input()
+  public group:Group;
   constructor() { }
 
   ngOnInit() {

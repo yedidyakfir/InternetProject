@@ -6,6 +6,8 @@ module.exports = db => {
     // create a schema
     var groupSchema = new Schema({
         name: { type: String, required: true, unique: true },
+        creator:String,
+        photo: String,
         users: [String],
         messages: [String],
         created_at: Date,

@@ -10,6 +10,8 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
+
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/Data/users');
 var booksRouter = require('./routes/Data/books');
