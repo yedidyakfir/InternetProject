@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {User} from "../../../model/user";
+import {UserService} from "../../../services/UserService/user.service";
 
 @Component({
   selector: 'app-user-view',
@@ -9,9 +10,17 @@ import {User} from "../../../model/user";
 export class UserViewComponent implements OnInit {
   @Input()
   public user:User;
-  constructor() { }
+  public oldUserEmail :String;
+  constructor(private userService: UserService) {
+  }
 
   ngOnInit() {
+    this.oldUserEmail = this.user.email;
+  }
+
+  public UpdateUser(userEmail,userPassword)
+  {
+    this.userService.updateUser(this.oldUserEmail,userEmail,userPassword).subscribe();
   }
 
 }
