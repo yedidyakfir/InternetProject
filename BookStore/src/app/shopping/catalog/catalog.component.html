@@ -1,4 +1,4 @@
-<section class="bg0 m-t-150 p-b-140">
+<section class="bg0 m-t-150 p-b-140" xmlns="" xmlns="">
   <div class="container">
     <div class="p-b-52">
       <h3 class="ltext-103 cl5">
@@ -242,7 +242,7 @@
             </button>
           <!--</div>-->
         </div>
-        <div class="container" style="background: white;">
+        <div class="container" >
           <app-sell-book style="background: white;"></app-sell-book>
         </div>
       </div>
@@ -251,13 +251,10 @@
     </div>
 
     <div class="row isotope-grid" style="position: relative;">
-      <app-small-book-view *ngFor="let book of books" [book]="book"
-                           [bigViewClick]="bookModal.changeBook"></app-small-book-view>
+      <app-small-book-view *ngFor="let book of books" [book]="book"></app-small-book-view>
     </div>
 
-    <app-big-book-view #bookModal [modalBook]="books[0]"></app-big-book-view>
+    <!--<app-big-book-view #bookModal></app-big-book-view>-->
 
   </div>
 </section>
-
-<div style="display: none;" class="yedidya"></div>
