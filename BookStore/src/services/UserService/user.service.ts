@@ -16,6 +16,7 @@ export class UserService {
   }
 
   deleteUser(email:string): Observable<boolean> {
+    console.log("delete user have called");
     return this.http.post<boolean>(this.userUrl + '/disable', {email:email});
   }
 
