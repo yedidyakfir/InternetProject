@@ -18,7 +18,6 @@ export class CatalogComponent implements OnInit {
 
     //I requesting the books data and store it in the array which is connected to the view
     this.bookService.getBookList().subscribe(bookRes => this.books = bookRes);
-
   }
 
 }

@@ -20,12 +20,6 @@ export class LoginNavBarComponent implements OnInit {
     // this.http.post(this.userUrl + '/register',{email:'yedidya',password:'kfiry'}).subscribe(res => console.log("s"));
   }
 
-  open() {
-    this.username = 'yedidya';
-    this.password = 'kfiry';
-    this.login();
-    //this.modalService.open(modal,{size: "lg"});
-  }
   login() {
     this.auth.login(this.username,this.password)
       .subscribe(res => {

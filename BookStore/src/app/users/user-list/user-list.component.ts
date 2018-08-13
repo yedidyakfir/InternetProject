@@ -18,7 +18,7 @@ export class UserListComponent implements OnInit {
     //   .subscribe(res => console.log('created success'));
 	//new Array<T>()
     //I requesting the books data and store it in the array which is connected to the view
-	let x =this.bookService.getBookList()
+	let x =this.bookService.getUserList()
     x.subscribe(bookRes => this.users = bookRes);
   }
 

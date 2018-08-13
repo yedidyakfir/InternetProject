@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  (function ($) {
+  (function base($) {
     "use strict";
 
     /*[ Load page ]
@@ -282,7 +282,7 @@ $(document).ready(function() {
 
 
 
-    $('.loginBtn').on('click', function (e) {
+    $('.modalLoginBtn').on('click', function (e) {
       console.log("login btn click");
       e.preventDefault();
       $('.login-modal').addClass('show-modal1');
@@ -314,6 +314,16 @@ $(document).ready(function() {
       $('.js-modal1').removeClass('show-modal1');
     });
 
+    $('.sell-book-open-modal').on('click', function (e) {
+      console.log("sell btn click");
+      e.preventDefault();
+      $('.sellBookModal').addClass('show-modal1');
+    });
+
+    $('.js-sell-book-close-modal').on('click', function () {
+      console.log("close modal click");
+      $('.js-modal1').removeClass('show-modal1');
+    });
   })(jQuery);
 });
 

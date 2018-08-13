@@ -37,10 +37,7 @@ router.post('/login', function (req, res, next) {
 router.get('/googleAuth', passport.authenticate('google' , {scope: ['profile','email']}));
 
 router.get('/googleAuth/callback',
-    passport.authenticate('google', {failureRedirect:'/'}),
-    function (req,res) {
-       res.json(true);
-    });
+    passport.authenticate('google', {failureRedirect:'/',successRedirect:'/'}));
 
 //user check if he is logged in
 router.get('/isLogIn', function (req, res) {
@@ -66,4 +63,13 @@ router.get('/list',async function (req, res) {
    else {res.redirect('/');}
 });
 
+router.post('/disable', async function(req,res) {
+   if(req.isAuthenticated() && req.user.admin) {User.DISABLE(req.body.email);}
+   else {res.redirect('/');}
+});
+
+router.post('update',function (req,res) {
+    if(req.isAuthenticated() && req.user.admin) {User.UPDATE(req.body.email,req.body.newUser);}
+    else {res.redirect('/');}
+});
 module.exports = router;

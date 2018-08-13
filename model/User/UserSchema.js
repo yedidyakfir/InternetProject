@@ -9,6 +9,7 @@ module.exports = db => {
         email: { type: String, required: true, unique: true },
         admin: Boolean,
 		password: String,
+        active: boolean,
         created_at: Date,
         updated_at: Date,
         google: {
@@ -25,6 +26,8 @@ module.exports = db => {
     });
 
     userSchema.pre('save', function(next) {
+
+        this.active = true;
         // get the current date
         var currentDate = new Date();
 
@@ -44,7 +47,7 @@ module.exports = db => {
         return u;
     };
 	
-	userSchema.static.REGISTER = async function(email,admin,password)
+	userSchema.statics.REGISTER = async function(email,admin,password)
     {
         let userToAdd = {
             email : email,
@@ -54,6 +57,14 @@ module.exports = db => {
         this.create(userToAdd);
     };
 
+	userSchema.statics.UPDATE = async function(email,newUser)
+    {
+        this.update({email:email},newUser);
+    };
+
+	userSchema.statics.DISABLE = async function(email) {
+	  this.updateOne({email:email},{active: false});
+    };
 
     db.model('Users', userSchema);
 };

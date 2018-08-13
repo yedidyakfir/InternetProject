@@ -11,7 +11,15 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
 
-  getBookList(): Observable<User[]> {
+  getUserList(): Observable<User[]> {
     return this.http.get<User[]>(this.userUrl + '/list');
+  }
+
+  deleteUser(email:string): Observable<boolean> {
+    return this.http.post<boolean>(this.userUrl + '/disable', {email:email});
+  }
+
+  updateUser(email:string,newEmail:string,newPassword:string):Observable<boolean> {
+    return this.http.post<boolean>(this.userUrl + '/update',{email:email, newUser:{email:newEmail,password:newPassword}});
   }
 }

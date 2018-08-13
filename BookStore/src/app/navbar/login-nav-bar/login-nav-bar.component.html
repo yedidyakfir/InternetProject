@@ -1,5 +1,5 @@
 <div [hidden]="isLogIn">
-  <button mat-button class="loginBtn button">
+  <button mat-button class="modalLoginBtn button">
     <fa name="user"></fa>
   </button>
 </div>
@@ -31,15 +31,18 @@
   <div class="container">
     <div class="form">
 
-      <!--<img src="http://www.androidpolice.com/wp-content/themes/ap2/ap_resize/ap_resize.php?src=http%3A%2F%2Fwww.androidpolice.com%2Fwp-content%2Fuploads%2F2015%2F10%2Fnexus2cee_Search-Thumb-150x150.png&w=150&h=150&zc=3">-->
-      <a href="/users/googleAuth" class="fa fa-google"></a>
+      <button class="loginBtn loginBtn--google" (click)="googleBtn.click()">
+        <a href="/users/googleAuth" #googleBtn style="display: none;"></a>
+        Login with Google
+      </button>
 
 
-      <input type="email" name="email" placeholder="Email" />
 
-      <input type="password" name="Password" placeholder="Password" />
+      <input type="email" name="email" placeholder="Email" [(ngModel)]="username"/>
 
-      <button class="button">Sign in</button>
+      <input type="password" name="Password" placeholder="Password" [(ngModel)]="password"/>
+
+      <button class="button" (click)="login()">Sign in</button>
 
 
       <a href="https://www.google.com/">Create account</a>
