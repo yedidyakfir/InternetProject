@@ -2,231 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/css/skdslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/close_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/star1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/javascript/jquery-1.11.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/close_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/icon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore1/src/assets/images/icons/star1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookStore/src/model/book.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookStore/src/model/group.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookStore/src/model/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/blogs/blogs.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/blogs/blogs.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/blogs/blogs.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/blogs/blogs.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/enter-group/enter-group.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/enter-group/enter-group.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/enter-group/enter-group.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/enter-group/enter-group.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/group-discussion/group-discussion.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/group-discussion/group-discussion.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/group-discussion/group-discussion.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/groups/group-discussion/group-discussion.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/footer/footer.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/footer/footer.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/footer/footer.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/footer/footer.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main-image/main-image.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main-image/main-image.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main-image/main-image.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main-image/main-image.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main/main.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main/main.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main/main.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/main-page/main/main.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/sell-book/sell-book.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/sell-book/sell-book.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/sell-book/sell-book.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/sell-book/sell-book.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/shopping/small-book-view/small-book-view.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/users/user-list/user-list.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/users/user-list/user-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/users/user-list/user-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/users/user-list/user-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/users/user-view/user-view.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/users/user-view/user-view.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/users/user-view/user-view.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/users/user-view/user-view.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/animsition.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/animsition.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/daterangepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/hamburgers.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/hamburgers.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/perfect-scrollbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/perfect-scrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/css/slick/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Montserrat/Montserrat-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/Poppins/Poppins-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/fonts/iconic/material-design-iconic-font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/background/slide-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/background/slide-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/background/slide-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/background/slide-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-close2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-email.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-heart-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-heart-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-pay-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-pay-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-pay-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-pay-04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-pay-05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/icon-prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/logo-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/logo-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/icons/pin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/all IncludeJS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/animsition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/animsition.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/daterangepicker/daterangepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/daterangepicker/moment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/daterangepicker/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/fonts/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/fonts/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/fonts/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/fonts/slick.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/isotope.pkgd.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/jquery.magnific-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/jquery.magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/js/map-custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/js/slick-custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/parallax100.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/perfect-scrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/select2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/slick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/slick.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/javascript/sweetalert.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/model/book.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/model/group.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/model/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/AdminGuradService/admin-gurad.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/AdminGuradService/admin-gurad.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/BookService/book.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/GroupSocketService/group-socket.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/GroupSocketService/group-socket.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/alert-service.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io-socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/io-socket.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -240,11 +19,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
+      <file leaf-file-name="user.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookStore1/src/services/UserService/user.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="600">
+              <caret line="24" column="3" selection-start-line="9" selection-start-column="2" selection-end-line="24" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -313,10 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script2.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script3.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script4.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/on Page js/script5.js" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/isotope.pkgd.min.js" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/parallax100.js" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/javascript/jquery.magnific-popup.js" />
@@ -333,7 +123,6 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.css" />
         <option value="$PROJECT_DIR$/BookStore/src/app/users/user-list/user-list.component.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" />
         <option value="$PROJECT_DIR$/model/Group/GroupSchema.js" />
         <option value="$PROJECT_DIR$/BookStore/src/model/group.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/navbar/nav-bar/nav-bar.component.html" />
@@ -364,6 +153,11 @@
         <option value="$PROJECT_DIR$/BookStore1/src/assets/css/skdslider.css" />
         <option value="$PROJECT_DIR$/BookStore1/src/styles.css" />
         <option value="$PROJECT_DIR$/BookStore/src/styles.css" />
+        <option value="$PROJECT_DIR$/BookStore/src/services/AdminGuardService/admin-guard.service.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/services/AuthenticationService/authentication.service.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/services/GroupService/group.service.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" />
       </list>
     </option>
   </component>
@@ -420,23 +214,30 @@
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="GroupService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -454,23 +255,15 @@
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
               <item name="BookStore1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
               <item name="BookStore1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="UserService" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -493,22 +286,22 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/BookStore/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/BookStore1/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore1\src\assets\images\icons" />
-      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets\css" />
-      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\services\AdminGuradService" />
-      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\public" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\services\UserService" />
+      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\services\GroupService" />
+      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\services\BookService" />
+      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\services\AdminGuardService" />
+      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\services\AuthenticationService" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets\images" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore1\src\assets\images\icons" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets\fonts" />
-      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets\javascript" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -570,7 +363,7 @@
       <workItem from="1533830379659" duration="96900000" />
       <workItem from="1534172236392" duration="11513000" />
       <workItem from="1534233471205" duration="596000" />
-      <workItem from="1534234092717" duration="3350000" />
+      <workItem from="1534234092717" duration="4556000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1525887214121</created>
@@ -866,17 +659,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534196815543</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="created new angualar template , for the second try , also I fixed the socket io">
+      <created>1534239909500</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1534239909500</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275729000" />
+    <option name="totallyTimeSpent" value="276935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.16302083" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.16302083" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.27799478" side_tool="true" weight="0.24" />
@@ -884,14 +685,13 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7220052" weight="0.22741765" />
       <window_info id="npm" order="2" sideWeight="0.501355" side_tool="true" weight="0.16302083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.22916667" />
+      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.22916667" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7421875" weight="0.30712008" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49947917" weight="0.32943678" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -905,7 +705,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed catalog on navbar problem" />
     <MESSAGE value="created blogs" />
     <MESSAGE value="created books router" />
     <MESSAGE value="started connection angular and mongodb" />
@@ -930,7 +729,8 @@
     <MESSAGE value="added line (window as any).global = window; to this file" />
     <MESSAGE value="created service for socket io" />
     <MESSAGE value="saperated the passport configoration to a diffrent file (not app.js)" />
-    <option name="LAST_COMMIT_MESSAGE" value="saperated the passport configoration to a diffrent file (not app.js)" />
+    <MESSAGE value="created new angualar template , for the second try , also I fixed the socket io" />
+    <option name="LAST_COMMIT_MESSAGE" value="created new angualar template , for the second try , also I fixed the socket io" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -950,76 +750,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115300">
-          <caret line="4612" column="1" lean-forward="true" selection-start-line="4612" selection-start-column="1" selection-end-line="4612" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31700">
-          <caret line="1268" column="42" selection-start-line="1268" selection-start-column="33" selection-end-line="1268" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/services/authentication-service.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/big-book-view/big-book-view.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="15" lean-forward="true" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/navbar/login-nav-bar/login-nav-bar.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/shopping/catalog/catalog.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/users/user-view/user-view.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1015">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/model/book.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/groups/enter-group/enter-group.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1154,13 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/users/user-view/user-view.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1288,10 +1011,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/model/book.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore1/src/services/AdminGuradService/admin-gurad.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/AdminGuardService/admin-guard.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore1/src/services/authentication-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="766">
+          <caret line="33" column="3" selection-start-line="6" selection-start-column="2" selection-end-line="33" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/AuthenticationService/authentication.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore1/src/services/BookService/book.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="3" selection-start-line="8" selection-start-column="2" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/GroupService/group.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore1/src/services/GroupSocketService/group-socket.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="3" selection-start-line="8" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore1/src/services/UserService/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="3" selection-start-line="9" selection-start-column="2" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
