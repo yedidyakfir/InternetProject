@@ -34,10 +34,17 @@ router.post('/login', function (req, res, next) {
     })(req, res, next);
 });
 
+// Google authentication
 router.get('/googleAuth', passport.authenticate('google' , {scope: ['profile','email']}));
 
 router.get('/googleAuth/callback',
     passport.authenticate('google', {failureRedirect:'/',successRedirect:'/'}));
+
+/// Facebook authentication
+router.get('/facebookAuth', passport.authenticate('facebook',{scope: ['email']}));
+
+router.get('/facebookAuth/callback',
+    passport.authenticate('facebook', {failureRedirect:'/', successRedirect: '/'}));
 
 //user check if he is logged in
 router.get('/isLogIn', function (req, res) {

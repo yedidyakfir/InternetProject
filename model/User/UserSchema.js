@@ -6,7 +6,7 @@ const passportLocalMongoose = require('passport-local-mongoose');
 module.exports = db => {
     // create a schema
     var userSchema = new Schema({
-        email: { type: String, required: true, unique: true },
+        email: { type: String },
         admin: Boolean,
 		password: String,
         active: Boolean,
@@ -17,12 +17,23 @@ module.exports = db => {
             token:String,
             email:String,
             name:String
+        },
+        facebook: {
+            id: String,
+            token: String,
+            email: String,
+            name: String
         }
     });
 
     userSchema.plugin(passportLocalMongoose, {
         usernameField: 'email',
         passwordField: 'password'
+    });
+
+    userSchema.pre('create', function (next) {
+       this.admin = false;
+        next();
     });
 
     userSchema.pre('save', function(next) {

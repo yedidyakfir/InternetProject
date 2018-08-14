@@ -1,0 +1,55 @@
+
+<div class="card">
+  <div class = "container">
+    <tr>
+      <td>
+        <span class="user-subhead" style ="vertical-align: middle;">{{user.email}}</span>
+      </td>
+      <div class="divider"></div>
+      <td>
+        <span class="user-subhead" *ngIf="user.admin==true">Admin</span>
+        <span class="user-subhead" *ngIf="user.admin==false">Member</span>
+      </td>
+      <td class="text-center">
+        {{user.updated_at}}
+      </td>
+      <td style="width: 20%;">
+        <button class="table-link b editUserBtn"style ="vertical-align: middle;">
+                    <span class="fa-stack">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+        </button>
+        <button class="table-link danger" style ="vertical-align: middle;" (click)="DeleteUser(user.email)">
+                    <span class="fa-stack">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                    </span>
+        </button>
+      </td>
+    </tr>
+  </div>
+</div>
+
+<div class="edit-user-modal wrap-modal1 js-modal1 p-t-60 p-b-20">
+  <div class="overlay-modal1 js-hide-modal1"></div>
+
+  <div class="container">
+    <!--<div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">-->
+    <button class="how-pos3 hov3 trans-04 edit-user-close">
+      <img src="../../../assets/images/icons/icon-close.png" alt="CLOSE">
+    </button>
+    <!--</div>-->
+  </div>
+  <div class="container">
+    <div class="form">
+      <input type="email" name="emailEdit" placeholder="Email" id="emailEdit{{user.email}}" required [(ngModel)]="user.email"/>
+
+      <input type="password" name="PasswordEdit" placeholder="Password" id="PasswordEdit{{user.email}}" required [(ngModel)]="user.password"/>
+      <input type="checkbox" name ="Admin"/>Is admin<br>
+      <button class="button" (click)="UpdateUser(user.email,user.password)">Update</button>
+
+    </div>
+  </div>
+</div>
+
