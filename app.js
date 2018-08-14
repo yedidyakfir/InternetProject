@@ -34,6 +34,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 require('./passportAuth')(passport);
 //
+//the socket-io configoration
+//require('./io-socket');
+//
 
 app.use('/users', usersRouter);
 app.use('/books', booksRouter);
