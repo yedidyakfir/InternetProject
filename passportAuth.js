@@ -18,7 +18,7 @@ module.exports = function (passport) {
             clientID: '1717606231670528',
             clientSecret: '521d888c28376003910ce9ce1440ab50',
             callbackURL: 'http://localhost:3000/users/facebookAuth/callback',
-            profileFields:['email   ']
+            profileFields:['email']
         },
         function(accessToken, refreshToken, profile, done) {
             process.nextTick(function(){

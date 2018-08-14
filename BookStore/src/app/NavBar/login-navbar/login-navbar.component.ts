@@ -21,6 +21,8 @@ export class LoginNavbarComponent implements OnInit {
   login() {
     this.auth.login(this.username,this.password)
       .subscribe(res => {
+        if(res == false)
+          alert("username or password are incorrect");
         this.isLoggedIn();
       });
   }

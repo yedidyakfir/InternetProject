@@ -19,12 +19,16 @@ import { LoginNavbarComponent } from './NavBar/login-navbar/login-navbar.compone
 
 //services
 import {AdminGuardService} from "../services/AdminGuardService/admin-guard.service";
+import { RegisterComponent } from './NavBar/register/register.component';
+import { FooterComponent } from './Main-Page/footer/footer.component';
+import { MainComponent } from './Main-Page/main/main.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
   // {path:'Home', component:MainComponent},
   // {path:'Shopping', component: CatalogComponent},
   {path:'Users', component: UserListComponent, canActivate: [AdminGuardService]},
+  {path: 'Register', component: RegisterComponent},
   // {path:'Groups', component:GroupDiscussionComponent}
 ];
 
@@ -34,7 +38,10 @@ const routes: Routes = [
     UserViewComponent,
     UserListComponent,
     NavbarComponent,
-    LoginNavbarComponent
+    LoginNavbarComponent,
+    RegisterComponent,
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

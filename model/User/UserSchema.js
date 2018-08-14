@@ -10,8 +10,12 @@ module.exports = db => {
         admin: Boolean,
 		password: String,
         active: Boolean,
+        resetPasswordToken: String,
+        resetPasswordExpires: Date,
+
         created_at: Date,
         updated_at: Date,
+
         google: {
             id:String,
             token:String,
