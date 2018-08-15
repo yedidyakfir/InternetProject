@@ -22,11 +22,15 @@ import {AdminGuardService} from "../services/AdminGuardService/admin-guard.servi
 import { RegisterComponent } from './NavBar/register/register.component';
 import { FooterComponent } from './Main-Page/footer/footer.component';
 import { MainComponent } from './Main-Page/main/main.component';
+import { CatalogComponent } from './Shopping/catalog/catalog.component';
+import { SmallBookViewComponent } from './Shopping/small-book-view/small-book-view.component';
+import { BigBookViewComponent } from './Shopping/big-book-view/big-book-view.component';
+import { SellBookComponent } from './Shopping/sell-book/sell-book.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
   // {path:'Home', component:MainComponent},
-  // {path:'Shopping', component: CatalogComponent},
+  {path:'Shopping', component: CatalogComponent},
   {path:'Users', component: UserListComponent, canActivate: [AdminGuardService]},
   {path: 'Register', component: RegisterComponent},
   // {path:'Groups', component:GroupDiscussionComponent}
@@ -41,7 +45,11 @@ const routes: Routes = [
     LoginNavbarComponent,
     RegisterComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    CatalogComponent,
+    SmallBookViewComponent,
+    BigBookViewComponent,
+    SellBookComponent
   ],
   imports: [
     BrowserModule,

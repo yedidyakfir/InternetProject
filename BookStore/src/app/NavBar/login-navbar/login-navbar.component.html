@@ -14,12 +14,12 @@
             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
               <div class="form-group">
                 <label class="sr-only" for="EmailInput">Email address</label>
-                <input type="email" class="form-control" id="EmailInput"
+                <input type="email" class="form-control" id="EmailInput" name="Email"
                        placeholder="Email address" required [(ngModel)]="username">
               </div>
               <div class="form-group">
                 <label class="sr-only" for="PasswordInput">Password</label>
-                <input type="password" class="form-control" id="PasswordInput"
+                <input type="password" class="form-control" id="PasswordInput" name="Password"
                        placeholder="Password" required [(ngModel)]="password">
                 <div class="help-block text-right"><a href="">Forget the password ?</a></div>
               </div>

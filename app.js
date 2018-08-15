@@ -41,9 +41,10 @@ require('./passportAuth')(passport);
 app.use('/users', usersRouter);
 app.use('/books', booksRouter);
 
+
+app.use('/images',express.static(path.join(__dirname, 'public')));
 global.appRoot = __dirname;
 app.use(express.static(path.join(__dirname,'BookStore','dist','BookStore')),spaRouter);
-app.use('/images',express.static(path.join(__dirname, 'public')));
 
 //app.use(express.static(path.join(__dirname, 'public')));
 
