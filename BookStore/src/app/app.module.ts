@@ -27,6 +27,7 @@ import { CatalogComponent } from './Shopping/catalog/catalog.component';
 import { SmallBookViewComponent } from './Shopping/small-book-view/small-book-view.component';
 import { BigBookViewComponent } from './Shopping/big-book-view/big-book-view.component';
 import { SellBookComponent } from './Shopping/sell-book/sell-book.component';
+import { CartComponent } from './Shopping/cart/cart.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -51,7 +52,8 @@ const routes: Routes = [
     SmallBookViewComponent,
     BigBookViewComponent,
     SellBookComponent,
-    FileSelectDirective
+    FileSelectDirective,
+    CartComponent
   ],
   imports: [
     BrowserModule,

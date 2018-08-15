@@ -10,8 +10,8 @@ export class BookService {
   bookUrl = 'http://localhost:3000/books';
   constructor(private http: HttpClient) { }
 
-  getBookList(): Observable<Book[]> {
-    return this.http.get<Book[]>(this.bookUrl + '/list');
+  getBookList(skip:number = 0,limit:number = 0): Observable<Book[]> {
+    return this.http.post<Book[]>(this.bookUrl + '/list',{skip:skip,limit:limit});
   }
 
 

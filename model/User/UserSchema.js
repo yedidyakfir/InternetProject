@@ -13,6 +13,8 @@ module.exports = db => {
         resetPasswordToken: String,
         resetPasswordExpires: Date,
 
+        cartItems: [String],
+
         created_at: Date,
         updated_at: Date,
 
@@ -79,6 +81,24 @@ module.exports = db => {
 
 	userSchema.statics.DISABLE = async function(email) {
 	  this.updateOne({email:email},{active: false});
+    };
+
+	userSchema.statics.AddToCart = async function(id,userId,cb)
+    {
+        console.log("add to cart" + id + " " + userId);
+        this.updateOne({_id:userId}, {$push: {cartItems: id}},function (err,doc) {
+            cb(err);
+        });
+    };
+
+    userSchema.statics.RemoveFromCart = async function(ISBN,name,email)
+    {
+        this.updateOne({email:email}, {$poll: {cartItems: {name: name, ISBN: ISBN}}});
+    };
+
+    userSchema.statics.RemoveAllCart = async function(email)
+    {
+        this.updateOne({email:email}, {$pullAll: {cartItems: {}}});
     };
 
     db.model('Users', userSchema);

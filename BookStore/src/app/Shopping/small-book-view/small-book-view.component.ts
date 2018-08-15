@@ -7,6 +7,7 @@ import {Book} from "../../../model/book";
   styleUrls: ['./small-book-view.component.css']
 })
 export class SmallBookViewComponent implements OnInit {
+
   @Input()
   public book: Book;
   @Input()

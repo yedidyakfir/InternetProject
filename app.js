@@ -7,10 +7,9 @@ var logger = require('morgan');
 var cookieSession = require("cookie-session");
 const passport = require('passport');
 
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/Data/users');
-var booksRouter = require('./routes/Data/books');
+const shopRouter = require('./routes/shopping');
+var usersRouter = require('./routes/users');
+var booksRouter = require('./routes/books');
 const spaRouter = require('./routes/spa');
 
 var app = express();
@@ -40,15 +39,12 @@ require('./passportAuth')(passport);
 
 app.use('/users', usersRouter);
 app.use('/books', booksRouter);
-
+app.use('/shop',shopRouter);
 
 app.use('/public',express.static(path.join(__dirname, 'public')));
 global.appRoot = __dirname;
 app.use(express.static(path.join(__dirname,'BookStore','dist','BookStore')),spaRouter);
 
-//app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -8,6 +8,9 @@ import {BookService} from "../../../services/BookService/book.service";
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent implements OnInit {
+  private booksInPage: number = 9;
+  private pageNumber:number = 0;
+
   public books:Book[] = [];
   constructor(private bookService: BookService) { }
 
@@ -21,8 +24,22 @@ export class CatalogComponent implements OnInit {
     console.log(this.books);
   }
 
-  public changeModalBook(newBook: Book) {
-    console.log(newBook);
-    this.books[0].photo = "";
+  public getBooks() {
+    this.bookService.getBookList(this.pageNumber * this.booksInPage, this.booksInPage)
+      .subscribe(bookRes => this.books = bookRes);
+    console.log(this.books);
   }
+
+  public nextPage() {
+    console.log("nexy");
+    this.pageNumber += 1;
+    this.getBooks();
+  }
+
+  public previousPage() {
+    if(this.pageNumber > 0)
+      this.pageNumber -= 1;
+    this.getBooks();
+  }
+
 }

@@ -11,7 +11,7 @@ module.exports = db => {
         photo: String,
         seriesName: String,
         publishDate: Date,
-        ISBN: { type: String, required: true, unique: true },
+        ISBN: { type: Number, required: true, unique: true },
         summary: String,
         seller: String,
         buyer: String,
@@ -36,9 +36,15 @@ module.exports = db => {
         next();
     });
 
-    bookSchema.statics.REQUEST = async function(cb) {
+    bookSchema.statics.REQUEST = async function(skip = 0,limit = 0,active = true) {
         debug("get all books");
-        let u = await this.find({});
+        let u = await this.find({active:active}).sort({'date': -1}).skip(skip).limit(limit);
+        return u;
+    };
+
+    bookSchema.statics.REQUESTBY = async function(book) {
+        debug("get book " + book);
+        let u = await this.findOne(book);
         return u;
     };
 

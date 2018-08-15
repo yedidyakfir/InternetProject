@@ -1,5 +1,6 @@
 import { Component, OnInit ,Input } from '@angular/core';
 import {Book} from "../../../model/book";
+import {ShoppingService} from "../../../services/ShoppingService/shopping.service";
 
 @Component({
   selector: 'app-big-book-view',
@@ -7,15 +8,20 @@ import {Book} from "../../../model/book";
   styleUrls: ['./big-book-view.component.css']
 })
 export class BigBookViewComponent implements OnInit {
-  public book:Book = new Book();
-  constructor() { }
+  public mybook:Book;
+  constructor(private shopping:ShoppingService) { }
 
   ngOnInit() {
+    this.mybook = new Book();
   }
 
   public changeBook(newBook: Book) {
-    console.log(this.book);
-    this.book = newBook;
+    console.log(newBook);
+    console.log(this.mybook);
+    this.mybook = newBook;
   }
 
+  public addToCart() {
+    this.shopping.addToCart(this.mybook);
+  }
 }
