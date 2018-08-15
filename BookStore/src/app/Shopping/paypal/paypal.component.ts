@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { PayPalConfig, PayPalEnvironment, PayPalIntegrationType } from 'ngx-paypal';
 
 @Component({
@@ -7,6 +7,8 @@ import { PayPalConfig, PayPalEnvironment, PayPalIntegrationType } from 'ngx-payp
   styleUrls: ['./paypal.component.css']
 })
 export class PaypalComponent implements OnInit {
+  @Input()
+  private price: number = 0;
   public payPalConfig?: PayPalConfig;
 
   ngOnInit(): void {
@@ -28,14 +30,17 @@ export class PaypalComponent implements OnInit {
       },
       onCancel: (data, actions) => {
         console.log('OnCancel');
+        console.log(data);
+        console.log(actions);
       },
       onError: (err) => {
         console.log('OnError');
+        console.log(err);
       },
       transactions: [{
         amount: {
           currency: 'USD',
-          total: 9
+          total: this.price
         }
       }]
     });
