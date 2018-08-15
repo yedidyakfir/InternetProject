@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {User} from "../../model/user";
 import {Observable} from "rxjs/index";
+import {register} from "ts-node";
 
 
 @Injectable({
@@ -23,4 +24,12 @@ export class UserService {
 
   updateUser(email:string,newEmail:string,newPassword:string):Observable<boolean> {
     return this.http.post<boolean>(this.userUrl + '/update',{email:email, newUser:{email:newEmail,password:newPassword}});
-  }}
+  }
+  register(email:string, password:string)
+  {
+    return this.http.post<boolean>(this.userUrl + '/register',{email:email,password:password});
+  }
+
+
+}
+
