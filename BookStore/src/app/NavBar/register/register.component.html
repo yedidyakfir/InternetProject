@@ -1,47 +1,21 @@
-
-        <!--<div class="container" style="padding-top: 10%; width: 30%">
-          <div class="col-md-12" s>
-            Register
-            <form class="form" role="form" method="post" action="register" accept-charset="UTF-8" id="login-nav">
-              <div class="form-group">
-                <label class="sr-only" for="EmailInput">Email address</label>
-                <input type="email" class="form-control" id="EmailInput" name="Email"
-                       placeholder="Email address" required [(ngModel)]="username">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="PasswordInput">Password</label>
-                <input type="password" class="form-control" id="PasswordInput" name="Password"
-                       placeholder="Password" required [(ngModel)]="password">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="PasswordInput">Retype Password</label>
-                <input type="password" class="form-control" id="RePasswordInput" name="RePassword"
-                       placeholder="re type password" required [(ngModel)]="rePassword">
-              </div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block" (click)="register()">Register</button>
-              </div>
-            </form>
-          </div>
-        </div>-->
-        <div class="register">
-          <div class="container">
-            <h2>Register Here</h2>
-            <div class="login-form-grids">
-              <h6>Login information</h6>
-                <form class="form" role="form" method="post" action="register" accept-charset="UTF-8" id="login-nav">
-                <input type="email" placeholder="Email Address" required="required"
-                       name="Email" [(ngModel)]="email" >
-                <input type="password" placeholder="Password" required="required"
-                       name="Password" [(ngModel)]="password" >
-                <input type="password" placeholder="Password Confirmation" required="required"
-                       name="RePassword" [(ngModel)]="rePassword" >
-                <input type="submit" value="Register" (click)="register()">
-              </form>
-            </div>
-            <div class="register-home">
-              <a href="index.html">Home</a>
-            </div>
-          </div>
-        </div>
+<div class="register">
+  <div class="container">
+    <h2>Register Here</h2>
+    <div class="login-form-grids">
+      <h6>Login information</h6>
+      <form class="form" role="form" method="post" action="register" accept-charset="UTF-8" id="register-nav">
+        <input type="email" placeholder="Email Address" required="required"
+               name="Email" [(ngModel)]="email" >
+        <input type="password" placeholder="Password" required="required"
+               name="Password" [(ngModel)]="password" >
+        <input type="password" placeholder="Password Confirmation" required="required"
+               name="RePassword" [(ngModel)]="rePassword" >
+        <input type="submit" value="Register" (click)="register()">
+      </form>
+    </div>
+    <div class="register-home">
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</div>
 

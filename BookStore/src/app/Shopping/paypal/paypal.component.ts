@@ -8,7 +8,7 @@ import { PayPalConfig, PayPalEnvironment, PayPalIntegrationType } from 'ngx-payp
 })
 export class PaypalComponent implements OnInit {
   @Input()
-  private price: number = 0;
+  private price: number;
   public payPalConfig?: PayPalConfig;
 
   ngOnInit(): void {

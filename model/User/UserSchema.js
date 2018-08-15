@@ -13,7 +13,7 @@ module.exports = db => {
         resetPasswordToken: String,
         resetPasswordExpires: Date,
 
-        cartItems: [String],
+        cartItems: {type:[String], unique: true},
 
         created_at: Date,
         updated_at: Date,
@@ -93,7 +93,7 @@ module.exports = db => {
 
     userSchema.statics.RemoveFromCart = async function(id,email,cb)
     {
-        this.updateOne({email:email}, {$poll: {cartItems: id}}.cb);
+        this.updateOne({email:email}, {$pull: {cartItems: id}},cb);
     };
 
     userSchema.statics.RemoveAllCart = async function(email,cb)

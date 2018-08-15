@@ -15,7 +15,7 @@
           <div class="clearfix"></div>
         </div>
       </ng-container>
-      <nav class="numbering">
+      <nav class="numbering" *ngIf="canMove">
         <ul class="pagination paging">
           <li>
             <button class="btn btn-default" aria-label="Previous" (click)="previousPage()">

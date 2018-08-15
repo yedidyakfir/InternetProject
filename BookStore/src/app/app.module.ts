@@ -37,6 +37,7 @@ const routes: Routes = [
   {path:'Shopping', component: CatalogComponent},
   {path:'Users', component: UserListComponent, canActivate: [AdminGuardService]},
   {path: 'Register', component: RegisterComponent},
+  {path: 'Cart', component: CartComponent}
   // {path:'Groups', component:GroupDiscussionComponent}
 ];
 
