@@ -9,9 +9,14 @@ import {Book} from "../../../model/book";
 export class SmallBookViewComponent implements OnInit {
   @Input()
   public book: Book;
+  @Input()
+  public bigViewClick: Function;
   constructor() { }
 
   ngOnInit() {
   }
 
+  openModal() {
+    this.bigViewClick(this.book);
+  }
 }

@@ -1,22 +1,21 @@
 export class Book
 {
-  name: String;
-  author: String;
-  photo: String;
-  seriesName: String;
+  name: String = "";
+  author: String = "";
+  photo: String = "";
+  seriesName: String = "";
 
-  publishDate: Date;
-  ISBN: Number;
-  summary: String;
-  seller: String;
-  buyer: String;
+  publishDate: Date = new Date();
+  ISBN: Number = 0;
+  summary: String = "";
+  seller: String = "";
+  buyer: String = "";
 
-  sellDate: Date;
+  sellDate: Date = new Date();
 
-  createdAt: Date;
+  createdAt: Date = new Date();
 
-  updatedAt: Date;
-  price: Number;
-  active: boolean;
-
+  updatedAt: Date = new Date();
+  price: Number = 0;
+  active: boolean = false;
 }

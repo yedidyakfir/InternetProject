@@ -1,11 +1,14 @@
+<app-big-book-view #bigBookModal *ngIf="books[0] != undefined" [book]="books[0]"></app-big-book-view>
+
 <div class="products">
   <div class="container">
     <div class="col-md-12 products-right">
       <ng-container *ngFor="let book of books; let i = index">
         <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 0 || i == books.length - 1">
-          <app-small-book-view class="card" *ngIf="books[i - 2] != undefined" [book]="books[i - 2]"></app-small-book-view>
-          <app-small-book-view class="card" *ngIf="books[i - 1] != undefined" [book]="books[i - 1]"></app-small-book-view>
-          <app-small-book-view class="card" *ngIf="books[i ] != undefined" [book]="books[i]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i - 2] != undefined" [book]="books[i - 2]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i - 1] != undefined" [book]="books[i - 1]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i] != undefined"  [bigViewClick]="changeModalBook"
+                               [book]="books[i]"></app-small-book-view>
           <div class="clearfix"></div>
         </div>
       </ng-container>
@@ -33,127 +36,3 @@
   </div>
 </div>
 
-
-<!--<div class="product">-->
-  <!--<div class="container">-->
-    <!--<div class="agile_top_brands_grids">-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<div class="clearfix"> </div>-->
-    <!--</div>-->
-    <!--<div class="agile_top_brands_grids">-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<div class="clearfix"> </div>-->
-    <!--</div>-->
-    <!--<div class="agile_top_brands_grids">-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<app-small-book-view class="card"></app-small-book-view>-->
-      <!--<div class="clearfix"> </div>-->
-    <!--</div>-->
-
-  <!--</div>-->
-<!--</div>-->
-
-<!--<div class="card col-md-4 top_brand_left">-->
-  <!--<div class="hover14 column">-->
-    <!--<div class="agile_top_brand_left_grid">-->
-      <!--<div class="agile_top_brand_left_grid_pos">-->
-        <!--<img src="images/offer.png" alt=" " class="img-responsive">-->
-      <!--</div>-->
-      <!--<div class="agile_top_brand_left_grid1">-->
-        <!--<figure>-->
-          <!--<div class="snipcart-item block">-->
-            <!--<div class="snipcart-thumb">-->
-              <!--<a href="single.html"><img title=" " alt=" " src="images/pf4.png"></a>-->
-              <!--<p>Sampann-toor-dal</p>-->
-              <!--<h4>$35.99 <span>$55.00</span></h4>-->
-            <!--</div>-->
-            <!--<div class="snipcart-details top_brand_home_details">-->
-              <!--<form action="#" method="post">-->
-                <!--<fieldset>-->
-                  <!--<input type="hidden" name="cmd" value="_cart">-->
-                  <!--<input type="hidden" name="add" value="1">-->
-                  <!--<input type="hidden" name="business" value=" ">-->
-                  <!--<input type="hidden" name="item_name" value="Fortune Sunflower Oil">-->
-                  <!--<input type="hidden" name="amount" value="35.99">-->
-                  <!--<input type="hidden" name="discount_amount" value="1.00">-->
-                  <!--<input type="hidden" name="currency_code" value="USD">-->
-                  <!--<input type="hidden" name="return" value=" ">-->
-                  <!--<input type="hidden" name="cancel_return" value=" ">-->
-                  <!--<input type="submit" name="submit" value="Add to cart" class="button">-->
-                <!--</fieldset>-->
-              <!--</form>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</figure>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
-<!--<div class="card col-md-4 top_brand_left">-->
-  <!--<div class="hover14 column">-->
-    <!--<div class="agile_top_brand_left_grid">-->
-      <!--<div class="agile_top_brand_left_grid_pos">-->
-        <!--<img src="images/offer.png" alt=" " class="img-responsive">-->
-      <!--</div>-->
-      <!--<div class="agile_top_brand_left_grid1">-->
-        <!--<figure>-->
-          <!--<div class="snipcart-item block">-->
-            <!--<div class="snipcart-thumb">-->
-              <!--<a href="single.html"><img title="asdas" style="min-height: 400px; max-height: 400px" alt=" " src="images/books/images/Kings Way9999999.jpg"></a>-->
-              <!--<p>Parryss-sugar</p>-->
-              <!--<h4>$30.99 <span>$45.00</span></h4>-->
-            <!--</div>-->
-            <!--<div class="snipcart-details top_brand_home_details">-->
-              <!--<form action="#" method="post">-->
-                <!--<fieldset>-->
-                  <!--<input type="hidden" name="cmd" value="_cart">-->
-                  <!--<input type="hidden" name="add" value="1">-->
-                  <!--<input type="hidden" name="business" value=" ">-->
-                  <!--<input type="hidden" name="item_name" value="basmati rise">-->
-                  <!--<input type="hidden" name="amount" value="30.99">-->
-                  <!--<input type="hidden" name="discount_amount" value="1.00">-->
-                  <!--<input type="hidden" name="currency_code" value="USD">-->
-                  <!--<input type="hidden" name="return" value=" ">-->
-                  <!--<input type="hidden" name="cancel_return" value=" ">-->
-                  <!--<input type="submit" name="submit" value="Add to cart" class="button">-->
-                <!--</fieldset>-->
-              <!--</form>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</figure>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
-<!--<div class="card col-md-4 top_brand_left">-->
-  <!--<div class="hover14 column">-->
-    <!--<div class="agile_top_brand_left_grid">-->
-      <!--<div class="agile_top_brand_left_grid1">-->
-        <!--<figure>-->
-          <!--<div class="snipcart-item block">-->
-            <!--<div class="snipcart-thumb">-->
-              <!--<a href="single.html">-->
-                <!--&lt;!&ndash;<img src="../../../assets/images/books/last%20empire1988948.jpg" alt="" class="img-responsive">&ndash;&gt;-->
-                <!--<img style="min-height: 400px; max-height: 400px" src="images/books/images/last%20empire1988948.jpg" alt="" class="img-responsive">-->
-              <!--</a>-->
-              <!--<p>Saffola-gold</p>-->
-              <!--<h4>$80.99 <span>$105.00</span></h4>-->
-            <!--</div>-->
-            <!--<div class="snipcart-details top_brand_home_details">-->
-              <!--<form action="#" method="post">-->
-                <!--<fieldset>-->
-                  <!--<input type="submit" name="submit" value="Add to cart" class="button">-->
-                <!--</fieldset>-->
-              <!--</form>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</figure>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->

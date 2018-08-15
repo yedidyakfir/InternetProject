@@ -8,7 +8,7 @@ import {BookService} from "../../../services/BookService/book.service";
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent implements OnInit {
-  public books:Book[];
+  public books:Book[] = [];
   constructor(private bookService: BookService) { }
 
   ngOnInit() {
@@ -16,4 +16,8 @@ export class CatalogComponent implements OnInit {
       .subscribe(bookRes => this.books = bookRes);
   }
 
+  public changeModalBook(newBook: Book) {
+    console.log(newBook);
+    this.books[0].photo = "";
+  }
 }

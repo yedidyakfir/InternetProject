@@ -6,7 +6,7 @@
           <div class="snipcart-item block">
             <div class="snipcart-thumb">
               <a>
-                <img style="min-height: 350px; max-height: 350px" src="images/books/images/{{book.photo}}" alt="" class="img-responsive">
+                <img style="min-height: 350px; max-height: 350px" src="public/books/images/{{book.photo}}" alt="" class="img-responsive">
               </a>
               <p>Name: {{book.name}}</p>
               <h4>Price: {{book.price}}</h4>
@@ -14,7 +14,8 @@
             <div class="snipcart-details top_brand_home_details">
               <form action="#" method="post">
                 <fieldset>
-                  <input type="submit" name="submit" value="Add to cart" class="button">
+                  <input type="submit" name="submit" value="Quick View" class="button"
+                         data-toggle="modal" data-target="#BigBookViewModal" (click)="openModal()">
                 </fieldset>
               </form>
             </div>
