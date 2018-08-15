@@ -12,7 +12,7 @@ export class CatalogComponent implements OnInit {
   private pageNumber:number = 0;
 
   public books:Book[] = [];
-  constructor(private bookService: BookService) { }
+  constructor(public bookService: BookService) { }
 
   ngOnInit() {
     this.bookService.getBookList()

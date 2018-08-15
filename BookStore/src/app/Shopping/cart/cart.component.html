@@ -5,79 +5,77 @@
       <table class="timetable_sub">
         <thead>
         <tr>
-          <th>SL No.</th>
-          <th>Product</th>
-          <th>Quality</th>
-          <th>Product Name</th>
+          <th>ISBN</th>
+          <th>Book</th>
+          <th>Series</th>
+          <th>Book Name</th>
 
           <th>Price</th>
           <th>Remove</th>
         </tr>
         </thead>
-        <tbody><tr class="rem1">
-          <td class="invert">1</td>
-          <td class="invert-image"><a href="single.html"><img src="images/1.png" alt=" " class="img-responsive"></a></td>
-          <td class="invert">
-            <div class="quantity">
-              <div class="quantity-select">
-                <div class="entry value-minus">&nbsp;</div>
-                <div class="entry value"><span>1</span></div>
-                <div class="entry value-plus active">&nbsp;</div>
-              </div>
-            </div>
-          </td>
-          <td class="invert">Tata Salt</td>
+        <tbody>
+          <tr class="rem1" *ngFor="let book of books">
+            <td class="invert">{{book.ISBN}}</td>
+            <td class="invert-image">
+              <a href="single.html">
+                <img src="public/books/images/{{book.photo}}" alt=" " class="img-responsive">
+              </a>
+            </td>
+            <td class="invert">{{book.seriesName}}</td>
+            <td class="invert">{{book.name}}</td>
 
-          <td class="invert">$290.00</td>
-          <td class="invert">
-            <div class="rem">
-              <div class="close1"> </div>
-            </div>
-          </td>
-        </tr>
-        <tr class="rem2">
-          <td class="invert">2</td>
-          <td class="invert-image"><a href="single.html"><img src="images/2.png" alt=" " class="img-responsive"></a></td>
-          <td class="invert">
-            <div class="quantity">
-              <div class="quantity-select">
-                <div class="entry value-minus">&nbsp;</div>
-                <div class="entry value"><span>1</span></div>
-                <div class="entry value-plus active">&nbsp;</div>
+            <td class="invert">${{book.price}}</td>
+            <td class="invert">
+              <div class="rem">
+                <div class="close1"> </div>
               </div>
-            </div>
-          </td>
-          <td class="invert">Fortune oil</td>
-
-          <td class="invert">$250.00</td>
-          <td class="invert">
-            <div class="rem">
-              <div class="close2"> </div>
-            </div>
-          </td>
-        </tr>
-        <tr class="rem3">
-          <td class="invert">3</td>
-          <td class="invert-image"><a href="single.html"><img src="images/3.png" alt=" " class="img-responsive"></a></td>
-          <td class="invert">
-            <div class="quantity">
-              <div class="quantity-select">
-                <div class="entry value-minus">&nbsp;</div>
-                <div class="entry value"><span>1</span></div>
-                <div class="entry value-plus active">&nbsp;</div>
+            </td>
+          </tr>
+          <tr class="rem2">
+            <td class="invert">2</td>
+            <td class="invert-image"><a href="single.html"><img src="images/2.png" alt=" " class="img-responsive"></a></td>
+            <td class="invert">
+              <div class="quantity">
+                <div class="quantity-select">
+                  <div class="entry value-minus">&nbsp;</div>
+                  <div class="entry value"><span>1</span></div>
+                  <div class="entry value-plus active">&nbsp;</div>
+                </div>
               </div>
-            </div>
-          </td>
-          <td class="invert">Aashirvaad atta</td>
+            </td>
+            <td class="invert">Fortune oil</td>
 
-          <td class="invert">$15.00</td>
-          <td class="invert">
-            <div class="rem">
-              <div class="close3"> </div>
-            </div>
-          </td>
-        </tr>
-        </tbody></table>
+            <td class="invert">$250.00</td>
+            <td class="invert">
+              <div class="rem">
+                <div class="close2"> </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="rem3">
+            <td class="invert">3</td>
+            <td class="invert-image"><a href="single.html"><img src="images/3.png" alt=" " class="img-responsive"></a></td>
+            <td class="invert">
+              <div class="quantity">
+                <div class="quantity-select">
+                  <div class="entry value-minus">&nbsp;</div>
+                  <div class="entry value"><span>1</span></div>
+                  <div class="entry value-plus active">&nbsp;</div>
+                </div>
+              </div>
+            </td>
+            <td class="invert">Aashirvaad atta</td>
+
+            <td class="invert">$15.00</td>
+            <td class="invert">
+              <div class="rem">
+                <div class="close3"> </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="checkout-left">
       <div class="checkout-left-basket">

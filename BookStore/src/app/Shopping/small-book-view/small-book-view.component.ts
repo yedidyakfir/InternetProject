@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Book} from "../../../model/book";
+import {BookService} from "../../../services/BookService/book.service";
 
 @Component({
   selector: 'app-small-book-view',
@@ -10,14 +11,9 @@ export class SmallBookViewComponent implements OnInit {
 
   @Input()
   public book: Book;
-  @Input()
-  public bigViewClick: Function;
-  constructor() { }
+  constructor(public booksService: BookService) { }
 
   ngOnInit() {
   }
 
-  openModal() {
-    this.bigViewClick(this.book);
-  }
 }

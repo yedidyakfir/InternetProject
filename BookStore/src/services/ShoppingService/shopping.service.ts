@@ -17,7 +17,7 @@ export class ShoppingService {
       .subscribe(res => {if(res != true) {alert(res);}});
   }
 
-  getList(): Observable<Book> {
-    return this.http.get<Book>(this.shoppingUrl +'/list');
+  getList(): Observable<Book[]> {
+    return this.http.get<Book[]>(this.shoppingUrl +'/list');
   }
 }

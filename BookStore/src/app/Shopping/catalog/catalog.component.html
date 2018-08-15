@@ -1,4 +1,4 @@
-<app-big-book-view #bigBookModal></app-big-book-view>
+<app-big-book-view></app-big-book-view>
 
 <div class="products">
   <div class="container">
@@ -9,12 +9,9 @@
       </div>
       <ng-container *ngFor="let book of books; let i = index">
         <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 0 || i == books.length - 1">
-          <app-small-book-view *ngIf="books[i - 2] != undefined" [bigViewClick]="bigBookModal.changeBook"
-                               [book]="books[i - 2]"></app-small-book-view>
-          <app-small-book-view *ngIf="books[i - 1] != undefined" [bigViewClick]="bigBookModal.changeBook"
-                               [book]="books[i - 1]"></app-small-book-view>
-          <app-small-book-view *ngIf="books[i] != undefined"  [bigViewClick]="bigBookModal.changeBook"
-                               [book]="books[i]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i - 2] != undefined" [book]="books[i - 2]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i - 1] != undefined" [book]="books[i - 1]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i] != undefined" [book]="books[i]"></app-small-book-view>
           <div class="clearfix"></div>
         </div>
       </ng-container>
@@ -42,5 +39,5 @@
   </div>
 </div>
 
-<app-sell-book [addBookCallback]="addBook"></app-sell-book>
+<app-sell-book></app-sell-book>
 

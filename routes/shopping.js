@@ -30,6 +30,7 @@ router.get('/list', function (req,res) {
                 res.json("cant get this cart");
             }
             else {
+
                 res.json(doc);
             }
         });

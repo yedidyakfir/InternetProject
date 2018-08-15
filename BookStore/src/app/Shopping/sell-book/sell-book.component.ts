@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Book} from "../../../model/book";
 import {FileUploader,FileSelectDirective} from "ng2-file-upload";
+import {BookService} from "../../../services/BookService/book.service";
 
 @Component({
   selector: 'app-sell-book',
@@ -8,19 +9,16 @@ import {FileUploader,FileSelectDirective} from "ng2-file-upload";
   styleUrls: ['./sell-book.component.css']
 })
 export class SellBookComponent implements OnInit {
-  @Input()
-  private addBookCallback: Function;
-
   public book = new Book();
   private uploadUrl: string = 'http://localhost:3000/books/create';
   public fileUploader: FileUploader = new FileUploader({url:this.uploadUrl,itemAlias:'photo'});
-  constructor() { }
+  constructor(private booksService:BookService) { }
 
   ngOnInit() {
     this.fileUploader.onSuccessItem = ((item, response) => {
       if(JSON.parse(response) == true){
         this.reset();
-        this.addBookCallback(this.book);
+        this.booksService.addBookToList(this.book);
       }
       else {alert("couldn't upload " + JSON.parse(response));}
     });

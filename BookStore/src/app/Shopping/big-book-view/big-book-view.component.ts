@@ -1,6 +1,8 @@
 import { Component, OnInit ,Input } from '@angular/core';
 import {Book} from "../../../model/book";
 import {ShoppingService} from "../../../services/ShoppingService/shopping.service";
+import {Subject} from "rxjs/index";
+import {BookService} from "../../../services/BookService/book.service";
 
 @Component({
   selector: 'app-big-book-view',
@@ -8,20 +10,21 @@ import {ShoppingService} from "../../../services/ShoppingService/shopping.servic
   styleUrls: ['./big-book-view.component.css']
 })
 export class BigBookViewComponent implements OnInit {
-  public mybook:Book;
-  constructor(private shopping:ShoppingService) { }
+  public book:Book;
+  constructor(private shopping:ShoppingService,private booksService:BookService) { }
 
   ngOnInit() {
-    this.mybook = new Book();
+    this.book = new Book();
+    this.booksService.getChoosenBook().subscribe( res => this.book = res);
   }
 
   public changeBook(newBook: Book) {
     console.log(newBook);
-    console.log(this.mybook);
-    this.mybook = newBook;
+    console.log(this.book);
+    this.book = newBook;
   }
 
   public addToCart() {
-    this.shopping.addToCart(this.mybook);
+    this.shopping.addToCart(this.book);
   }
 }
