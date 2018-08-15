@@ -8,7 +8,8 @@ let books = require('../../model')('Books');
 const multer = require('multer');
 let storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        let p = path.join(__dirname,'..','..','BookStore','dist','BookStore','assets','images','books');
+//        let p = path.join(__dirname,'..','..','BookStore','dist','BookStore','assets','images','books');
+        let p = path.join(__dirname,'..','..','public','books','images');
         cb(null,p);
     },
     filename: (req, file, cb) => {
