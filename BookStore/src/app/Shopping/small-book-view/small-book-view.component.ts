@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Book} from "../../../model/book";
 
 @Component({
   selector: 'app-small-book-view',
@@ -7,11 +8,10 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SmallBookViewComponent implements OnInit {
   @Input()
-  i:number;
+  public book: Book;
   constructor() { }
 
   ngOnInit() {
-  console.log(this.i);
   }
 
 }

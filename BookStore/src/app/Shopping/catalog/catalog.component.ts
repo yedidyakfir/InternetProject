@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Book} from "../../../model/book";
+import {BookService} from "../../../services/BookService/book.service";
 
 @Component({
   selector: 'app-catalog',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent implements OnInit {
-
-  constructor() { }
+  public books:Book[];
+  constructor(private bookService: BookService) { }
 
   ngOnInit() {
+    this.bookService.getBookList()
+      .subscribe(bookRes => this.books = bookRes);
   }
 
 }
