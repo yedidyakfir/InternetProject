@@ -16,6 +16,11 @@ export class CatalogComponent implements OnInit {
       .subscribe(bookRes => this.books = bookRes);
   }
 
+  public addBook(book:Book) {
+    this.books.push(book);
+    console.log(this.books);
+  }
+
   public changeModalBook(newBook: Book) {
     console.log(newBook);
     this.books[0].photo = "";

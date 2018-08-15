@@ -1,3 +1,84 @@
-<p>
-  sell-book works!
-</p>
+<div class="container">
+
+  <div style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="panel panel-info">
+      <div class="panel-heading"  style="background: #ff9b05">
+        <div class="panel-title">Sell Your Book</div>
+      </div>
+      <div class="panel-body" >
+          <div class="form-horizontal">
+            <div id="div_book_name" class="form-group required">
+              <label for="book_name" class="control-label col-md-4  requiredField"> Name<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md textInput form-control" id="book_name" [(ngModel)]="book.name"
+                       maxlength="30" name="name" placeholder="Enter The Book's name" style="margin-bottom: 10px" type="text" />
+              </div>
+            </div>
+            <div id="div_author" class="form-group required">
+              <label for="author" class="control-label col-md-4  requiredField"> Author<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md form-control" id="author" name="author" [(ngModel)]="book.author"
+                       placeholder="Enter The Books author" style="margin-bottom: 10px"/>
+              </div>
+            </div>
+            <div id="div_series" class="form-group required">
+              <label for="series" class="control-label col-md-4">Series</label>
+              <div class="controls col-md-8 ">
+                <input class="input-md textInput form-control" id="series" name="series" [(ngModel)]="book.seriesName"
+                       placeholder="Enter the Book's series" style="margin-bottom: 10px"/>
+              </div>
+            </div>
+            <div id="div_publish_date" class="form-group required">
+              <label for="publish_date" class="control-label col-md-4  requiredField">Publish Date<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md form-control" id="publish_date" name="publish_date" [(ngModel)]="book.publishDate"
+                       placeholder="Enter Publish date" style="margin-bottom: 10px" type="date" />
+              </div>
+            </div>
+            <div id="div_ISBN" class="form-group required">
+              <label for="ISBN" class="control-label col-md-4  requiredField">ISBN<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md form-control" id="ISBN" name="ISBN" [(ngModel)]="book.ISBN"
+                       placeholder="Enter ISBN" style="margin-bottom: 10px" type="number" />
+              </div>
+            </div>
+            <div id="div_summary" class="form-group required">
+              <label for="summary" class="control-label col-md-4">summary</label>
+              <div class="controls col-md-8 ">
+                <input class="input-md textInput form-control" id="summary" name="summary" [(ngModel)]="book.summary"
+                       placeholder="Enter the Book's summary" style="margin-bottom: 10px"/>
+              </div>
+            </div>
+            <div id="div_price" class="form-group required">
+              <label for="price" class="control-label col-md-4  requiredField">Price<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md form-control" id="price" name="price" [(ngModel)]="book.price"
+                       placeholder="Enter Price" style="margin-bottom: 10px" type="number" />
+              </div>
+            </div>
+            <div id="div_image" class="form-group required">
+              <label for="image" class="control-label col-md-4">Image</label>
+              <div class="controls col-md-8 ">
+                <button (click)="uploadBtn.click()" class="btn btn-default">
+                  upload your image
+                  <input #uploadBtn class="input-md form-control" id="image"
+                         name="number" placeholder="Upload image" style="display: none" type="file"
+                         ng2FileSelect [uploader]="fileUploader"/>
+                </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="aab controls col-md-4 "></div>
+              <div class="controls col-md-12">
+                <input type="submit" name="sell" value="Sell Your Book" (click)="upload()"
+                       class="btn btn-success btn btn-info" id="submit-book" style="width: 100%" />
+              </div>
+            </div>
+
+          </div>
+
+        <!--</form>-->
+      </div>
+    </div>
+  </div>
+</div>

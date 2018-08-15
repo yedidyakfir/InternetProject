@@ -9,6 +9,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AngularFontAwesomeModule } from "angular-font-awesome";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material";
+import { FileSelectDirective } from "ng2-file-upload";
 
 //component
 import { AppComponent } from './app.component';
@@ -49,7 +50,8 @@ const routes: Routes = [
     CatalogComponent,
     SmallBookViewComponent,
     BigBookViewComponent,
-    SellBookComponent
+    SellBookComponent,
+    FileSelectDirective
   ],
   imports: [
     BrowserModule,

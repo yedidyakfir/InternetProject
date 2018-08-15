@@ -7,7 +7,6 @@ import {Book} from "../../../model/book";
   styleUrls: ['./big-book-view.component.css']
 })
 export class BigBookViewComponent implements OnInit {
-  @Input()
   public book:Book = new Book();
   constructor() { }
 
@@ -15,8 +14,8 @@ export class BigBookViewComponent implements OnInit {
   }
 
   public changeBook(newBook: Book) {
-    console.log(newBook);
-    this.book.photo = "";
+    console.log(this.book);
+    this.book = newBook;
   }
 
 }
