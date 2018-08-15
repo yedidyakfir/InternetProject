@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Book} from "../../model/book";
+import {Observable} from "rxjs/index";
 
 @Injectable({
   providedIn: 'root'
@@ -11,11 +12,12 @@ export class ShoppingService {
 
   addToCart(book:Book) {
     console.log("addToCart");
-    book = new Book();
-    book.name = "Kings Way";
-    book.ISBN = 2018;
     console.log(book);
     this.http.post(this.shoppingUrl + '/addToCart', {book:book})
       .subscribe(res => {if(res != true) {alert(res);}});
+  }
+
+  getList(): Observable<Book> {
+    return this.http.get<Book>(this.shoppingUrl +'/list');
   }
 }

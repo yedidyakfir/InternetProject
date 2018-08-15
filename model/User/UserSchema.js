@@ -91,6 +91,14 @@ module.exports = db => {
         });
     };
 
+    userSchema.statics.GetCart = async function(userId,cb)
+    {
+        console.log("get cart" + userId);
+        this.find({_id:userId}, function (err,doc) {
+            cb(err,doc);
+        }).select('cartItems');
+    };
+
     userSchema.statics.RemoveFromCart = async function(ISBN,name,email)
     {
         this.updateOne({email:email}, {$poll: {cartItems: {name: name, ISBN: ISBN}}});

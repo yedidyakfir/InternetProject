@@ -22,4 +22,19 @@ router.post('/addToCart', async function (req,res) {
     console.log(req.user);
 });
 
+router.get('/list', function (req,res) {
+    if(req.isAuthenticated()) {
+        Users.GetCart(req.user._id, function (err, doc) {
+            if (err) {
+                console.log(err);
+                res.json("cant get this cart");
+            }
+            else {
+                res.json(doc);
+            }
+        });
+    }
+    else {res.json("you must be logged in to add to cart");}
+});
+
 module.exports = router;
