@@ -3,19 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/catalog/catalog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/catalog/catalog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/catalog/catalog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/catalog/catalog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/ShoppingService/shopping.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/services/ShoppingService/shopping.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Book/BookSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Book/BookSchema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/User/UserSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/User/UserSchema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/books/images/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/books/images/The Philosofer stone43240.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Main-Page/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Main-Page/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,6 +40,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Main-Page/main/main.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="54" selection-start-column="54" selection-end-column="54" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="cart.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,17 +65,26 @@
       <file leaf-file-name="shopping.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/shopping.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+            <state relative-caret-position="451">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserSchema.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserSchema.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="377">
               <caret line="100" column="69" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -151,12 +163,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BookStore1/src/assets/css/skdslider.css" />
         <option value="$PROJECT_DIR$/BookStore1/src/styles.css" />
         <option value="$PROJECT_DIR$/BookStore/src/services/AdminGuardService/admin-guard.service.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/services/AuthenticationService/authentication.service.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/services/GroupService/group.service.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Users/user-view/user-view.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Users/user-view/user-view.component.css" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Users/user-view/user-view.component.ts" />
@@ -189,7 +199,6 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/small-book-view/small-book-view.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/small-book-view/small-book-view.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/sell-book/sell-book.component.ts" />
         <option value="$PROJECT_DIR$/model/Book/BookSchema.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/catalog/catalog.component.ts" />
@@ -202,6 +211,9 @@
         <option value="$PROJECT_DIR$/routes/shopping.js" />
         <option value="$PROJECT_DIR$/BookStore/src/services/ShoppingService/shopping.service.ts" />
         <option value="$PROJECT_DIR$/model/User/UserSchema.js" />
+        <option value="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Main-Page/main/main.component.html" />
       </list>
     </option>
   </component>
@@ -265,7 +277,7 @@
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="Main-Page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -273,8 +285,23 @@
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="Main-Page" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -282,14 +309,6 @@
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="ShoppingService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -351,6 +370,117 @@
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore1\src\assets\images\icons" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/BookStore/src/app/Main-Page/main/main.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/BookStore/src/assets/images/background/main-image.jpg</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -414,14 +544,7 @@
       <workItem from="1534234092717" duration="6084000" />
       <workItem from="1534242362514" duration="2680000" />
       <workItem from="1534245777916" duration="26523000" />
-      <workItem from="1534283458647" duration="46270000" />
-    </task>
-    <task id="LOCAL-00006" summary="added navbar">
-      <created>1527262211409</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1527262211409</updated>
+      <workItem from="1534283458647" duration="47532000" />
     </task>
     <task id="LOCAL-00007" summary="added new navbar">
       <created>1527774089508</created>
@@ -759,11 +882,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534359974868</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="fixed problem of saving new photos (chagned routs...), chagned all observable to subject or subject behavior">
+      <created>1534365870762</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1534365870762</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353936000" />
+    <option name="totallyTimeSpent" value="355198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -772,16 +902,16 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.27799478" side_tool="true" weight="0.24" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49739584" weight="0.32731137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7220052" weight="0.282678" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7220052" visible="true" weight="0.282678" />
       <window_info id="npm" order="2" sideWeight="0.501355" side_tool="true" weight="0.16302083" />
       <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.16927083" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.171875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.171875" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4984375" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7421875" visible="true" weight="0.30712008" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7421875" weight="0.30712008" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -798,7 +928,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added al javascript from template, still not working tough , added book service , build template for user adminstration, added routes" />
     <MESSAGE value="added user service for the administrator also added server side request for user list&#10;fix the logout and login(problem because logout didn't gave any answer back to the user so he couldn't logout)" />
     <MESSAGE value="added sell button also created component for sell modal" />
     <MESSAGE value="added footer &#10;also finished the book upload,changed navbar(still need fix ,need to add javascript)" />
@@ -823,7 +952,8 @@
     <MESSAGE value="created cart service,object (in user) ,view etc&#10;however bigBookView still doesn't work" />
     <MESSAGE value="get cart server side is fixed" />
     <MESSAGE value="fixed problem with modals of books ,change to subject observable, not yet finished the fix about the add book view update" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed problem with modals of books ,change to subject observable, not yet finished the fix about the add book view update" />
+    <MESSAGE value="fixed problem of saving new photos (chagned routs...), chagned all observable to subject or subject behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed problem of saving new photos (chagned routs...), chagned all observable to subject or subject behavior" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -845,28 +975,17 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="62" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/shopping.js</url>
+          <line>28</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="67" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Users/user-list/user-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore1/src/app/users/user-list/user-list.component.html" />
-    <entry file="file://$PROJECT_DIR$/BookStore1/src/app/users/user-list/user-list.component.ts" />
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Users/user-list/user-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore1/src/app/users/user-view/user-view.component.html" />
     <entry file="file://$PROJECT_DIR$/BookStore1/src/app/app.module.ts" />
     <entry file="file://$PROJECT_DIR$/BookStore1/src/polyfills.ts" />
     <entry file="file://$PROJECT_DIR$/BookStore/src/polyfills.ts">
@@ -1081,13 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/sell-book/sell-book.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1170,13 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1203,15 +1308,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/shopping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        <state relative-caret-position="451">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/NavBar/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/NavBar/register/register.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/images/background/main-image.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="377">
           <caret line="100" column="69" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Main-Page/main/main.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" selection-start-column="54" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
