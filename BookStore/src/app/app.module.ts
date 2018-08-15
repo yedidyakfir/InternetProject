@@ -10,6 +10,7 @@ import { AngularFontAwesomeModule } from "angular-font-awesome";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material";
 import { FileSelectDirective } from "ng2-file-upload";
+import {NgxPayPalModule} from "ngx-paypal";
 
 //component
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { SmallBookViewComponent } from './Shopping/small-book-view/small-book-vi
 import { BigBookViewComponent } from './Shopping/big-book-view/big-book-view.component';
 import { SellBookComponent } from './Shopping/sell-book/sell-book.component';
 import { CartComponent } from './Shopping/cart/cart.component';
+import { PaypalComponent } from './Shopping/paypal/paypal.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -53,7 +55,8 @@ const routes: Routes = [
     BigBookViewComponent,
     SellBookComponent,
     FileSelectDirective,
-    CartComponent
+    CartComponent,
+    PaypalComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,8 @@ const routes: Routes = [
     NgbModule.forRoot(),
     AngularFontAwesomeModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    NgxPayPalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
