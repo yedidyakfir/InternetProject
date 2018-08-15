@@ -91,22 +91,14 @@ module.exports = db => {
         });
     };
 
-    userSchema.statics.GetCart = async function(userId,cb)
+    userSchema.statics.RemoveFromCart = async function(id,email,cb)
     {
-        console.log("get cart" + userId);
-        this.find({_id:userId}, function (err,doc) {
-            cb(err,doc);
-        }).select('cartItems');
+        this.updateOne({email:email}, {$poll: {cartItems: id}}.cb);
     };
 
-    userSchema.statics.RemoveFromCart = async function(ISBN,name,email)
+    userSchema.statics.RemoveAllCart = async function(email,cb)
     {
-        this.updateOne({email:email}, {$poll: {cartItems: {name: name, ISBN: ISBN}}});
-    };
-
-    userSchema.statics.RemoveAllCart = async function(email)
-    {
-        this.updateOne({email:email}, {$pullAll: {cartItems: {}}});
+        this.updateOne({email:email}, {$pullAll: {cartItems: {}}},cb);
     };
 
     db.model('Users', userSchema);

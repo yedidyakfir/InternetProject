@@ -9,7 +9,7 @@ import {Book} from "../../../model/book";
 })
 export class CartComponent implements OnInit {
   public books: Book[];
-  constructor(private shopping:ShoppingService) { }
+  constructor(public shopping:ShoppingService) { }
 
   ngOnInit() {
     this.shopping.getList().subscribe(res =>{

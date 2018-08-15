@@ -16,7 +16,10 @@ export class CatalogComponent implements OnInit {
 
   ngOnInit() {
     this.bookService.getBookList()
-      .subscribe(bookRes => this.books = bookRes);
+      .subscribe(bookRes => {
+        this.books = bookRes;
+        console.log(bookRes);
+      });
   }
 
   public addBook(book:Book) {

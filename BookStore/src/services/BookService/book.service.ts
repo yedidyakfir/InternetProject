@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Observable, Subject} from "rxjs/index";
+import {BehaviorSubject, Observable, Subject} from "rxjs/index";
 import {Book} from "../../model/book";
 import {HttpClient} from "@angular/common/http";
 
@@ -7,12 +7,12 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class BookService {
-  private books: Subject<Book[]>;
+  private books: BehaviorSubject<Book[]>;
   private chosenBook: Subject<Book>;
   bookUrl = 'http://localhost:3000/books';
   constructor(private http: HttpClient) {
     this.chosenBook = new Subject<Book>();
-    this.books = new Subject<Book[]>();
+    this.books = new BehaviorSubject<Book[]>([]);
   }
 
   getBookList(skip:number = 0,limit:number = 0): Subject<Book[]> {
@@ -22,6 +22,9 @@ export class BookService {
   }
 
   addBookToList(book:Book) {
+    let newBooks = this.books.getValue();
+    newBooks.push(book);
+    this.books.next(newBooks);
   }
 
   chooseBook(book:Book) {

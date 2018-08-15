@@ -48,11 +48,9 @@ module.exports = db => {
         return u;
     };
 
-    // bookSchema.statics.CREATE = async function(bookToAdd)
-    // {
-    //     let realBookToaAdd = bookToAdd;
-    //     this.create(bookToAdd);
-    // };
+    bookSchema.statics.GetByIDs = async function(ids,cb) {
+        this.find({_id: {$in: ids}},cb);
+    };
 
     bookSchema.statics.CREATE = async function(seller,name,author,ISBN,seriesName,publishDate,
                                                summary,price,photoName)
@@ -71,29 +69,6 @@ module.exports = db => {
         };
         this.create(bookToaAdd);
     };
-
-    // bookSchema.statics.CREATE = async function(name,author, seriesName,publishDate,ISBN,summary,seller)
-    // {
-    //     let bookToaAdd = new book
-    //     {
-    //         this.name = name,
-    //         this.author = author,
-    //         this.seriesName = seriesName,
-    //         this.publishDate = publishDate,
-    //         this.ISBN = ISBN,
-    //         this.summary = summary,
-    //         this.seller = seller,
-    //         this.sellDate = new Date(),//just fo now we should put it null? or min value on date
-    //         this.created_at = new Date(),
-    //         this.updated_at = new Date
-    //     };
-    //     db.model.save(function (err) {
-    //         if (err) {
-    //             throw err;
-    //         }
-    //         console.log("book sucessfuly created")
-    //     })
-    // };
 
 
     db.model('Books',bookSchema);
