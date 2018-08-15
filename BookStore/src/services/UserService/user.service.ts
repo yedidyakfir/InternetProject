@@ -25,6 +25,7 @@ export class UserService {
   updateUser(email:string,newEmail:string,newPassword:string):Observable<boolean> {
     return this.http.post<boolean>(this.userUrl + '/update',{email:email, newUser:{email:newEmail,password:newPassword}});
   }
+
   register(email:string, password:string)
   {
     return this.http.post<boolean>(this.userUrl + '/register',{email:email,password:password});
