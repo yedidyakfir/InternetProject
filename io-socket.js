@@ -28,11 +28,16 @@ module.exports = (server) => {
     io.on('connection', function (socket) {
         console.log("made a connection");
         console.log(socket.request.user);
+
+        socket.on('join', function (data) {
+           socket.join(data);
+        });
+
         socket.on('post',function (data) {
             console.log(socket.request.user);
-            console.log(data);
-            io.sockets.emit('post',{msg:data,user:'yedidyakfir@gmail.com'});
-        })
+            Blogs.ADDPOST(data.msg,socket.request.user.email,data.room);
+            io.to(data.room).emit('post',{msg:data.msg,user:socket.request.user.email});
+        });
     });
 
     server.listen(3000, function () {

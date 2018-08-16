@@ -16,7 +16,10 @@ export class BlogDiscussionComponent implements OnInit {
   ngOnInit() {
     this.blog = new Blog();
     this.blogService.getChosenBlog()
-      .subscribe(nextBlog => this.blog = nextBlog);
+      .subscribe(nextBlog => {
+        this.blog = nextBlog;
+        this.blogService.joinRoom(this.blog);//join room as soon as we get the right blog
+      });
     this.blogService.getMessages()
       .subscribe(msg => this.blog.posts.push(msg));
   }

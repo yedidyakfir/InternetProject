@@ -14,6 +14,10 @@ export class BlogService {
 
   constructor(private http: HttpClient) {this.chosenBlog = new Subject<Blog>(); this.getList();}
 
+  joinRoom(blog:Blog) {
+    this.socket.emit('join', blog.name);
+  }
+
   getList() {
     this.http.get<Blog[]>(this.blogUrl + '/list')
       .subscribe(res=> {
@@ -22,13 +26,13 @@ export class BlogService {
       });
   }
 
-  sendPost(msg:string) {
+  sendPost(msg:string,room:string) {
     console.log(msg);
-    this.socket.emit("post",msg);
+    this.socket.emit("post",{msg:msg,room:room});
   }
 
-  getMessages(): Observable<{msg:string,user,string}> {
-    return new Observable<{msg:string,user,string}>(observer =>{
+  getMessages(): Observable<{msg:string,user:string}> {
+    return new Observable<{msg:string,user:string}>(observer =>{
       this.socket.on('post', (data) => {
         observer.next(data);
       });

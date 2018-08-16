@@ -41,5 +41,20 @@ module.exports = db => {
         return u;
     };
 
+    blogSchema.statics.ADDPOST = async function(msg,user,blogname,cb) {
+        this.updateOne({name:blogname}, {$push: {posts: {msg:msg,user:user}}},function (err,doc) {
+            console.log(err);
+            console.log(doc);
+        });
+    };
+
+    blogSchema.statics.LIKEBLOG = async function(user,blogname,cb) {
+        this.updateOne({name:blogname}, {$push: {likes: user}},cb);
+    };
+
+    blogSchema.statics.ADDUSER = async function(user,blogname,cb) {
+        this.updateOne({name:blogname}, {$push: {users: user}},cb);
+    };
+
     db.model('Blogs', blogSchema);
 };

@@ -35,7 +35,7 @@
                 <textarea placeholder="Message" required="" name="postInput"
                           style="color: #833ab4"[(ngModel)]="msg"></textarea>
                 <input type="submit" value="Send"
-                       (click)="blogService.sendPost(msg)">
+                       (click)="blogService.sendPost(msg,blog.name)">
               </form>
             </div>
           </div>
