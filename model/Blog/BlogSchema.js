@@ -11,7 +11,7 @@ module.exports = db => {
         photo: String,
         users: [String],
         posts: [{msg: String, user: String}],
-        likes: {type: [String], unique: true},
+        likes: [String],
         created_at: Date,
         updated_at: Date
     });
@@ -42,18 +42,22 @@ module.exports = db => {
     };
 
     blogSchema.statics.ADDPOST = async function(msg,user,blogname,cb) {
-        this.updateOne({name:blogname}, {$push: {posts: {msg:msg,user:user}}},function (err,doc) {
+        this.updateOne({name:blogname}, {$push: {posts: {msg:msg,user:user}}},function () {});
+    };
+
+    blogSchema.statics.LIKEBLOG = async function(user,blogname,cb) {
+        this.updateOne({name:blogname}, {$push: {likes: user}},function (err,doc) {
             console.log(err);
             console.log(doc);
         });
     };
 
-    blogSchema.statics.LIKEBLOG = async function(user,blogname,cb) {
-        this.updateOne({name:blogname}, {$push: {likes: user}},cb);
+    blogSchema.statics.UNLIKEBLOG = async function(user,blogname,cb) {
+        this.updateOne({name:blogname}, {$pull: {likes: user}},function () {});
     };
 
     blogSchema.statics.ADDUSER = async function(user,blogname,cb) {
-        this.updateOne({name:blogname}, {$push: {users: user}},cb);
+        this.updateOne({name:blogname}, {$push: {users: user}},function () {});
     };
 
     db.model('Blogs', blogSchema);

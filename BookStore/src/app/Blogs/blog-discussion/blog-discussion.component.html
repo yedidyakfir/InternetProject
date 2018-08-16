@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="row">
-            <button class="button button-like pull-right">
+            <button class="button button-like pull-right" [class.liked]="like" (click)="likeToggle()">
               <i class="fa fa-heart"></i>
               <span>Like {{blog.likes.length}}</span>
             </button>

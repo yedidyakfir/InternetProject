@@ -39,6 +39,35 @@ export class BlogService {
     });
   }
 
+  doILike(blog:Blog) :Observable<boolean> {
+    return this.http.post<boolean>(this.blogUrl + '/doILike',{});
+  }
+
+  likePost(blog:Blog) {
+    console.log('like');
+    this.socket.emit('like',{room:blog.name});
+  }
+
+  unlikePost(blog:Blog) {
+    this.socket.emit('unlike',{room:blog.name});
+  }
+
+  getPostLikes() :Observable<string> {
+    return new Observable<string>(observer =>{
+      this.socket.on('like', (data) => {
+        observer.next(data);
+      });
+    });
+  }
+
+  getPostUnlike() :Observable<string> {
+    return new Observable<string>(observer =>{
+      this.socket.on('unlike', (data) => {
+        observer.next(data);
+      });
+    });
+  }
+
   chooseBlog(blog:Blog) {
     this.chosenBlog.next(blog);
   }

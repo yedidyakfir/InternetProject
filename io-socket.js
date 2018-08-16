@@ -38,6 +38,16 @@ module.exports = (server) => {
             Blogs.ADDPOST(data.msg,socket.request.user.email,data.room);
             io.to(data.room).emit('post',{msg:data.msg,user:socket.request.user.email});
         });
+
+        socket.on('like', function (data) {
+           Blogs.LIKEBLOG(socket.request.user.email,data.room);
+           io.to(data.room).emit('like');
+        });
+
+        socket.on('unlike' , function (data) {
+            Blogs.UNLIKEBLOG(socket.request.user.email,data.room);
+            io.to(data.room).emit('unlike');
+        });
     });
 
     server.listen(3000, function () {
