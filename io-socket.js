@@ -1,9 +1,3 @@
-// const cookieSession = require("cookie-session");
-// let sessionMiddleware = cookieSession({
-//     name: 'BookShop',
-//     keys: ["secret"],
-//     maxAge: 24 * 60 * 60 * 1000
-// });
 const session = require('express-session');
 const MongoDB = require('connect-mongo')(session);
 passportSocketIo = require("passport.socketio");
