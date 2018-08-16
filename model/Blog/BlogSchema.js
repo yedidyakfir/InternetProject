@@ -4,18 +4,20 @@ var Schema = mongoose.Schema;
 
 module.exports = db => {
     // create a schema
-    var groupSchema = new Schema({
+    var blogSchema = new Schema({
         name: { type: String, required: true, unique: true },
+        description: String,
         creator:String,
         photo: String,
         users: [String],
         messages: [String],
+        likes: [String],
         created_at: Date,
         updated_at: Date
     });
 
 
-    groupSchema.pre('save', function(next) {
+    blogSchema.pre('save', function(next) {
         // get the current date
         var currentDate = new Date();
 
@@ -29,15 +31,15 @@ module.exports = db => {
         next();
     });
 
-    groupSchema.statics.CREATE = async function(name){
+    blogSchema.statics.CREATE = async function(name){
 
     };
 
-    groupSchema.statics.REQUEST = async function(cb) {
+    blogSchema.statics.REQUEST = async function(cb) {
         debug("get all groups");
         let u = await this.find({});
         return u;
     };
 
-    db.model('Groups', groupSchema);
+    db.model('Groups', blogSchema);
 };
