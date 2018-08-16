@@ -28,19 +28,20 @@
           <div class="container">
             <h2>Register Here</h2>
             <div class="login-form-grids">
-              <h6>Login information</h6>
+              <h5>Login information</h5>
                 <form class="form" role="form" method="post" action="register" accept-charset="UTF-8" id="login-nav">
                 <input type="email" placeholder="Email Address" required="required"
-                       name="Email" [(ngModel)]="email" >
+                       name="Email" [(ngModel)]="user.email" >
                 <input type="password" placeholder="Password" required="required"
-                       name="Password" [(ngModel)]="password" >
+                       name="Password" [(ngModel)]="user.password" >
                 <input type="password" placeholder="Password Confirmation" required="required"
                        name="RePassword" [(ngModel)]="rePassword" >
+                  <div *ngIf="user.password !=rePassword">Password and confirm password not the same</div>
                 <input type="submit" value="Register" (click)="register()">
               </form>
             </div>
             <div class="register-home">
-              <a href="index.html">Home</a>
+              <a [routerLink]="['/Home']"><b>Home</b></a>
             </div>
           </div>
         </div>
