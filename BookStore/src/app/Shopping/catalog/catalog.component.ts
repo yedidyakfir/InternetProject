@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Book} from "../../../model/book";
 import {BookService} from "../../../services/BookService/book.service";
 
@@ -8,6 +8,9 @@ import {BookService} from "../../../services/BookService/book.service";
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent implements OnInit {
+  @Input()
+  public canMove: boolean = true; //indicate weather or not the user can switch pages to view more book
+
   private booksInPage: number = 9;
   private pageNumber:number = 0;
 

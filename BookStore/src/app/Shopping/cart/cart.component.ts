@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ShoppingService} from "../../../services/ShoppingService/shopping.service";
 import {Book} from "../../../model/book";
+import {BehaviorSubject, Subject} from "rxjs/index";
 
 @Component({
   selector: 'app-cart',
@@ -9,12 +10,19 @@ import {Book} from "../../../model/book";
 })
 export class CartComponent implements OnInit {
   public books: Book[];
-  constructor(public shopping:ShoppingService) { }
+  public totalPrice:BehaviorSubject<number>;
+  constructor(public shopping:ShoppingService) { this.totalPrice = new BehaviorSubject<number>(1); }
 
   ngOnInit() {
     this.shopping.getList().subscribe(res =>{
       this.books = res;
       console.log(res);
+      if(res.length > 0)
+      {
+        this.totalPrice.next(this.books.map(book => book.price as number)
+          .reduce((a,b) => a + b).valueOf());
+        console.log(this.totalPrice.getValue());
+      }
     });
   }
 

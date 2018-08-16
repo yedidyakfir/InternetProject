@@ -47,11 +47,13 @@
         <!--</ul>-->
       <!--</div>-->
       <div class="checkout-right-basket">
-        <a href="single.html">
-          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Pay
-        </a>
+        <!--<a href="single.html">-->
+          <!--<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Pay-->
+        <!--</a>-->
+        <app-paypal [price]="totalPrice"></app-paypal>
       </div>
       <div class="clearfix"> </div>
     </div>
   </div>
 </div>
+

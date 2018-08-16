@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Book} from "../../model/book";
-import {BehaviorSubject, Observable} from "rxjs/index";
+import {BehaviorSubject, Observable, Subject} from "rxjs/index";
 
 @Injectable({
   providedIn: 'root'
@@ -39,9 +39,13 @@ export class ShoppingService {
       });
   }
 
-  getList(): BehaviorSubject<Book[]> {
+  getList(): Subject<Book[]> {
     this.http.get<Book[]>(this.shoppingUrl +'/list')
-      .subscribe(res => this.bookList.next(res));
+      .subscribe(res => {
+        this.bookList.next(res);
+        console.log(res);
+        console.log(this.bookList);
+      });
     return this.bookList;
   }
 }

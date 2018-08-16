@@ -10,6 +10,7 @@ import { AngularFontAwesomeModule } from "angular-font-awesome";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material";
 import { FileSelectDirective } from "ng2-file-upload";
+import {NgxPayPalModule} from "ngx-paypal";
 
 //component
 import { AppComponent } from './app.component';
@@ -17,9 +18,6 @@ import { UserViewComponent } from './Users/user-view/user-view.component';
 import { UserListComponent } from './Users/user-list/user-list.component';
 import { NavbarComponent } from './NavBar/navbar/navbar.component';
 import { LoginNavbarComponent } from './NavBar/login-navbar/login-navbar.component';
-
-//services
-import {AdminGuardService} from "../services/AdminGuardService/admin-guard.service";
 import { RegisterComponent } from './NavBar/register/register.component';
 import { FooterComponent } from './Main-Page/footer/footer.component';
 import { MainComponent } from './Main-Page/main/main.component';
@@ -28,14 +26,23 @@ import { SmallBookViewComponent } from './Shopping/small-book-view/small-book-vi
 import { BigBookViewComponent } from './Shopping/big-book-view/big-book-view.component';
 import { SellBookComponent } from './Shopping/sell-book/sell-book.component';
 import { CartComponent } from './Shopping/cart/cart.component';
+import { PaypalComponent } from './Shopping/paypal/paypal.component';
+import { BlogListComponent } from './Blogs/blog-list/blog-list.component';
+import { BlogDiscussionComponent } from './Blogs/blog-discussion/blog-discussion.component';
+import { BlogViewComponent } from './Blogs/blog-view/blog-view.component';
+
+//services
+import {AdminGuardService} from "../services/AdminGuardService/admin-guard.service";
+import { BlogPostComponent } from './Blogs/blog-post/blog-post.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
-  // {path:'Home', component:MainComponent},
+  {path:'Home', component:MainComponent},
   {path:'Shopping', component: CatalogComponent},
   {path:'Users', component: UserListComponent, canActivate: [AdminGuardService]},
   {path: 'Register', component: RegisterComponent},
-  // {path:'Groups', component:GroupDiscussionComponent}
+  {path: 'Cart', component: CartComponent},
+  {path:'Groups', component: BlogDiscussionComponent}
 ];
 
 @NgModule({
@@ -53,7 +60,12 @@ const routes: Routes = [
     BigBookViewComponent,
     SellBookComponent,
     FileSelectDirective,
-    CartComponent
+    CartComponent,
+    PaypalComponent,
+    BlogListComponent,
+    BlogDiscussionComponent,
+    BlogViewComponent,
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +75,8 @@ const routes: Routes = [
     NgbModule.forRoot(),
     AngularFontAwesomeModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    NgxPayPalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

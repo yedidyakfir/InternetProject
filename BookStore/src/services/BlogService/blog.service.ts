@@ -5,12 +5,13 @@ import {Observable} from "rxjs/index";
 @Injectable({
   providedIn: 'root'
 })
-export class GroupService {
+export class BlogService {
   private socket = io('http://localhost:3000');
 
   constructor() {console.log("strat socket")}
 
   sendPost(msg:string) {
+    console.log(msg);
     this.socket.emit("post",msg);
   }
 

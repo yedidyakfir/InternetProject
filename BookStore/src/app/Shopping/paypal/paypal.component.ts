@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { PayPalConfig, PayPalEnvironment, PayPalIntegrationType } from 'ngx-paypal';
 
 @Component({
@@ -6,8 +6,9 @@ import { PayPalConfig, PayPalEnvironment, PayPalIntegrationType } from 'ngx-payp
   templateUrl: './paypal.component.html',
   styleUrls: ['./paypal.component.css']
 })
-export class Paypal implements OnInit {
-
+export class PaypalComponent implements OnInit {
+  @Input()
+  private price: number;
   public payPalConfig?: PayPalConfig;
 
   ngOnInit(): void {
@@ -18,7 +19,7 @@ export class Paypal implements OnInit {
     this.payPalConfig = new PayPalConfig(PayPalIntegrationType.ClientSideREST, PayPalEnvironment.Sandbox, {
       commit: true,
       client: {
-		  sandbox: 'AavkgQ4UPe7gPbjZK2Rb7FVnh79dnGHSD0dnMG70-jSNl_XJE8CNDDj8AgmtMLvx3YZ-A8jHTT-AhIfn'
+        sandbox: 'AavkgQ4UPe7gPbjZK2Rb7FVnh79dnGHSD0dnMG70-jSNl_XJE8CNDDj8AgmtMLvx3YZ-A8jHTT-AhIfn'
         //sandbox: 'yourSandboxKey'
       },
       button: {
@@ -29,14 +30,17 @@ export class Paypal implements OnInit {
       },
       onCancel: (data, actions) => {
         console.log('OnCancel');
+        console.log(data);
+        console.log(actions);
       },
       onError: (err) => {
         console.log('OnError');
+        console.log(err);
       },
       transactions: [{
         amount: {
           currency: 'USD',
-          total: 9
+          total: this.price
         }
       }]
     });
