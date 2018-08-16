@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/css/BlogStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/fonts/Raleway-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/111.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/search-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/si.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/social network132.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookStore/src/assets/images/icons/social.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Blog/BlogSchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookStore/src/model/blog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blogs/images/hp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/blogs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/GroupService/group.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/GroupService/group.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Group/GroupSchema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/books/Kings Way9999999.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/assets/images/books/last empire1988948.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/model/group.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io-socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/io-socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Blog/BlogSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Blog/BlogSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,13 +34,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blog-discussion.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog-discussion.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="341">
+              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
               <folding>
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" />
               </folding>
@@ -48,20 +51,11 @@
       <file leaf-file-name="blog-discussion.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="377">
+              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#55#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog-post.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -69,8 +63,8 @@
       <file leaf-file-name="blog.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="502">
+              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -78,23 +72,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogSchema.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Blog/BlogSchema.js">
+      <file leaf-file-name="blog.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/model/blog.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="175">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io-socket.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blogs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/blogs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogSchema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Blog/BlogSchema.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="io-socket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/io-socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="484">
+              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -112,8 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>agile_top_brands_grids</find>
-      <find>clearfix</find>
       <find>: Date</find>
       <find>example</find>
       <find>signupbox</find>
@@ -135,13 +154,15 @@
       <find>technology</find>
       <find>images/si.png</find>
       <find>technology-1</find>
-      <find>media</find>
       <find>Rackham</find>
       <find>business</find>
       <find>busi</find>
       <find>textarea</find>
+      <find>media</find>
       <find>groupSchema</find>
+      <find>session</find>
       <find>busines</find>
+      <find>cookieParser</find>
     </findStrings>
     <replaceStrings>
       <replace>assets/fonts/Poppins</replace>
@@ -162,8 +183,8 @@
       <replace>book</replace>
       <replace>&quot;../images/icons/social.png&quot;</replace>
       <replace>&quot;../images/icons/111.png&quot;</replace>
-      <replace>blogSchema</replace>
       <replace>../../../assets/images/icons/si.png</replace>
+      <replace>blogSchema</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -177,11 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BookStore/src/app/NavBar/login-navbar/login-navbar.component.css" />
-        <option value="$PROJECT_DIR$/routes/Data/users.js" />
-        <option value="$PROJECT_DIR$/passportAuth.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/NavBar/login-navbar/login-navbar.component.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Main-Page/footer/footer.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/catalog/catalog.component.css" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.css" />
         <option value="$PROJECT_DIR$/BookStore/src/model/temp.ts" />
@@ -190,7 +206,6 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/sell-book/sell-book.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/NavBar/navbar/navbar.component.html" />
         <option value="$PROJECT_DIR$/routes/Data/books.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/small-book-view/small-book-view.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/small-book-view/small-book-view.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.ts" />
@@ -213,7 +228,6 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/catalog/catalog.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/catalog/catalog.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Main-Page/main/main.component.html" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css" />
         <option value="$PROJECT_DIR$/BookStore/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/../blogsDemo/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/css/bootstrap.css" />
@@ -222,12 +236,19 @@
         <option value="$PROJECT_DIR$/BookStore/src/styles.css" />
         <option value="$PROJECT_DIR$/BookStore/src/assets/css/BlogStyle.css" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.css" />
-        <option value="$PROJECT_DIR$/model/Blog/BlogSchema.js" />
-        <option value="$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css" />
+        <option value="$PROJECT_DIR$/model/index.js" />
+        <option value="$PROJECT_DIR$/routes/blogs.js" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts" />
+        <option value="$PROJECT_DIR$/model/Blog/BlogSchema.js" />
+        <option value="$PROJECT_DIR$/BookStore/src/model/blog.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html" />
+        <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/io-socket.js" />
       </list>
     </option>
   </component>
@@ -270,37 +291,7 @@
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-post" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -311,7 +302,7 @@
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -324,7 +315,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../inse-lab9-socketio-master/chat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../inse-lab9-socketio-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -345,11 +336,11 @@
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\public\books\images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\public\blogs\images" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets\images" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets\fonts" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets\images\icons" />
       <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\BookStore\src\assets\css" />
-      <recent name="C:\Users\yedid\Downloads\Internet\InternetProject\public\books\images" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -526,14 +517,7 @@
       <workItem from="1534234092717" duration="6084000" />
       <workItem from="1534242362514" duration="2680000" />
       <workItem from="1534245777916" duration="26523000" />
-      <workItem from="1534283458647" duration="65119000" />
-    </task>
-    <task id="LOCAL-00011" summary="created small-book and started working on it">
-      <created>1531827451774</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1531827451775</updated>
+      <workItem from="1534283458647" duration="79492000" />
     </task>
     <task id="LOCAL-00012" summary="added catalog&#10;still has a problem because the nav is fixed">
       <created>1531854439123</created>
@@ -871,24 +855,31 @@
       <option name="project" value="LOCAL" />
       <updated>1534373449660</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="added template for a single blog ,in addition some parpameters for blogs mongodb , still need more parameter for posts">
+      <created>1534421745916</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1534421745916</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372785000" />
+    <option name="totallyTimeSpent" value="387158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.27799478" side_tool="true" weight="0.24" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.27864584" side_tool="true" weight="0.282678" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49739584" weight="0.32731137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7220052" visible="true" weight="0.282678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7213542" visible="true" weight="0.282678" />
       <window_info id="npm" order="2" sideWeight="0.501355" side_tool="true" weight="0.16302083" />
       <window_info anchor="right" id="Terminal" order="3" sideWeight="0.49375" visible="true" weight="0.2109375" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.171875" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.171875" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4984375" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -910,7 +901,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added google authentication" />
     <MESSAGE value="updated the user service" />
     <MESSAGE value="added socket io and design ui for it" />
     <MESSAGE value="created gurad for user" />
@@ -935,7 +925,8 @@
     <MESSAGE value="switch or's code to component for paypal" />
     <MESSAGE value="added router" />
     <MESSAGE value="fixed routes (added cart etc)&#10;change catalog,now can be viewed without page switching" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed routes (added cart etc)&#10;change catalog,now can be viewed without page switching" />
+    <MESSAGE value="added template for a single blog ,in addition some parpameters for blogs mongodb , still need more parameter for posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="added template for a single blog ,in addition some parpameters for blogs mongodb , still need more parameter for posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -951,75 +942,17 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/io-socket.js</url>
+          <line>35</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="74" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/sell-book/sell-book.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="65" column="64" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#button#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#8;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/books/images/0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/books.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Book/BookSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/NavBar/register/register.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/images/background/main-image.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/paypal/paypal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/paypal/paypal.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1057,37 +990,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1190,22 +1096,8 @@
     <entry file="file://$PROJECT_DIR$/BookStore/src/assets/images/icons/22.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/spa.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" lean-forward="true" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1247,13 +1139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1271,13 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/css/BlogStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="716" column="1" selection-start-line="716" selection-start-column="1" selection-end-line="716" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/Group/GroupSchema.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1292,65 +1170,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Blog/BlogSchema.js">
+    <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="300">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io-socket.js">
+    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/css/BlogStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="773" column="8" selection-start-line="773" selection-start-column="3" selection-end-line="773" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts">
+    <entry file="file://$PROJECT_DIR$/BookStore/src/model/group.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state>
+          <caret selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1850">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.ts">
+    <entry file="file://$PROJECT_DIR$/model/Book/BookSchema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="-825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts">
+    <entry file="file://$PROJECT_DIR$/public/blogs/images/hp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="502">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="175">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="341">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/model/blog.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/blogs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passportAuth.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/User/UserSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Blog/BlogSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io-socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

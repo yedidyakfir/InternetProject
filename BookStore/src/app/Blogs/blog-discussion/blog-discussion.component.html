@@ -7,31 +7,23 @@
       <div class="col-md-9 technology-left">
         <div class="business">
           <div class=" blog-grid2">
-            <img src="../../../assets/images/1.jpg" class="img-responsive" alt="">
+            <img src="/public/blogs/images/{{blog.photo}}" style="width: 100%;" class="img-responsive" alt="">
             <div class="blog-text">
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, con sectetuer adipiscing elit. Mauris fermentum dictum magna. </p>
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+              <h5>{{blog.name}}</h5>
+              <p>{{blog.description}}</p>
+              <p>BY: {{blog.creator}}</p>
             </div>
+          </div>
+          <div class="row">
+            <button class="button button-like pull-right">
+              <i class="fa fa-heart"></i>
+              <span>Like {{blog.likes.length}}</span>
+            </button>
           </div>
           <div class="comment-top">
             <h2>Comment</h2>
             <div class="media-body">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img src="../../../assets/images/icons/si.png" alt="">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Joseph Goh</h4>
-                  <p>asdfasdfasdfasdfasdf</p>
-                </div>
-              </div>
-              <ng-container *ngFor="let post of posts">
-                <app-blog-post [postMsg]="post"></app-blog-post>
-                <div class="clearfix"></div>
-              </ng-container>
+              <app-blog-post *ngFor="let post of blog.posts" [post]="post"></app-blog-post>
             </div>
           </div>
 

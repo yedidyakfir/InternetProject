@@ -14,7 +14,7 @@ let db = mongodb.createConnection();
 })();
 
 debug('Pending DB connection');
-require("./Group/GroupSchema")(db);
+require("./Blog/BlogSchema")(db);
 require("./User/UserSchema")(db);
 require("./Book/BookSchema")(db);
 module.exports = model => db.model(model);

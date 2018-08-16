@@ -10,8 +10,8 @@ module.exports = db => {
         creator:String,
         photo: String,
         users: [String],
-        messages: [String],
-        likes: [String],
+        posts: [{msg: String, user: String}],
+        likes: {type: [String], unique: true},
         created_at: Date,
         updated_at: Date
     });
@@ -36,10 +36,10 @@ module.exports = db => {
     };
 
     blogSchema.statics.REQUEST = async function(cb) {
-        debug("get all groups");
+        debug("get all blogs");
         let u = await this.find({});
         return u;
     };
 
-    db.model('Groups', blogSchema);
+    db.model('Blogs', blogSchema);
 };
