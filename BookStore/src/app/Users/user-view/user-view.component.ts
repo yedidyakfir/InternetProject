@@ -3,13 +3,14 @@ import {User} from "../../../model/user";
 import {UserService} from "../../../services/UserService/user.service";
 
 @Component({
-  selector: 'app-user-view',
+  selector: '[app-user-view]',
   templateUrl: './user-view.component.html',
   styleUrls: ['./user-view.component.css']
 })
 export class UserViewComponent implements OnInit {
-  @Input()
-  public user:User;
+
+  @Input() public user:User;
+
   public oldUserEmail :string;
   constructor(private userService: UserService) {
   }
