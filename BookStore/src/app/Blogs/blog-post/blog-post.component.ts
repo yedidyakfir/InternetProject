@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class BlogPostComponent implements OnInit {
   @Input()
-  public postMsg: string;
+  public post: {msg:string, user:string};
 
   constructor() { }
 

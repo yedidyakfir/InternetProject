@@ -4,24 +4,33 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var cookieSession = require("cookie-session");
+
+const session = require('express-session');
+const MongoDB = require('connect-mongo')(session);
+//var cookieSession = require("cookie-session");
 const passport = require('passport');
 
 const shopRouter = require('./routes/shopping');
 var usersRouter = require('./routes/users');
 var booksRouter = require('./routes/books');
 const spaRouter = require('./routes/spa');
+const blogsRouter = require('./routes/blogs');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(cookieSession({
-    name: 'BookShop',
-    keys: ["secret"],
-    maxAge: 24 * 60 * 60 * 1000
+app.use(session({
+   secret: 'IHopeThisWorks',
+   resave: true,
+   store: new MongoDB({ url: 'mongodb://localhost/BookShop'})
 }));
+// app.use(cookieSession({
+//     name: 'BookShop',
+//     keys: ["secret"],
+//     maxAge: 24 * 60 * 60 * 1000
+// }));
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -39,7 +48,8 @@ require('./passportAuth')(passport);
 
 app.use('/users', usersRouter);
 app.use('/books', booksRouter);
-app.use('/shop',shopRouter);
+app.use('/shop', shopRouter);
+app.use('/blog', blogsRouter);
 
 app.use('/public',express.static(path.join(__dirname, 'public')));
 global.appRoot = __dirname;

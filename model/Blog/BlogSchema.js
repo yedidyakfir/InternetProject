@@ -10,7 +10,7 @@ module.exports = db => {
         creator:String,
         photo: String,
         users: [String],
-        messages: [String],
+        posts: [{msg: String, user: String}],
         likes: [String],
         created_at: Date,
         updated_at: Date
@@ -36,10 +36,29 @@ module.exports = db => {
     };
 
     blogSchema.statics.REQUEST = async function(cb) {
-        debug("get all groups");
+        debug("get all blogs");
         let u = await this.find({});
         return u;
     };
 
-    db.model('Groups', blogSchema);
+    blogSchema.statics.ADDPOST = async function(msg,user,blogname,cb) {
+        this.updateOne({name:blogname}, {$push: {posts: {msg:msg,user:user}}},function () {});
+    };
+
+    blogSchema.statics.LIKEBLOG = async function(user,blogname,cb) {
+        this.updateOne({name:blogname}, {$push: {likes: user}},function (err,doc) {
+            console.log(err);
+            console.log(doc);
+        });
+    };
+
+    blogSchema.statics.UNLIKEBLOG = async function(user,blogname,cb) {
+        this.updateOne({name:blogname}, {$pull: {likes: user}},function () {});
+    };
+
+    blogSchema.statics.ADDUSER = async function(user,blogname,cb) {
+        this.updateOne({name:blogname}, {$push: {users: user}},function () {});
+    };
+
+    db.model('Blogs', blogSchema);
 };

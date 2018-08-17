@@ -13,7 +13,7 @@ module.exports = db => {
         resetPasswordToken: String,
         resetPasswordExpires: Date,
 
-        cartItems: {type:[String], unique: true},
+        cartItems:{type:[String], unique: true},
 
         created_at: Date,
         updated_at: Date,
@@ -85,6 +85,19 @@ module.exports = db => {
 
 	userSchema.statics.AddToCart = async function(bookId,userId,cb)
     {
+        // let cart = await this.findOne({_id:userId}).select('cartItems');
+        // if(cart.contains(id)){
+        //     cb("this ptoduct is already in the cart",null);
+        //     return;
+        // }
+        // if(cart.indexOf(id) > -1) {
+        //     cb("this ptoduct is already in the cart",null);
+        //     return;
+        // }
+        console.log("add to cart" + id + " " + userId);
+        this.updateOne({_id:userId}, {$push: {cartItems: id}},function (err,doc) {
+            cb(err);
+        });
         console.log("add to cart " + bookId + " " + userId);
         let isAllreadyIn = await this.findOne( { _id:userId, cartItems: { $in : [bookId]} }).count();
         if (isAllreadyIn == 0)
@@ -100,14 +113,14 @@ module.exports = db => {
         }
     };
 
-    userSchema.statics.RemoveFromCart = async function(id,email,cb)
+    userSchema.statics.RemoveFromCart = async function(id,userId,cb)
     {
-        this.updateOne({email:email}, {$pull: {cartItems: id}},cb);
+        this.updateOne({_id:userId}, {$pull: {cartItems: id}},cb);
     };
 
-    userSchema.statics.RemoveAllCart = async function(email,cb)
+    userSchema.statics.RemoveAllCart = async function(userId,cb)
     {
-        this.updateOne({email:email}, {$pullAll: {cartItems: {}}},cb);
+        this.updateOne({_id:userId}, {$pullAll: {cartItems: {}}},cb);
     };
 
     db.model('Users', userSchema);
