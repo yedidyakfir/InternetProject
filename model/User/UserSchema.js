@@ -85,19 +85,8 @@ module.exports = db => {
 
 	userSchema.statics.AddToCart = async function(bookId,userId,cb)
     {
-        // let cart = await this.findOne({_id:userId}).select('cartItems');
-        // if(cart.contains(id)){
-        //     cb("this ptoduct is already in the cart",null);
-        //     return;
-        // }
-        // if(cart.indexOf(id) > -1) {
-        //     cb("this ptoduct is already in the cart",null);
-        //     return;
-        // }
-        console.log("add to cart" + id + " " + userId);
-        this.updateOne({_id:userId}, {$push: {cartItems: id}},function (err,doc) {
-            cb(err);
-        });
+        // console.log("add to cart" + bookId + " " + userId);
+        // this.updateOne({_id:userId}, {$push: {cartItems: bookId}},cb);
         console.log("add to cart " + bookId + " " + userId);
         let isAllreadyIn = await this.findOne( { _id:userId, cartItems: { $in : [bookId]} }).count();
         if (isAllreadyIn == 0)
@@ -108,8 +97,7 @@ module.exports = db => {
         }
         else
         {
-            console.log("add to cart fail because the item allredy exsist");
-            return false;
+            cb("cant add , the item already in the cart",null);
         }
     };
 

@@ -46,18 +46,32 @@ module.exports = db => {
     };
 
     blogSchema.statics.LIKEBLOG = async function(user,blogname,cb) {
-        this.updateOne({name:blogname}, {$push: {likes: user}},function (err,doc) {
-            console.log(err);
-            console.log(doc);
-        });
+        //is this user already liked this post
+        let isUserLiked = await this.findOne( { name:blogname, likes: { $in : [user]} }).count();
+        if(isUserLiked == 0) { //if not he can like it
+            this.updateOne({name:blogname}, {$push: {likes: user}},function (err,doc) {
+                console.log(err);
+                console.log(doc);
+            });
+        }
     };
 
     blogSchema.statics.UNLIKEBLOG = async function(user,blogname,cb) {
         this.updateOne({name:blogname}, {$pull: {likes: user}},function () {});
     };
 
+    blogSchema.statics.DoILikeBlog = async function(user,blogname,cb) {
+        let isUserLiked = await this.findOne( { name:blogname, likes: { $in : [user]} }).count();
+        return isUserLiked != 0;
+    };
+
     blogSchema.statics.ADDUSER = async function(user,blogname,cb) {
         this.updateOne({name:blogname}, {$push: {users: user}},function () {});
+    };
+
+    blogSchema.statics.IsUserInBlog = async function(user,blogname,cb) {
+        let isUser = await this.findOne( { name:blogname, users: { $in : [user]} }).count();
+        return isUser != 0;
     };
 
     db.model('Blogs', blogSchema);

@@ -5,7 +5,6 @@ let Blogs = require('./model/index')('Blogs');
 
 module.exports = (server) => {
 
-    //const server = require('http').createServer(app);
     const io = require('socket.io')(server);
 
     //this code is for connect the passport to socket
@@ -26,15 +25,17 @@ module.exports = (server) => {
     }));
 
     io.on('connection', function (socket) {
+        if(!socket.request.user.logged_in)
+            socket.disconnect();
         console.log("made a connection");
         console.log(socket.request.user);
 
-        socket.on('join', function (data) {
-           socket.join(data);
+        socket.on('join',async function (data) {
+            if(await Blogs.IsUserInBlog(socket.request.user.email,data.room))
+                socket.join(data);
         });
 
         socket.on('post',function (data) {
-            console.log(socket.request.user);
             Blogs.ADDPOST(data.msg,socket.request.user.email,data.room);
             io.to(data.room).emit('post',{msg:data.msg,user:socket.request.user.email});
         });

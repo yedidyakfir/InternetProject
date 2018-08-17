@@ -3,10 +3,6 @@
 <div class="products">
   <div class="container">
     <div class="col-md-12 products-right">
-      <div class="agile_top_brands_grids">
-        <input type="submit" name="submit" value="Sell Your Book" class="btn btn-default pull-right">
-        <div class="clearfix"> </div>
-      </div>
       <ng-container *ngFor="let book of books; let i = index">
         <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1 || i == books.length - 1">
           <app-small-book-view *ngIf="books[i + 2] != undefined" [book]="books[i + 2]"></app-small-book-view>
