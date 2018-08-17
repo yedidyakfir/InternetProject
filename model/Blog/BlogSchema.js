@@ -69,7 +69,7 @@ module.exports = db => {
         this.updateOne({name:blogname}, {$push: {users: user}},function () {});
     };
 
-    blogSchema.statics.IsUserInBlog = async function(user,blogname,cb) {
+    blogSchema.statics.IsUserInBlog = async function(user,blogname) {
         let isUser = await this.findOne( { name:blogname, users: { $in : [user]} }).count();
         return isUser != 0;
     };
