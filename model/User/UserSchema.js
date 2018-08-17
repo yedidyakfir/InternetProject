@@ -83,12 +83,21 @@ module.exports = db => {
 	  this.updateOne({email:email},{active: false});
     };
 
-	userSchema.statics.AddToCart = async function(id,userId,cb)
+	userSchema.statics.AddToCart = async function(bookId,userId,cb)
     {
-        console.log("add to cart" + id + " " + userId);
-        this.updateOne({_id:userId}, {$push: {cartItems: id}},function (err,doc) {
-            cb(err);
-        });
+        console.log("add to cart " + bookId + " " + userId);
+        let isAllreadyIn = await this.findOne( { _id:userId, cartItems: { $in : [bookId]} }).count();
+        if (isAllreadyIn == 0)
+        {
+            this.updateOne({_id:userId}, {$push: {cartItems: bookId}},function (err,doc) {
+                cb(err);
+            });
+        }
+        else
+        {
+            console.log("add to cart fail because the item allredy exsist");
+            return false;
+        }
     };
 
     userSchema.statics.RemoveFromCart = async function(id,email,cb)

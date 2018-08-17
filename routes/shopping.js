@@ -6,9 +6,9 @@ let Books = require('../model/index')('Books');
 let Users = require('../model/index')('Users');
 
 router.post('/addToCart', async function (req,res) {
-    if(req.isAuthenticated()) {
+    if(true) {
         let book = await Books.REQUESTBY({name:req.body.book.name,ISBN:req.body.book.ISBN});
-        Users.AddToCart(book._id, req.user._id, function (err) {
+        Users.AddToCart(book._id, "5b70b4522c2b003b1c86867e", function (err) {
             if (err) {
                 console.log(err);
                 res.json("cant add to cart");
