@@ -15,7 +15,7 @@ export class BlogService {
   constructor(private http: HttpClient) {this.chosenBlog = new Subject<Blog>(); this.getList();}
 
   joinRoom(blog:Blog) {
-    this.socket.emit('join', blog.name);
+    this.socket.emit('join', {room:blog.name});
   }
 
   getList() {
