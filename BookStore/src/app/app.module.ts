@@ -34,6 +34,7 @@ import { BlogViewComponent } from './Blogs/blog-view/blog-view.component';
 //services
 import {AdminGuardService} from "../services/AdminGuardService/admin-guard.service";
 import { BlogPostComponent } from './Blogs/blog-post/blog-post.component';
+import { MyBooksComponent } from './Shopping/my-books/my-books.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -65,7 +66,8 @@ const routes: Routes = [
     BlogListComponent,
     BlogDiscussionComponent,
     BlogViewComponent,
-    BlogPostComponent
+    BlogPostComponent,
+    MyBooksComponent
   ],
   imports: [
     BrowserModule,

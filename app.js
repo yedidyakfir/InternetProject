@@ -58,6 +58,7 @@ app.use(express.static(path.join(__dirname,'BookStore','dist','BookStore')),spaR
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
+    console.log(req);
   next(createError(404));
 });
 

@@ -40,7 +40,7 @@ export class BlogService {
   }
 
   doILike(blog:Blog) :Observable<boolean> {
-    return this.http.post<boolean>(this.blogUrl + '/doILike',{});
+    return this.http.post<boolean>(this.blogUrl + '/doILike',{room:blog.name});
   }
 
   likePost(blog:Blog) {
