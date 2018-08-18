@@ -9,6 +9,7 @@ module.exports = db => {
         description: String,
         creator:String,
         photo: String,
+        joinRequest: [String],
         users: [String],
         posts: [{msg: String, user: String}],
         likes: [String],
@@ -65,13 +66,34 @@ module.exports = db => {
         return isUserLiked != 0;
     };
 
+    blogSchema.statics.JoinReq = async function(blogname,user,cb) {
+        let IsAlreadyJoined = await this.findOne({name: blogname , users: { $in : [user] }}).count();
+        let IsAlreadyRequested = await this.findOne({name: blogname, joinRequst: {$in : [user]}}).count();
+
+        if(IsAlreadyJoined == 0 && IsAlreadyRequested == 0)
+            this.updateOne({name: blogname}, {$push :{joinRequest: user}},function (err,doc) {
+                console.log(err); console.log(doc);
+            });
+        else {cb("user already requested or already in group");}
+    };
+
     blogSchema.statics.ADDUSER = async function(user,blogname,cb) {
-        this.updateOne({name:blogname}, {$push: {users: user}},function () {});
+        let IsAlreadyJoined = await this.findOne({name: blogname , users: { $in : [user] }}).count();
+
+        if(IsAlreadyJoined == 0){
+            this.updateOne({name: blogname}, {$pull: {joinRequst: user},function() {}}); //delete his join request
+            this.updateOne({name:blogname}, {$push: {users: user}},function () {}); //add user to list
+        }
     };
 
     blogSchema.statics.IsUserInBlog = async function(user,blogname) {
         let isUser = await this.findOne( { name:blogname, users: { $in : [user]} }).count();
         return isUser != 0;
+    };
+
+    blogSchema.statics.IsCreator = async function(user,blogname) {
+        let creator = await this.findOne({name:blogname}).select('creator');
+        return user == creator;
     };
 
     db.model('Blogs', blogSchema);

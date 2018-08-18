@@ -17,6 +17,7 @@ export class BlogDiscussionComponent implements OnInit {
     this.blog = new Blog();
     this.blogService.getChosenBlog()
       .subscribe(nextBlog => {
+        console.log(nextBlog);
         this.blog = nextBlog;
         this.blogService.joinRoom(this.blog);//join room as soon as we get the right blog
         this.blogService.doILike(this.blog) //ask did I liked this post

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as io from 'socket.io-client';
-import {Observable, Subject} from "rxjs/index";
+import {BehaviorSubject, Observable, Subject} from "rxjs/index";
 import {Blog} from "../../model/blog";
 import {HttpClient} from "@angular/common/http";
 
@@ -10,9 +10,9 @@ import {HttpClient} from "@angular/common/http";
 export class BlogService {
   private blogUrl = "http://localhost:3000/blog";
   private socket = io('http://localhost:3000');
-  private chosenBlog: Subject<Blog>;
+  private chosenBlog: BehaviorSubject<Blog>;
 
-  constructor(private http: HttpClient) {this.chosenBlog = new Subject<Blog>(); this.getList();}
+  constructor(private http: HttpClient) {this.chosenBlog = new BehaviorSubject<Blog>(new Blog()); this.getList();}
 
   joinRoom(blog:Blog) {
     this.socket.emit('join', {room:blog.name});
@@ -66,6 +66,19 @@ export class BlogService {
         observer.next(data);
       });
     });
+  }
+
+  addUser(user:string,blog:Blog) {
+    this.http.post(this.blogUrl + '/addUser', {user:user, room:blog.name})
+      .subscribe(success => {
+        if(success) {
+          let newBlog = this.chosenBlog.getValue();
+          let index = newBlog.joinRequest.indexOf(user);
+          if(index != -1) {newBlog.joinRequest.splice(index,1);}
+          this.chosenBlog.next(newBlog);
+        }
+        else {alert("cant add this user");}
+      });
   }
 
   chooseBlog(blog:Blog) {

@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material";
 import { FileSelectDirective } from "ng2-file-upload";
 import {NgxPayPalModule} from "ngx-paypal";
+import {BsDropdownModule} from "ngx-bootstrap";
 
 //component
 import { AppComponent } from './app.component';
@@ -75,6 +76,7 @@ const routes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(routes),
     NgbModule.forRoot(),
+    BsDropdownModule.forRoot(),
     AngularFontAwesomeModule,
     BrowserAnimationsModule,
     MatButtonModule,

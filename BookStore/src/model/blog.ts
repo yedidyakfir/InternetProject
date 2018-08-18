@@ -4,6 +4,7 @@ export class Blog
   description:string;
   creator:string;
   photo:string;
+  joinRequest: string[] = [];
   users:string[] = [];
   posts:{msg: string, user:string}[] = [];
   likes:string[] = [];

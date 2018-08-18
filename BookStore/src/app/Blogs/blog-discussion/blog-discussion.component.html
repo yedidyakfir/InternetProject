@@ -129,11 +129,20 @@
   </div>
 </div>
 
-<a href="#" class="float">
-  <i class="fa fa-plus my-float"></i>
-</a>
 
-<div class="label-container">
-  <div class="label-text">User Join Requests</div>
-  <i class="fa fa-play label-arrow"></i>
+<div class="dropdown float" dropdown [dropup]="true">
+  <a dropdownToggle class="float" role="button">
+    <i class="fa fa-plus my-float"></i>
+  </a>
+  <div class="label-container">
+    <div class="label-text">User Join Requests</div>
+    <i class="fa fa-play label-arrow"></i>
+  </div>
+  <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+    <li *ngFor="let req of blog.joinRequest" role="menuitem">
+      <span>
+        <button class="btn btn-success pull-right" (click)="blogService.addUser(req,blog)"><i class="fa fa-plus">{{req}}</i></button>
+      </span>
+    </li>
+  </ul>
 </div>
