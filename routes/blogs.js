@@ -15,11 +15,15 @@ router.post('/doILike',async function (req,res) {
 });
 
 router.post('/addUser', async function(req,res) {
-   if(req.isAuthenticated() && Blogs.IsCreator(req.user.email, req.body.room)) {
+   if(req.isAuthenticated() && await Blogs.IsCreator(req.user.email, req.body.room)) {
        Blogs.ADDUSER(req.body.user, req.body.room);
        res.json(true);
    }
    else {res.json(false);}
+});
+
+router.get('/isCreator', async function(req ,res) {
+   res.json(await Blogs.IsCreator);
 });
 
 module.exports = router;
