@@ -31,12 +31,12 @@ import { PaypalComponent } from './Shopping/paypal/paypal.component';
 import { BlogListComponent } from './Blogs/blog-list/blog-list.component';
 import { BlogDiscussionComponent } from './Blogs/blog-discussion/blog-discussion.component';
 import { BlogViewComponent } from './Blogs/blog-view/blog-view.component';
-
-//services
-import {AdminGuardService} from "../services/AdminGuardService/admin-guard.service";
 import { BlogPostComponent } from './Blogs/blog-post/blog-post.component';
 import { MyBooksComponent } from './Shopping/my-books/my-books.component';
 import { MainBlogViewComponent } from './Blogs/main-blog-view/main-blog-view.component';
+
+//services
+import {AdminGuardService} from "../services/AdminGuardService/admin-guard.service";
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -50,7 +50,7 @@ const routes: Routes = [
       {path:'List' , component:BlogListComponent},
       {path: 'BlogDiscussion/:name', component: BlogDiscussionComponent}
     ]},
-  {path: 'Blog' ,component: BlogDiscussionComponent}
+  {path: 'MyBooks',component: MyBooksComponent}
 ];
 
 @NgModule({
