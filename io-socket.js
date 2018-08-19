@@ -46,14 +46,14 @@ module.exports = (server) => {
         socket.on('like', async function (data) {
             if(await Blogs.IsUserInBlog(socket.request.user.email,data.room)){
                 Blogs.LIKEBLOG(socket.request.user.email,data.room);
-                io.to(data.room).emit('like');
+                io.to(data.room).emit('like',{user:socket.request.user.email});
             }
         });
 
         socket.on('unlike' , async function (data) {
             if(await Blogs.IsUserInBlog(socket.request.user.email,data.room)){
                 Blogs.UNLIKEBLOG(socket.request.user.email,data.room);
-                io.to(data.room).emit('unlike');
+                io.to(data.room).emit('unlike',{user:socket.request.user.email});
             }
         });
     });

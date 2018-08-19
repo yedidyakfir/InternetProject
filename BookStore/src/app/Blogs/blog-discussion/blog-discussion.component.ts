@@ -11,6 +11,7 @@ export class BlogDiscussionComponent implements OnInit {
   public blog: Blog;
   public msg:string;
   public like: boolean;
+  public isCreator: boolean;
   constructor(public blogService: BlogService) { }
 
   ngOnInit() {
@@ -21,15 +22,21 @@ export class BlogDiscussionComponent implements OnInit {
         this.blog = nextBlog;
         this.blogService.joinRoom(this.blog);//join room as soon as we get the right blog
         this.blogService.doILike(this.blog) //ask did I liked this post
-          .subscribe(res => this.like = res);
-        this.blogService.getPostLikes()
-          .subscribe(userLike => this.blog.likes.push(userLike));
-        this.blogService.getPostUnlike()
-          .subscribe(userUnlike => {
-            let i = this.blog.likes.indexOf(userUnlike);
-            if(i != -1)
-              this.blog.likes.splice(this.blog.likes.indexOf(userUnlike),1)
+          .subscribe(res => {
+            this.like = res;
           });
+        // this.blogService.getPostLikes()
+        //   .subscribe(userLike =>{
+        //     this.blog.likes.push(userLike);
+        //   });
+        // this.blogService.getPostUnlike()
+        //   .subscribe(userUnlike => {
+        //     let i = this.blog.likes.indexOf(userUnlike);
+        //     if(i != -1)
+        //       this.blog.likes.splice(i,1);
+        //   });
+        this.blogService.isCreator(this.blog)
+          .subscribe(res => this.isCreator = res);
       });
     this.blogService.getMessages()
       .subscribe(msg => this.blog.posts.push(msg));

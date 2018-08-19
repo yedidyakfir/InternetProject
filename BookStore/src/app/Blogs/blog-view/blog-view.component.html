@@ -11,20 +11,17 @@
 <div class="tc-ch">
 
   <div class="tch-img">
-    <a href="singlepage.html"><img src="images/1.jpg" class="img-responsive" alt=""></a>
+    <a href><img src="/public/blogs/images/{{blog.photo}}" class="img-responsive" alt=""></a>
   </div>
-  <a class="blog blue" href="singlepage.html">Technology</a>
-  <h3><a href="singlepage.html">Lorem Ipsum is simply</a></h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud eiusmod tempor incididunt ut labore et dolore magna aliqua exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Ut enim ad minim veniam, quis nostrud eiusmod tempor incididunt ut labore et dolore magna aliqua exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <a class="blog blue">Participants:{{blog.users.length}}</a>
+  <h3><a href>{{blog.name}}</a></h3>
+  <p>{{blog.description}}</p>
 
   <div class="blog-poast-info">
     <ul>
-      <li><i class="glyphicon glyphicon-user"> </i><a class="admin" href="#"> Admin </a></li>
-      <li><i class="glyphicon glyphicon-calendar"> </i>30-12-2015</li>
-      <li><i class="glyphicon glyphicon-comment"> </i><a class="p-blog" href="#">3 Comments </a></li>
-      <li><i class="glyphicon glyphicon-heart"> </i><a class="admin" href="#">5 favourites </a></li>
-      <li><i class="glyphicon glyphicon-eye-open"> </i>1.128 views</li>
+      <li><i class="glyphicon glyphicon-user"> </i><a class="admin" > Admin :{{blog.creator}}</a></li>
+      <li><i class="glyphicon glyphicon-calendar"> </i>{{blog.created_at}}</li>
+      <li><i class="glyphicon glyphicon-comment"> </i><a class="p-blog" >{{blog.posts.length}} Comments </a></li>
     </ul>
   </div>
 </div>

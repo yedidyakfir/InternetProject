@@ -44,7 +44,7 @@ const routes: Routes = [
   {path:'Users', component: UserListComponent, canActivate: [AdminGuardService]},
   {path: 'Register', component: RegisterComponent},
   {path: 'Cart', component: CartComponent},
-  {path:'Groups', component: BlogDiscussionComponent}
+  {path:'Groups', component: BlogListComponent}
 ];
 
 @NgModule({

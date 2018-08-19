@@ -58,7 +58,7 @@ module.exports = db => {
     };
 
     blogSchema.statics.UNLIKEBLOG = async function(user,blogname,cb) {
-        this.updateOne({name:blogname}, {$pull: {likes: user}},function () {});
+        this.updateOne({name:blogname}, {$pull: {likes: user}},function (err,doc) {console.log(err); console.log(doc);});
     };
 
     blogSchema.statics.DoILikeBlog = async function(user,blogname,cb) {

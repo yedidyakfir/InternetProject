@@ -1,5 +1,5 @@
 <div class="angular-blogs">
-  <div class="banner1 angular-blogs"></div>
+  <!--<div class="banner1 angular-blogs"></div>-->
 
   <!-- blog -->
   <div class="technology-1 angular-blogs">
@@ -130,7 +130,7 @@
 </div>
 
 
-<div class="dropdown float" dropdown [dropup]="true">
+<div class="dropdown float" dropdown [dropup]="true" *ngIf="isCreator">
   <a dropdownToggle class="float" role="button">
     <i class="fa fa-plus my-float"></i>
   </a>

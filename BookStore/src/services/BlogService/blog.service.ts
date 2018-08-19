@@ -12,18 +12,19 @@ export class BlogService {
   private socket = io('http://localhost:3000');
   private chosenBlog: BehaviorSubject<Blog>;
 
-  constructor(private http: HttpClient) {this.chosenBlog = new BehaviorSubject<Blog>(new Blog()); this.getList();}
+  constructor(private http: HttpClient) {
+    this.chosenBlog = new BehaviorSubject<Blog>(new Blog());
+    this.getList();
+    this.getBlogLikes();
+    this.getBlogUnlikes();
+  }
 
   joinRoom(blog:Blog) {
     this.socket.emit('join', {room:blog.name});
   }
 
-  getList() {
-    this.http.get<Blog[]>(this.blogUrl + '/list')
-      .subscribe(res=> {
-        console.log(res);
-        this.chooseBlog(res[0])
-      });
+  getList() :Observable<Blog[]> {
+    return this.http.get<Blog[]>(this.blogUrl + '/list');
   }
 
   sendPost(msg:string,room:string) {
@@ -52,21 +53,41 @@ export class BlogService {
     this.socket.emit('unlike',{room:blog.name});
   }
 
-  getPostLikes() :Observable<string> {
-    return new Observable<string>(observer =>{
-      this.socket.on('like', (data) => {
-        observer.next(data);
-      });
+  getBlogLikes() {
+    this.socket.on('like', (data) => {
+      let newBlog = this.chosenBlog.getValue();
+      newBlog.likes.push(data.user);
+      this.chosenBlog.next(newBlog);
+      console.log(newBlog);
     });
   }
 
-  getPostUnlike() :Observable<string> {
-    return new Observable<string>(observer =>{
-      this.socket.on('unlike', (data) => {
-        observer.next(data);
-      });
+  getBlogUnlikes() {
+    this.socket.on('unlike', (data) => {
+      let newBlog = this.chosenBlog.getValue();
+      let i = newBlog.likes.indexOf(data.user);
+          if(i != -1)
+            newBlog.likes.splice(i,1);
+      this.chosenBlog.next(newBlog);
+      console.log(newBlog);
     });
   }
+
+  // // getPostLikes() :Observable<string> {
+  // //   return new Observable<string>(observer =>{
+  // //     this.socket.on('like', (data) => {
+  // //       observer.next(data.user);
+  // //     });
+  // //   });
+  // // }
+  // //
+  // // getPostUnlike() :Observable<string> {
+  // //   return new Observable<string>(observer =>{
+  // //     this.socket.on('unlike', (data) => {
+  // //       observer.next(data.user);
+  // //     });
+  // //   });
+  // }
 
   addUser(user:string,blog:Blog) {
     this.http.post(this.blogUrl + '/addUser', {user:user, room:blog.name})
@@ -79,6 +100,10 @@ export class BlogService {
         }
         else {alert("cant add this user");}
       });
+  }
+
+  isCreator(blog:Blog): Observable<boolean> {
+    return this.http.post<boolean>(this.blogUrl + '/isCreator' ,{room:blog.name});
   }
 
   chooseBlog(blog:Blog) {

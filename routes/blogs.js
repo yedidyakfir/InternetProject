@@ -22,8 +22,8 @@ router.post('/addUser', async function(req,res) {
    else {res.json(false);}
 });
 
-router.get('/isCreator', async function(req ,res) {
-   res.json(await Blogs.IsCreator);
+router.post('/isCreator', async function(req ,res) {
+   res.json(await Blogs.IsCreator(req.user.email, req.body.room));
 });
 
 module.exports = router;
