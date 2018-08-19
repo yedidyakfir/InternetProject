@@ -1,3 +1,116 @@
-<p>
-  my-books works!
-</p>
+<app-big-book-view></app-big-book-view>
+
+<!--<h1 style="text-align: center; background: #ff9b05">Book for sell</h1>-->
+<div class="products">
+  <div class="container">
+    <div class="col-md-12 products-right">
+      <ng-container *ngFor="let book of books; let i = index">
+        <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1 || i == books.length - 1">
+          <app-small-book-view *ngIf="books[i + 2] != undefined" [book]="books[i + 2]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i + 1] != undefined" [book]="books[i + 1]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i] != undefined" [book]="books[i]"></app-small-book-view>
+          <div class="clearfix"></div>
+        </div>
+      </ng-container>
+      <nav class="numbering" *ngIf="canMove">
+        <ul class="pagination paging">
+          <li>
+            <button class="btn btn-default" aria-label="Previous" (click)="previousPage()">
+              <span aria-hidden="true">«</span>
+            </button>
+          </li>
+          <!--<li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>-->
+          <!--<li><a href="#">2</a></li>-->
+          <!--<li><a href="#">3</a></li>-->
+          <!--<li><a href="#">4</a></li>-->
+          <!--<li><a href="#">5</a></li>-->
+          <li>
+            <button class="btn btn-default" aria-label="Next" (click)="nextPage()">
+              <span aria-hidden="true">»</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+
+
+<div class="products">
+  <div class="container">
+    <div class="col-md-12 products-right">
+      <ng-container *ngFor="let book of books; let i = index">
+        <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1 || i == books.length - 1">
+          <app-small-book-view *ngIf="books[i + 2] != undefined" [book]="books[i + 2]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i + 1] != undefined" [book]="books[i + 1]"></app-small-book-view>
+          <app-small-book-view *ngIf="books[i] != undefined" [book]="books[i]"></app-small-book-view>
+          <div class="clearfix"></div>
+        </div>
+      </ng-container>
+      <nav class="numbering" *ngIf="canMove">
+        <ul class="pagination paging">
+          <li>
+            <button class="btn btn-default" aria-label="Previous" (click)="previousPage()">
+              <span aria-hidden="true">«</span>
+            </button>
+          </li>
+          <!--<li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>-->
+          <!--<li><a href="#">2</a></li>-->
+          <!--<li><a href="#">3</a></li>-->
+          <!--<li><a href="#">4</a></li>-->
+          <!--<li><a href="#">5</a></li>-->
+          <li>
+            <button class="btn btn-default" aria-label="Next" (click)="nextPage()">
+              <span aria-hidden="true">»</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+
+<a href="#" class="float">
+  <i class="fa fa-plus my-float"></i>
+</a>
+
+
+
+
+
+
+<!--<div class="menu pmd-floating-action"  role="navigation">
+  <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Supervisor Account">
+    <span class="pmd-floating-hidden">Supervisor Account</span>
+    <i class="material-icons">supervisor_account</i>
+  </a>
+  <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Cloud Queue">
+    <span class="pmd-floating-hidden">Cloud Queue</span>
+    <i class="material-icons">cloud_queue</i>
+  </a>
+  <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Headset">
+    <span class="pmd-floating-hidden">Headset</span>
+    <i class="material-icons">headset</i>
+  </a>
+  <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Dialpad">
+    <span class="pmd-floating-hidden">Dialpad</span>
+    <i class="material-icons">dialpad</i>
+  </a>
+  <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary" data-title="Add" href="javascript:void(0);">
+    <span class="pmd-floating-hidden">Primary</span>
+    <i class="material-icons pmd-sm">add</i>
+  </a>
+</div>-->
+
+<!--<div id="css3navigation" style="position:absolute;top:119px;">
+  <nav id="css3mainnav">        <ol>
+    <li class="css3videos"><a href="http://www.tolly2day.com/video/">Videos</a>
+      <ul>
+        <li><a href="#">Trailers</a></li>
+        <li><a href="#">Movies</a></li>
+      </ul>
+    </li>
+  </ol></nav>
+</div>-->
