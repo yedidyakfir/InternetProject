@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { PayPalConfig, PayPalEnvironment, PayPalIntegrationType } from 'ngx-paypal';
+import {BehaviorSubject} from "rxjs/index";
 
 @Component({
   selector: 'app-paypal',
@@ -8,14 +9,14 @@ import { PayPalConfig, PayPalEnvironment, PayPalIntegrationType } from 'ngx-payp
 })
 export class PaypalComponent implements OnInit {
   @Input()
-  private price: number;
+  private priceObservable: BehaviorSubject<number>;
   public payPalConfig?: PayPalConfig;
 
   ngOnInit(): void {
-    this.initConfig();
+    this.priceObservable.subscribe(price => this.initConfig(price));
   }
 
-  private initConfig(): void {
+  private initConfig(price): void {
     this.payPalConfig = new PayPalConfig(PayPalIntegrationType.ClientSideREST, PayPalEnvironment.Sandbox, {
       commit: true,
       client: {
@@ -40,7 +41,7 @@ export class PaypalComponent implements OnInit {
       transactions: [{
         amount: {
           currency: 'USD',
-          total: this.price
+          total: price
         }
       }]
     });

@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Main-Page/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Main-Page/footer/footer.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,19 +22,31 @@
       <file leaf-file-name="cart.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="416">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cart.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="266">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paypal.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-423">
+              <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,11 +136,8 @@
         <option value="$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts" />
         <option value="$PROJECT_DIR$/routes/books.js" />
         <option value="$PROJECT_DIR$/BookStore/src/services/UserService/user.service.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/NavBar/register/register.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/services/ShoppingService/shopping.service.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/NavBar/login-navbar/login-navbar.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/app.component.html" />
@@ -173,6 +179,9 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Main-Page/footer/footer.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" />
       </list>
     </option>
@@ -246,16 +255,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="small-book-view" type="462c0819:PsiDirectoryNode" />
+              <item name="paypal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -491,14 +491,7 @@
       <workItem from="1534234092717" duration="6084000" />
       <workItem from="1534242362514" duration="2680000" />
       <workItem from="1534245777916" duration="26523000" />
-      <workItem from="1534283458647" duration="160713000" />
-    </task>
-    <task id="LOCAL-00027" summary="push for or">
-      <created>1533678585308</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1533678585308</updated>
+      <workItem from="1534283458647" duration="162984000" />
     </task>
     <task id="LOCAL-00028" summary="changed navbar , now it works with hidden property instead of router">
       <created>1533727941691</created>
@@ -836,11 +829,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534698314215</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="deleted unnecessary code and deleted some bugs">
+      <created>1534703061415</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1534703061415</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="468379000" />
+    <option name="totallyTimeSpent" value="470650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -875,7 +875,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added book sell and upload" />
     <MESSAGE value="created cart service,object (in user) ,view etc&#10;however bigBookView still doesn't work" />
     <MESSAGE value="get cart server side is fixed" />
     <MESSAGE value="fixed problem with modals of books ,change to subject observable, not yet finished the fix about the add book view update" />
@@ -900,7 +899,8 @@
     <MESSAGE value="fixed user schema configuration" />
     <MESSAGE value="created nested routes for blogs" />
     <MESSAGE value="fixed add user button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed add user button" />
+    <MESSAGE value="deleted unnecessary code and deleted some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted unnecessary code and deleted some bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -921,20 +921,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model/Group/GroupSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-post/blog-post.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1288,19 +1274,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="416">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="266">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>

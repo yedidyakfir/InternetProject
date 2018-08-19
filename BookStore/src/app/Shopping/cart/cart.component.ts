@@ -11,7 +11,7 @@ import {BehaviorSubject, Subject} from "rxjs/index";
 export class CartComponent implements OnInit {
   public books: Book[];
   public totalPrice:BehaviorSubject<number>;
-  constructor(public shopping:ShoppingService) { this.totalPrice = new BehaviorSubject<number>(1); }
+  constructor(public shopping:ShoppingService) { this.totalPrice = new BehaviorSubject<number>(2); }
 
   ngOnInit() {
     this.shopping.getList().subscribe(res =>{
