@@ -9,8 +9,6 @@ import {Blog} from "../../../model/blog";
 export class BlogViewComponent implements OnInit {
   @Input()
   public blog:Blog;
-  @Output("ClickToEnter")
-  public enterBlog:EventEmitter<Blog> = new EventEmitter<Blog>();
   @Output("SendJoinReq")
   public joinReq:EventEmitter<Blog> = new EventEmitter<Blog>();
   constructor() { }

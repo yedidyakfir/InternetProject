@@ -25,10 +25,5 @@ export class BlogListComponent implements OnInit {
       })
   }
 
-  enterBlog(blog: Blog) {
-    //this.router.navigate(['/Blog']);
-    //this.blogService.chooseBlog(blog);
-    //this.router.navigate(['/Groups','BlogDiscussion']);
-  }
 
 }

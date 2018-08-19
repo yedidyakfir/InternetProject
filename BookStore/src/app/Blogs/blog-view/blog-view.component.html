@@ -14,7 +14,7 @@
     <a href><img src="/public/blogs/images/{{blog.photo}}" class="img-responsive" alt=""></a>
   </div>
   <a class="blog blue">Participants:{{blog.users.length}}</a>
-  <h3 *ngIf="blog.authorized"><a [routerLink]="['..','BlogDiscussion', blog.name]" (click)="enterBlog.emit(blog)">{{blog.name}}</a></h3>
+  <h3 *ngIf="blog.authorized"><a [routerLink]="['..','BlogDiscussion', blog.name]">{{blog.name}}</a></h3>
   <h3 *ngIf="!blog.authorized">{{blog.name}}</h3>
   <button (click)="joinReq.emit(blog)" *ngIf="!blog.authorized" class="btn btn-success pull-right">Join Blog</button>
   <p>{{blog.description}}</p>

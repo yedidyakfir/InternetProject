@@ -1,7 +1,7 @@
 <div class="col-md-9 technology-left">
   <div class="tech-no">
     <!-- technology-top -->
-    <app-blog-view *ngFor="let blog of blogs" [blog]="blog" (ClickToEnter)="enterBlog(blog)"
+    <app-blog-view *ngFor="let blog of blogs" [blog]="blog"
                    (SendJoinReq)="sendJoinReq(blog)"></app-blog-view>
   </div>
 </div>

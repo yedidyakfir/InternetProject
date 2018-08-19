@@ -3,18 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8b5233d1-6616-4871-a6fe-a7dd8d63de4e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/model/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/model/blog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Blog/BlogSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Blog/BlogSchema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/blogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Main-Page/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Main-Page/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,107 +22,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main-blog-view.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/main-blog-view/main-blog-view.component.html">
+      <file leaf-file-name="cart.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="241">
+              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog-list.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html">
+      <file leaf-file-name="cart.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog-discussion.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/blogs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogSchema.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Blog/BlogSchema.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="46" column="32" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog-list.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="450">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog-view.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog-view.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
-              <folding>
-                <element signature="n#div#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-                <element signature="e#215#270#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/sell-book/sell-book.component.ts" />
         <option value="$PROJECT_DIR$/model/Book/BookSchema.js" />
         <option value="$PROJECT_DIR$/BookStore/src/services/BookService/book.service.ts" />
         <option value="$PROJECT_DIR$/routes/books.js" />
@@ -222,7 +130,6 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/NavBar/register/register.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/services/ShoppingService/shopping.service.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/paypal/paypal.component.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/big-book-view/big-book-view.component.html" />
@@ -252,19 +159,21 @@
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.css" />
         <option value="$PROJECT_DIR$/model/User/UserSchema.js" />
         <option value="$PROJECT_DIR$/BookStore/src/model/blog.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/main-blog-view/main-blog-view.component.css" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.css" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/main-blog-view/main-blog-view.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html" />
         <option value="$PROJECT_DIR$/model/Blog/BlogSchema.js" />
         <option value="$PROJECT_DIR$/routes/blogs.js" />
         <option value="$PROJECT_DIR$/BookStore/src/services/BlogService/blog.service.ts" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html" />
         <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Main-Page/footer/footer.component.html" />
+        <option value="$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html" />
       </list>
     </option>
   </component>
@@ -328,7 +237,7 @@
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="Shopping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -336,8 +245,8 @@
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="Shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -345,26 +254,8 @@
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
-              <item name="main-blog-view" type="462c0819:PsiDirectoryNode" />
+              <item name="Shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="small-book-view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -372,14 +263,6 @@
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InternetProject" type="462c0819:PsiDirectoryNode" />
-              <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="BlogService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InternetProject" type="b2602c69:ProjectViewProjectNode" />
@@ -608,21 +491,7 @@
       <workItem from="1534234092717" duration="6084000" />
       <workItem from="1534242362514" duration="2680000" />
       <workItem from="1534245777916" duration="26523000" />
-      <workItem from="1534283458647" duration="158710000" />
-    </task>
-    <task id="LOCAL-00025" summary="the connection between angular and json is working and catalog is working">
-      <created>1533645749415</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1533645749415</updated>
-    </task>
-    <task id="LOCAL-00026" summary="started working with passport">
-      <created>1533676547851</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1533676547851</updated>
+      <workItem from="1534283458647" duration="160713000" />
     </task>
     <task id="LOCAL-00027" summary="push for or">
       <created>1533678585308</created>
@@ -953,11 +822,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534670634307</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="created nested routes for blogs">
+      <created>1534698144519</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1534698144519</updated>
+    </task>
+    <task id="LOCAL-00075" summary="fixed add user button">
+      <created>1534698314215</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1534698314215</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466376000" />
+    <option name="totallyTimeSpent" value="468379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -992,8 +875,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed book source to mongoDb" />
-    <MESSAGE value="try to add book modal,not yet succesful" />
     <MESSAGE value="added book sell and upload" />
     <MESSAGE value="created cart service,object (in user) ,view etc&#10;however bigBookView still doesn't work" />
     <MESSAGE value="get cart server side is fixed" />
@@ -1017,7 +898,9 @@
     <MESSAGE value="fixed some misspells in the add user api" />
     <MESSAGE value="added blog list, likes still doing problem" />
     <MESSAGE value="fixed user schema configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed user schema configuration" />
+    <MESSAGE value="created nested routes for blogs" />
+    <MESSAGE value="fixed add user button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed add user button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1033,41 +916,11 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/io-socket.js</url>
-          <line>53</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="136" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="157" />
+      <option name="time" value="158" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../blogsDemo/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="2827" column="28" selection-start-line="2827" selection-start-column="26" selection-end-line="2827" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/services/GroupService/group.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="3" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/Group/GroupSchema.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1290,13 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io-socket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/model/blog.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1332,24 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="170" column="24" selection-start-line="170" selection-start-column="24" selection-end-line="170" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#1431#0" />
-            <element signature="e#6983#7003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/main-blog-view/main-blog-view.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -1361,20 +1189,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html">
+    <entry file="file://$PROJECT_DIR$/routes/blogs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        <state relative-caret-position="400">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1385,10 +1203,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/blogs.js">
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="191">
+          <caret line="170" column="81" selection-start-line="170" selection-start-column="81" selection-end-line="170" selection-end-column="81" />
+          <folding>
+            <element signature="e#6983#7003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io-socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1402,9 +1257,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-view/blog-view.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-discussion/blog-discussion.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="91">
           <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
@@ -1412,17 +1274,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.html">
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/main-blog-view/main-blog-view.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="275">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Blogs/blog-list/blog-list.component.ts">
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Main-Page/footer/footer.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        <state relative-caret-position="450">
+          <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookStore/src/app/Shopping/cart/cart.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
