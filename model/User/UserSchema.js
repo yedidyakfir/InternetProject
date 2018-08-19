@@ -6,14 +6,14 @@ const passportLocalMongoose = require('passport-local-mongoose');
 module.exports = db => {
     // create a schema
     var userSchema = new Schema({
-        email: { type: String },
+        email: { type: String ,unique: true},
         admin: Boolean,
 		password: String,
         active: Boolean,
         resetPasswordToken: String,
         resetPasswordExpires: Date,
 
-        cartItems:{type:[String], unique: true},
+        cartItems:[String],
 
         created_at: Date,
         updated_at: Date,
