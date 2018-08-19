@@ -36,6 +36,7 @@ import { BlogViewComponent } from './Blogs/blog-view/blog-view.component';
 import {AdminGuardService} from "../services/AdminGuardService/admin-guard.service";
 import { BlogPostComponent } from './Blogs/blog-post/blog-post.component';
 import { MyBooksComponent } from './Shopping/my-books/my-books.component';
+import { MainBlogViewComponent } from './Blogs/main-blog-view/main-blog-view.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -44,7 +45,12 @@ const routes: Routes = [
   {path:'Users', component: UserListComponent, canActivate: [AdminGuardService]},
   {path: 'Register', component: RegisterComponent},
   {path: 'Cart', component: CartComponent},
-  {path:'Groups', component: BlogListComponent}
+  {path:'Groups', component: MainBlogViewComponent, children: [
+      {path:'',redirectTo:'List', pathMatch:'full'},
+      {path:'List' , component:BlogListComponent},
+      {path: 'BlogDiscussion/:name', component: BlogDiscussionComponent}
+    ]},
+  {path: 'Blog' ,component: BlogDiscussionComponent}
 ];
 
 @NgModule({
@@ -68,7 +74,8 @@ const routes: Routes = [
     BlogDiscussionComponent,
     BlogViewComponent,
     BlogPostComponent,
-    MyBooksComponent
+    MyBooksComponent,
+    MainBlogViewComponent
   ],
   imports: [
     BrowserModule,

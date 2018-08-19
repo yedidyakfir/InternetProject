@@ -27,6 +27,10 @@ export class BlogService {
     return this.http.get<Blog[]>(this.blogUrl + '/list');
   }
 
+  getBlogByName(name: string):Observable<Blog> {
+    return this.http.post<Blog>(this.blogUrl + '/data', {room:name});
+  }
+
   sendPost(msg:string,room:string) {
     console.log(msg);
     this.socket.emit("post",{msg:msg,room:room});
@@ -73,22 +77,6 @@ export class BlogService {
     });
   }
 
-  // // getPostLikes() :Observable<string> {
-  // //   return new Observable<string>(observer =>{
-  // //     this.socket.on('like', (data) => {
-  // //       observer.next(data.user);
-  // //     });
-  // //   });
-  // // }
-  // //
-  // // getPostUnlike() :Observable<string> {
-  // //   return new Observable<string>(observer =>{
-  // //     this.socket.on('unlike', (data) => {
-  // //       observer.next(data.user);
-  // //     });
-  // //   });
-  // }
-
   addUser(user:string,blog:Blog) {
     this.http.post(this.blogUrl + '/addUser', {user:user, room:blog.name})
       .subscribe(success => {
@@ -106,7 +94,12 @@ export class BlogService {
     return this.http.post<boolean>(this.blogUrl + '/isCreator' ,{room:blog.name});
   }
 
+  sendJoinReq(blog: Blog): Observable<boolean> {
+    return this.http.post<boolean>(this.blogUrl + '/sendJoinReq' , {room:blog.name});
+  }
+
   chooseBlog(blog:Blog) {
+    console.log(blog);
     this.chosenBlog.next(blog);
   }
 

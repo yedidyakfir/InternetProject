@@ -9,4 +9,5 @@ export class Blog
   posts:{msg: string, user:string}[] = [];
   likes:string[] = [];
   created_at:Date;
+  authorized: boolean;
 }

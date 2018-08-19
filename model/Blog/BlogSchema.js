@@ -13,12 +13,14 @@ module.exports = db => {
         users: [String],
         posts: [{msg: String, user: String}],
         likes: [String],
+        authorized: Boolean,
         created_at: Date,
         updated_at: Date
     });
 
 
     blogSchema.pre('save', function(next) {
+        this.authorized = false;
         // get the current date
         var currentDate = new Date();
 
@@ -40,6 +42,11 @@ module.exports = db => {
         debug("get all blogs");
         let u = await this.find({});
         return u;
+    };
+
+    blogSchema.statics.GetByName = async function(blogname,cb) {
+        let blog = await this.findOne({name:blogname});
+        return blog;
     };
 
     blogSchema.statics.ADDPOST = async function(msg,user,blogname,cb) {

@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {BlogService} from "../../../services/BlogService/blog.service";
 import {Blog} from "../../../model/blog";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-blog-discussion',
@@ -12,10 +13,12 @@ export class BlogDiscussionComponent implements OnInit {
   public msg:string;
   public like: boolean;
   public isCreator: boolean;
-  constructor(public blogService: BlogService) { }
+  constructor(public blogService: BlogService,private route:ActivatedRoute) { }
 
   ngOnInit() {
     this.blog = new Blog();
+    this.blogService.getBlogByName(this.route.snapshot.params['name'])
+      .subscribe(res => this.blogService.chooseBlog(res));
     this.blogService.getChosenBlog()
       .subscribe(nextBlog => {
         console.log(nextBlog);
@@ -25,16 +28,6 @@ export class BlogDiscussionComponent implements OnInit {
           .subscribe(res => {
             this.like = res;
           });
-        // this.blogService.getPostLikes()
-        //   .subscribe(userLike =>{
-        //     this.blog.likes.push(userLike);
-        //   });
-        // this.blogService.getPostUnlike()
-        //   .subscribe(userUnlike => {
-        //     let i = this.blog.likes.indexOf(userUnlike);
-        //     if(i != -1)
-        //       this.blog.likes.splice(i,1);
-        //   });
         this.blogService.isCreator(this.blog)
           .subscribe(res => this.isCreator = res);
       });
