@@ -34,8 +34,17 @@ module.exports = db => {
         next();
     });
 
-    blogSchema.statics.CREATE = async function(name){
-
+    blogSchema.statics.CREATE = async function(name,description,creator,photo,cb){
+        let newBlog = {
+            name: name,
+            description:description,
+            creator: creator,
+            joinRequest: [],
+            users: [creator],
+            likes: [],
+            photo:photo
+        };
+        this.create(newBlog,cb);
     };
 
     blogSchema.statics.REQUEST = async function(cb) {

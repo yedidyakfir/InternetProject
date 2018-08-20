@@ -10,6 +10,7 @@ import {HttpClient} from "@angular/common/http";
 export class BlogService {
   private blogUrl = "http://localhost:3000/blog";
   private socket = io('http://localhost:3000');
+  private blogs: BehaviorSubject<Blog[]> = new BehaviorSubject<Blog[]>([]);
   private chosenBlog: BehaviorSubject<Blog>;
 
   constructor(private http: HttpClient) {
@@ -24,7 +25,16 @@ export class BlogService {
   }
 
   getList() :Observable<Blog[]> {
-    return this.http.get<Blog[]>(this.blogUrl + '/list');
+    this.http.get<Blog[]>(this.blogUrl + '/list')
+      .subscribe(res => this.blogs.next(res));
+    return this.blogs;
+  }
+
+  addToBlogList(blog: Blog) {
+    let newList = this.blogs.getValue();
+    newList.push(blog);
+    console.log(newList);
+    this.blogs.next(newList);
   }
 
   getBlogByName(name: string):Observable<Blog> {

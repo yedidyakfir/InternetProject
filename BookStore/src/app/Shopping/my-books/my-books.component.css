@@ -18,8 +18,8 @@
 
 .label-container{
   position:fixed;
-  bottom:48px;
-  right:105px;
+  bottom:40px;
+  left:90px;
   display:table;
   visibility: hidden;
 }
@@ -54,4 +54,11 @@ a.float + div.label-container {
 a.float:hover + div.label-container{
   visibility: visible;
   opacity: 1;
+}
+
+.icon-flipped {
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
 }

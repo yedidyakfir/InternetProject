@@ -140,3 +140,11 @@ a.float:hover + div.label-container{
   opacity: 1;
 }
 
+button {
+  background: #ff9b05;
+}
+
+input[type="submit"] {
+  background: #ff9b05;
+}
+

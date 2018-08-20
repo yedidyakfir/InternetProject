@@ -3,7 +3,7 @@
   <div class="container">
     <div class="col-md-12 products-right">
       <ng-container *ngFor="let book of books; let i = index">
-        <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1 || i == books.length - 1">
+        <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1">
           <app-small-book-view *ngIf="books[i + 2] != undefined" [book]="books[i + 2]"></app-small-book-view>
           <app-small-book-view *ngIf="books[i + 1] != undefined" [book]="books[i + 1]"></app-small-book-view>
           <app-small-book-view *ngIf="books[i] != undefined" [book]="books[i]"></app-small-book-view>
@@ -39,7 +39,7 @@
   <div class="container">
     <div class="col-md-12 products-right">
       <ng-container *ngFor="let book of books; let i = index">
-        <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1 || i == books.length - 1">
+        <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1 ">
           <app-small-book-view *ngIf="books[i + 2] != undefined" [book]="books[i + 2]"></app-small-book-view>
           <app-small-book-view *ngIf="books[i + 1] != undefined" [book]="books[i + 1]"></app-small-book-view>
           <app-small-book-view *ngIf="books[i] != undefined" [book]="books[i]"></app-small-book-view>
@@ -70,12 +70,12 @@
   </div>
 </div>
 
-<a href class="float" role="button" data-toggle="modal" data-target="#SellBookModal">
-  <i class="fa fa-plus my-float"></i>
+<a href class="float" role="button" style="background-color: #e74c3c" data-toggle="modal" data-target="#SellBookModal">
+  <i class="fa fa-plus my-float icon-flipped"></i>
 </a>
 <div style="z-index: 0" class="label-container">
-  <div class="label-text">Add a new book</div>
   <i class="fa fa-play label-arrow"></i>
+  <div class="label-text">Add a new book</div>
 </div>
 
 <app-sell-book></app-sell-book>

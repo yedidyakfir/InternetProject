@@ -5,3 +5,64 @@
                    (SendJoinReq)="sendJoinReq(blog)"></app-blog-view>
   </div>
 </div>
+
+<a href class="float" role="button" style="background-color: #e74c3c" data-toggle="modal"
+   data-target="#CreateBlogModal">
+  <i class="fa fa-plus my-float"></i>
+</a>
+<div style="z-index: 0" class="label-container">
+  <i class="fa fa-play label-arrow"></i>
+  <div class="label-text">Create a Blog</div>
+</div>
+
+
+<div class="container modal fade" id="CreateBlogModal" tabindex="-1" role="dialog"
+     aria-labelledby="CreateBlogModalLabel" aria-hidden="true">
+  <div style="margin-top:50px" class="modal-dialog mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="modal-content panel panel-info">
+      <div class="panel-heading"  style="background: #ff9b05">
+        <div class="panel-title">Create Your Blog</div>
+      </div>
+      <div class="panel-body modal-body">
+        <div class="form-horizontal">
+          <div id="div_blog_name" class="form-group required">
+            <label for="blog_name" class="control-label col-md-4  requiredField">Blog Name<span class="asteriskField">*</span> </label>
+            <div class="controls col-md-8 ">
+              <input class="input-md textInput form-control" id="blog_name" [(ngModel)]="newBlog.name"
+                     maxlength="30" name="name" placeholder="Enter The blog's name" style="margin-bottom: 10px" type="text" />
+            </div>
+          </div>
+          <div id="div_description" class="form-group required">
+            <label for="description" class="control-label col-md-4  requiredField">Description<span class="asteriskField">*</span> </label>
+            <div class="controls col-md-8 ">
+              <input class="input-md form-control" id="description" name="description" [(ngModel)]="newBlog.description"
+                     placeholder="Enter The blogs description" style="margin-bottom: 10px"/>
+            </div>
+          </div>
+          <div id="div_image" class="form-group required">
+            <label for="image" class="control-label col-md-4">Image</label>
+            <div class="controls col-md-8 ">
+              <button (click)="uploadBtn.click()" class="btn btn-default">
+                upload your image
+                <input #uploadBtn class="input-md form-control" id="image"
+                       name="number" placeholder="Upload image" style="display: none" type="file"
+                       ng2FileSelect [uploader]="fileUploader"/>
+              </button>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="aab controls col-md-4 "></div>
+            <div class="controls col-md-12">
+              <input type="submit" name="sell" value="Create Your blog" (click)="upload()"
+                     class="btn btn-success btn btn-info close" data-dismiss="modal"
+                     data-target="#SellBookModal" id="submit-blog" style="width: 100%" />
+            </div>
+          </div>
+
+        </div>
+
+        <!--</form>-->
+      </div>
+    </div>
+  </div>
+</div>

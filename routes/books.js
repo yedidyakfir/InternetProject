@@ -33,8 +33,10 @@ router.post('/create',upload.single('photo'), function(req, res, next) {
    {
        books.CREATE(req.user.email,req.body.bookName,req.body.bookAuthor,req.body.bookISBN,
            req.body.bookSeries,req.body.bookPublishDate,req.body.bookSummary,
-           req.body.bookPrice,req.file.originalname);
-       res.json(true);
+           req.body.bookPrice,req.file.originalname, function (err) {
+               if(err) {res.json("couldn't upload your file, try diffrent name or ISBN");}
+               else {res.json(true);}
+           });
    }
    else {res.json("user must be connected");}
 });

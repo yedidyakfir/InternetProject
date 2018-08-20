@@ -17,8 +17,8 @@ export class SellBookComponent implements OnInit {
   ngOnInit() {
     this.fileUploader.onSuccessItem = ((item, response) => {
       if(JSON.parse(response) == true){
-        this.reset();
         this.booksService.addBookToList(this.book);
+        this.reset();
       }
       else {alert("couldn't upload " + JSON.parse(response));}
     });
@@ -40,7 +40,7 @@ export class SellBookComponent implements OnInit {
   upload() {
     console.log("in upload func");
     this.fileUploader.uploadAll();
-    this.book.photo = this.book.name + this.book.ISBN.toString();
+    this.book.photo = this.book.name + this.book.ISBN.toString() + ".jpg";
   }
 
   reset() {this.book = new Book();}

@@ -53,7 +53,7 @@ module.exports = db => {
     };
 
     bookSchema.statics.CREATE = async function(seller,name,author,ISBN,seriesName,publishDate,
-                                               summary,price,photoName)
+                                               summary,price,photoName,cb)
     {
         let bookToaAdd = {
             name : name,
@@ -67,7 +67,7 @@ module.exports = db => {
             active : true,
             price : price
         };
-        this.create(bookToaAdd);
+        this.create(bookToaAdd,cb);
     };
 
 
