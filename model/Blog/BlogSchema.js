@@ -41,7 +41,6 @@ module.exports = db => {
             creator: creator,
             joinRequest: [],
             users: [creator],
-            likes: [],
             photo:photo
         };
         this.create(newBlog,cb);

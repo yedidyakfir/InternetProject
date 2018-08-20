@@ -11,7 +11,7 @@
               <p>Name: {{book.name}}</p>
               <h4>Price: {{book.price}}</h4>
             </div>
-            <div class="snipcart-details top_brand_home_details">
+            <div [hidden]="!openable" class="snipcart-details top_brand_home_details">
               <form action="#" method="post">
                 <fieldset>
                   <input type="submit" name="submit" value="Quick View" class="button"

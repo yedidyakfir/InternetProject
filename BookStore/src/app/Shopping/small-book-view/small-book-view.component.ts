@@ -8,7 +8,8 @@ import {BookService} from "../../../services/BookService/book.service";
   styleUrls: ['./small-book-view.component.css']
 })
 export class SmallBookViewComponent implements OnInit {
-
+  @Input()
+  public openable: boolean = true;
   @Input()
   public book: Book;
   constructor(public booksService: BookService) { }
