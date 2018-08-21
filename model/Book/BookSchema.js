@@ -42,6 +42,14 @@ module.exports = db => {
         return u;
     };
 
+    bookSchema.statics.AllUserUnsold = async function(user,cb) {
+        this.find({seller:user,sellDate:{$exists:false}},cb);
+    };
+
+    bookSchema.statics.AllUserSells = async function(user,cb) {
+        this.find({seller:user,sellDate:{$exists:true}},cb);
+    };
+
     bookSchema.statics.REQUESTBY = async function(book) {
         debug("get book " + book);
         let u = await this.findOne(book);

@@ -27,6 +27,26 @@ router.post('/list', async function (req, res ,next) {
     catch (e) {res.send(e)}
 });
 
+router.get('/myUnsold', async function(req,res) {
+   books.AllUserUnsold(req.user.email,function (err,doc) {
+       if(err) {
+           console.log(err);
+           res.json([]);
+       }
+       else {res.json(doc);}
+   });
+});
+
+router.get('/mySells', function (req,res) {
+    books.AllUserSells(req.user.email,function (err,doc) {
+        if(err) {
+            console.log(err);
+            res.json([]);
+        }
+        else {res.json(doc);}
+    });
+});
+
 router.post('/create',upload.single('photo'), function(req, res, next) {
    console.log(req.file);
    if(req.isAuthenticated())

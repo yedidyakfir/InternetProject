@@ -8,41 +8,21 @@ import {BookService} from "../../../services/BookService/book.service";
   styleUrls: ['./my-books.component.css']
 })
 export class MyBooksComponent implements OnInit {
-
-  private booksInPage: number = 9;
-  private pageNumber:number = 0;
-
-  public books:Book[] = [];
+  public unsold:Book[] = [];
+  public sold:Book[] = [];
   constructor(public bookService: BookService) { }
 
   ngOnInit() {
-    this.bookService.getBookList()
+    console.log("afdasd");
+    this.bookService.getMySells()
       .subscribe(bookRes => {
-        this.books = bookRes;
+        console.log("mine");
+        this.sold = bookRes;
         console.log(bookRes);
       });
+
+    this.bookService.getMyUnsold()
+      .subscribe(bookres => this.unsold = bookres);
   }
 
-  public addBook(book:Book) {
-    this.books.push(book);
-    console.log(this.books);
-  }
-
-  public getBooks() {
-    this.bookService.getBookList(this.pageNumber * this.booksInPage, this.booksInPage)
-      .subscribe(bookRes => this.books = bookRes);
-    console.log(this.books);
-  }
-
-  public nextPage() {
-    console.log("nexy");
-    this.pageNumber += 1;
-    this.getBooks();
-  }
-
-  public previousPage() {
-    if(this.pageNumber > 0)
-      this.pageNumber -= 1;
-    this.getBooks();
-  }
 }

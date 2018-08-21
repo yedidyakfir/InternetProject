@@ -2,11 +2,11 @@
 <div class="products">
   <div class="container">
     <div class="col-md-12 products-right">
-      <ng-container *ngFor="let book of books; let i = index">
+      <ng-container *ngFor="let book of unsold; let i = index">
         <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1">
-          <app-small-book-view [openable]="false" *ngIf="books[i + 2] != undefined" [book]="books[i + 2]"></app-small-book-view>
-          <app-small-book-view [openable]="false" *ngIf="books[i + 1] != undefined" [book]="books[i + 1]"></app-small-book-view>
-          <app-small-book-view [openable]="false" *ngIf="books[i] != undefined" [book]="books[i]"></app-small-book-view>
+          <app-small-book-view [openable]="false" *ngIf="unsold[i + 2] != undefined" [book]="unsold[i + 2]"></app-small-book-view>
+          <app-small-book-view [openable]="false" *ngIf="unsold[i + 1] != undefined" [book]="unsold[i + 1]"></app-small-book-view>
+          <app-small-book-view [openable]="false" *ngIf="unsold[i] != undefined" [book]="unsold[i]"></app-small-book-view>
           <div class="clearfix"></div>
         </div>
       </ng-container>
@@ -33,11 +33,11 @@
 <div class="products">
   <div class="container">
     <div class="col-md-12 products-right">
-      <ng-container *ngFor="let book of books; let i = index">
+      <ng-container *ngFor="let book of sold; let i = index">
         <div class="agile_top_brands_grids" *ngIf="((i + 1) % 3) == 1 ">
-          <app-small-book-view [openable]="false" *ngIf="books[i + 2] != undefined" [book]="books[i + 2]"></app-small-book-view>
-          <app-small-book-view [openable]="false" *ngIf="books[i + 1] != undefined" [book]="books[i + 1]"></app-small-book-view>
-          <app-small-book-view [openable]="false" *ngIf="books[i] != undefined" [book]="books[i]"></app-small-book-view>
+          <app-small-book-view [openable]="false" *ngIf="sold[i + 2] != undefined" [book]="sold[i + 2]"></app-small-book-view>
+          <app-small-book-view [openable]="false" *ngIf="sold[i + 1] != undefined" [book]="sold[i + 1]"></app-small-book-view>
+          <app-small-book-view [openable]="false" *ngIf="sold[i] != undefined" [book]="sold[i]"></app-small-book-view>
           <div class="clearfix"></div>
         </div>
       </ng-container>

@@ -21,6 +21,15 @@ export class BookService {
     return this.books;
   }
 
+  getMySells(): Observable<Book[]> {
+    this.http.get(this.bookUrl + '/mySells').subscribe(res => console.log(res));
+    return this.http.get<Book[]>(this.bookUrl + '/mySells');
+  }
+
+  getMyUnsold(): Observable<Book[]> {
+    return this.http.get<Book[]>(this.bookUrl + '/myUnsold');
+  }
+
   addBookToList(book:Book) {
     let newBooks = this.books.getValue();
     newBooks.push(book);
