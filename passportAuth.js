@@ -26,7 +26,10 @@ module.exports = function (passport) {
                     if(err)
                         return done(err);
                     if(user)
-                        return done(null, user);
+                        if(user.active)
+                            return done(null, user);
+                        else
+                            return done("user was disabled");
                     else {
                         var newUser = new UserDB();
                         newUser.admin = false;
@@ -63,7 +66,10 @@ module.exports = function (passport) {
                     if(err)
                         return done(err);
                     if(user)
-                        return done(null, user);
+                        if(user.active)
+                            return done(null, user);
+                        else
+                            return done("user was disabled");
                     else {
                         var newUser = new UserDB();
                         newUser.admin = false;

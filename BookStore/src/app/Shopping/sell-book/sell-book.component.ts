@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Book} from "../../../model/book";
 import {FileUploader,FileSelectDirective} from "ng2-file-upload";
 import {BookService} from "../../../services/BookService/book.service";
@@ -9,6 +9,8 @@ import {BookService} from "../../../services/BookService/book.service";
   styleUrls: ['./sell-book.component.css']
 })
 export class SellBookComponent implements OnInit {
+  @Output()
+  finishUpload :EventEmitter<boolean> = new EventEmitter<boolean>();
   public book = new Book();
   private uploadUrl: string = 'http://localhost:3000/books/create';
   public fileUploader: FileUploader = new FileUploader({url:this.uploadUrl,itemAlias:'photo'});
@@ -19,6 +21,7 @@ export class SellBookComponent implements OnInit {
       if(JSON.parse(response) == true){
         this.booksService.addBookToList(this.book);
         this.reset();
+        this.finishUpload.emit(true);
       }
       else {alert("couldn't upload " + JSON.parse(response));}
     });

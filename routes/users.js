@@ -38,7 +38,10 @@ router.post('/login', function (req, res, next) {
 router.get('/googleAuth', passport.authenticate('google' , {scope: ['profile','email']}));
 
 router.get('/googleAuth/callback',
-    passport.authenticate('google', {failureRedirect:'/',successRedirect:'/'}));
+    passport.authenticate('google', {successRedirect:'/'}), function (req,res) {
+        if(!req.isAuthenticated())
+            res.redirect('/');
+    });
 
 /// Facebook authentication
 router.get('/facebookAuth', passport.authenticate('facebook',{scope: ['email']}));

@@ -9,8 +9,11 @@ export class SearchFilterPipe implements PipeTransform {
   transform(value: Book[], args?: Book): Book[] {
     if(args == undefined) return value;
     if(args == new Book()) return value;
-    console.log(value[0]);
-    return new Array(value[0]);
+
+    return value.filter(function(book) {
+      console.log(book.name + " includes " + args.name + ":" + book.name.toLowerCase().includes(args.name.toLowerCase()));
+      return book.name.toLowerCase().includes(args.name.toLowerCase());
+    });
   }
 
 }

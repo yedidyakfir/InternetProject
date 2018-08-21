@@ -1,7 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Book} from "../../../model/book";
 import {BookService} from "../../../services/BookService/book.service";
-import {SearchFilterPipe} from "../../../SearchFilter/search-filter.pipe";
 
 @Component({
   selector: 'app-catalog',
@@ -27,7 +26,10 @@ export class CatalogComponent implements OnInit {
         console.log(bookRes);
       });
     this.bookService.getFilter()
-      .subscribe(res => this.bookFilter = res);
+      .subscribe(res => {
+        this.bookFilter = res
+
+      });
   }
 
   public addBook(book:Book) {
@@ -42,7 +44,7 @@ export class CatalogComponent implements OnInit {
   }
 
   public nextPage() {
-    console.log("nexy");
+    console.log("next");
     this.pageNumber += 1;
     this.getBooks();
   }

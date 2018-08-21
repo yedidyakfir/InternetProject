@@ -13,6 +13,11 @@ export class MyBooksComponent implements OnInit {
   constructor(public bookService: BookService) { }
 
   ngOnInit() {
+    this.refresh();
+  }
+
+  refresh() {
+
     console.log("afdasd");
     this.bookService.getMySells()
       .subscribe(bookRes => {
