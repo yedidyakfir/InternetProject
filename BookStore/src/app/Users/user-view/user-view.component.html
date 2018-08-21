@@ -9,12 +9,13 @@
   {{user.updated_at}}
 </td>
 <td >
-  <button class="table-link b" style ="vertical-align: middle;">
+  <a href class="table-link b" style ="vertical-align: middle;" (click)="userSelected.emit(user);"
+     data-toggle="modal" data-target="#EditUserModal">
     <span class="fa-stack">
         <i class="fa fa-square fa-stack-2x"></i>
         <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
     </span>
-  </button>
+  </a>
 
 </td>
 <td>
@@ -45,5 +46,8 @@
         </div>
       </div>
       </div>-->
+
+
+
 
 

@@ -18,7 +18,7 @@
                   </thead>
                   <tr *ngFor="let user of users"
                       app-user-view
-                      [user]="user" >
+                      [user]="user" (userSelected)="changeChosenUser(user)">
                   </tr>
                 </table>
               </div>
@@ -29,3 +29,51 @@
     </div>
   </div>
 </section>
+
+
+<div class="container modal fade" id="EditUserModal" tabindex="-1" role="dialog"
+     aria-labelledby="EditUserModalLabel" aria-hidden="true">
+  <div style="margin-top:50px" class="modal-dialog mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="modal-content panel panel-info">
+      <div class="panel-heading"  style="background: #ff9b05">
+        <div class="panel-title">Sell Your Book</div>
+      </div>
+      <div class="panel-body modal-body">
+        <div class="form-horizontal">
+          <div id="div_ISBN" class="form-group required">
+            <label for="ISBN" class="control-label col-md-4  requiredField">ISBN<span class="asteriskField">*</span> </label>
+            <div class="controls col-md-8 ">
+              <input class="input-md form-control" id="ISBN" name="ISBN"
+                     placeholder="Enter ISBN" style="margin-bottom: 10px" type="number" />
+            </div>
+          </div>
+          <div id="div_summary" class="form-group required">
+            <label for="summary" class="control-label col-md-4">summary</label>
+            <div class="controls col-md-8 ">
+              <input class="input-md textInput form-control" id="summary" name="summary"
+                     placeholder="Enter the Book's summary" style="margin-bottom: 10px"/>
+            </div>
+          </div>
+          <div id="div_price" class="form-group required">
+            <label for="price" class="control-label col-md-4  requiredField">Price<span class="asteriskField">*</span> </label>
+            <div class="controls col-md-8 ">
+              <input class="input-md form-control" id="price" name="price"
+                     placeholder="Enter Price" style="margin-bottom: 10px" type="number" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="aab controls col-md-4 "></div>
+            <div class="controls col-md-12">
+              <input type="submit" name="sell" value="Sell Your Book"
+                     class="btn btn-success btn btn-info" data-dismiss="modal"
+                     data-target="#EditUserModal" id="submit-book" style="width: 100%" />
+            </div>
+          </div>
+
+        </div>
+
+        <!--</form>-->
+      </div>
+    </div>
+  </div>
+</div>

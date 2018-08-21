@@ -37,6 +37,7 @@ import { MainBlogViewComponent } from './Blogs/main-blog-view/main-blog-view.com
 
 //services
 import {AdminGuardService} from "../services/AdminGuardService/admin-guard.service";
+import { SearchFilterPipe } from './search-filter.pipe';
 
 const routes: Routes = [
   {path:'', redirectTo:'Home', pathMatch:'full'},
@@ -75,7 +76,8 @@ const routes: Routes = [
     BlogViewComponent,
     BlogPostComponent,
     MyBooksComponent,
-    MainBlogViewComponent
+    MainBlogViewComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,

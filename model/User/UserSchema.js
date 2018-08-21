@@ -80,7 +80,9 @@ module.exports = db => {
     };
 
 	userSchema.statics.DISABLE = async function(email) {
-	  this.updateOne({email:email},{active: false});
+	  this.updateOne({email:email},{active: false},function (err,doc) {
+          console.log(err); console.log(doc);
+      });
     };
 
 	userSchema.statics.AddToCart = async function(bookId,userId,cb)

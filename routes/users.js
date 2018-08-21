@@ -4,9 +4,9 @@ const User = require('../model/index')('Users');
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+// router.get('/', function(req, res, next) {
+//   res.send('respond with a resource');
+// });
 
 //user attempt to register
 router.post('/register', function (req, res) {

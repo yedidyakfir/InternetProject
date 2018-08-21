@@ -8,7 +8,7 @@ import {UserService} from "../../../services/UserService/user.service";
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
-
+  public chosenUser: User = new User();
   public users: User[];
 
   constructor(private userService: UserService) { }
@@ -20,5 +20,9 @@ export class UserListComponent implements OnInit {
     //I requesting the books data and store it in the array which is connected to the view
     let x =this.userService.getUserList();
     x.subscribe(bookRes => this.users = bookRes);
+  }
+
+  changeChosenUser(user:User) {
+    this.chosenUser = user;
   }
 }

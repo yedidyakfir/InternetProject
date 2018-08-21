@@ -9,8 +9,10 @@ import {HttpClient} from "@angular/common/http";
 export class BookService {
   private books: BehaviorSubject<Book[]>;
   private chosenBook: Subject<Book>;
+  private bookFilter: Subject<Book>;
   bookUrl = 'http://localhost:3000/books';
   constructor(private http: HttpClient) {
+    this.bookFilter = new Subject<Book>();
     this.chosenBook = new Subject<Book>();
     this.books = new BehaviorSubject<Book[]>([]);
   }
@@ -45,5 +47,14 @@ export class BookService {
     return this.chosenBook;
   }
 
+  changeFilter(filter:string) {
+    let book = new Book();
+    book.name = filter;
+    this.bookFilter.next(book);
+  }
+
+  getFilter(): Subject<Book> {
+    return this.bookFilter;
+  }
 
 }

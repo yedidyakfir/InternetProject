@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {User} from "../../../model/user";
 import {UserService} from "../../../services/UserService/user.service";
 
@@ -8,7 +8,7 @@ import {UserService} from "../../../services/UserService/user.service";
   styleUrls: ['./user-view.component.css']
 })
 export class UserViewComponent implements OnInit {
-
+  @Output() userSelected: EventEmitter<User> = new EventEmitter<User>();
   @Input() public user:User;
 
   public oldUserEmail :string;
