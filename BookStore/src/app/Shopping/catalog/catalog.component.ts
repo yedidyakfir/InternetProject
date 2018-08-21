@@ -20,15 +20,10 @@ export class CatalogComponent implements OnInit {
   constructor(public bookService: BookService) { }
 
   ngOnInit() {
-    this.bookService.getBookList()
-      .subscribe(bookRes => {
-        this.books = bookRes;
-        console.log(bookRes);
-      });
+    this.getBooks();
     this.bookService.getFilter()
       .subscribe(res => {
-        this.bookFilter = res
-
+        this.bookFilter = res;
       });
   }
 
