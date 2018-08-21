@@ -9,15 +9,24 @@ import {HttpClient} from "@angular/common/http";
 })
 export class BlogService {
   private blogUrl = "http://localhost:3000/blog";
-  private socket = io('http://localhost:3000');
+  private socket;
   private blogs: BehaviorSubject<Blog[]> = new BehaviorSubject<Blog[]>([]);
   private chosenBlog: BehaviorSubject<Blog>;
 
   constructor(private http: HttpClient) {
+    this.connect();
     this.chosenBlog = new BehaviorSubject<Blog>(new Blog());
     this.getList();
     this.getBlogLikes();
     this.getBlogUnlikes();
+  }
+
+  connect() {
+    this.socket = io('http://localhost:3000');
+  }
+
+  leaveRoom(blog:Blog) {
+    this.socket.emit('leave', {room:blog.name});
   }
 
   joinRoom(blog:Blog) {

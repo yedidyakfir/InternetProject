@@ -35,11 +35,16 @@ module.exports = (server) => {
                 socket.join(data.room);
         });
 
+        socket.on('leave', async function(data) {
+            socket.leave(data.room);
+            socket.disconnect();
+        });
+
         socket.on('post', async function (data) {
 
             if(await Blogs.IsUserInBlog(socket.request.user.email,data.room)){
                 Blogs.ADDPOST(data.msg,socket.request.user.email,data.room);
-                io.to(data.room).emit('post',{msg:data.msg,user:socket.request.user.email});
+                io.sockets.in(data.room).emit('post',{msg:data.msg,user:socket.request.user.email});
             }
         });
 

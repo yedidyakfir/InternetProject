@@ -38,9 +38,10 @@ module.exports = function (passport) {
 
                         newUser.save(function(err){
                             if(err)
-                                throw err;
-                            return done(null, newUser);
-                        })
+                                console.log(err);
+                            else
+                                return done(null, newUser);
+                        });
                         console.log(profile);
                     }
                 });
@@ -74,8 +75,9 @@ module.exports = function (passport) {
 
                         newUser.save(function(err){
                             if(err)
-                                throw err;
-                            return done(null, newUser);
+                                console.log(err);
+                            else
+                                return done(null, newUser);
                         });
                         console.log(profile);
                     }

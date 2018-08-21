@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {BlogService} from "../../../services/BlogService/blog.service";
 import {Blog} from "../../../model/blog";
 import {ActivatedRoute} from "@angular/router";
@@ -8,15 +8,20 @@ import {ActivatedRoute} from "@angular/router";
   templateUrl: './blog-discussion.component.html',
   styleUrls: ['./blog-discussion.component.css']
 })
-export class BlogDiscussionComponent implements OnInit {
+export class BlogDiscussionComponent implements OnInit, OnDestroy {
   public blog: Blog;
   public msg:string;
   public like: boolean;
   public isCreator: boolean;
   constructor(public blogService: BlogService,private route:ActivatedRoute) { }
 
+  ngOnDestroy() {
+    this.blogService.leaveRoom(this.blog);
+  }
+
   ngOnInit() {
     this.blog = new Blog();
+    this.blogService.connect();
     this.blogService.getBlogByName(this.route.snapshot.params['name'])
       .subscribe(res => this.blogService.chooseBlog(res));
     this.blogService.getChosenBlog()
